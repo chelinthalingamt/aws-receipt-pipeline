@@ -1,0 +1,177 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: >
+  EC2 version (Person B) - the traditional, server-based version. One small EC2
+  instance runs poller.py all the time; it checks s3://<bucket>/ec2/ for new
+  receipts and processes them with the same code as the Lambda version.
+  The bucket, table and topic come from the shared-infrastructure stack.
+
+Parameters:
+  BucketName:
+    Type: String
+    Description: S3 bucket from the shared-infrastructure stack.
+  TableName:
+    Type: String
+    Description: DynamoDB table from the shared-infrastructure stack.
+  TopicArn:
+    Type: String
+    Description: SNS topic ARN from the shared-infrastructure stack.
+  InstanceType:
+    Type: String
+    Default: t3.micro
+    Description: Size of the server. t3.micro has 2 vCPUs and 1 GiB of memory.
+  LatestAmiId:
+    Type: AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>
+    Default: /aws/service/ami-amazon-linux-latest/al2023-ami-kernel-default-x86_64
+    Description: Latest Amazon Linux 2023 image, looked up automatically.
+  PollSeconds:
+    Type: Number
+    Default: 10
+    MinValue: 1
+    Description: How often the server checks the ec2/ folder.
+
+Resources:
+  # Security: the server's permissions, same least-privilege idea as Person A's
+  # role. The server gets these through an instance profile, never through keys
+  # stored on the machine.
+  PollerRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: receipt-pipeline-ec2-role
+      Description: Least-privilege role for the EC2 receipt poller.
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        # Lets you open a terminal on the server from the console (Session
+        # Manager) and lets ec2-power.sh read its logs, with no SSH key or open port.
+        - arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore
+      Policies:
+        - PolicyName: receipt-pipeline-ec2-least-privilege
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Sid: ListOnlyTheEc2Folder
+                Effect: Allow
+                Action: s3:ListBucket
+                Resource: !Sub 'arn:aws:s3:::${BucketName}'
+                Condition:
+                  StringLike:
+                    s3:prefix: 'ec2/*'
+              - Sid: ReadReceiptsAndCode
+                Effect: Allow
+                Action: s3:GetObject
+                Resource:
+                  - !Sub 'arn:aws:s3:::${BucketName}/ec2/*'
+                  - !Sub 'arn:aws:s3:::${BucketName}/deploy/ec2-code.zip'
+              - Sid: SaveAndCheckReceipts
+                Effect: Allow
+                Action:
+                  - dynamodb:PutItem
+                  - dynamodb:GetItem
+                Resource: !Sub 'arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/${TableName}'
+              - Sid: SendNotification
+                Effect: Allow
+                Action: sns:Publish
+                Resource: !Ref TopicArn
+              - Sid: OcrImages
+                Effect: Allow
+                Action: rekognition:DetectText
+                Resource: '*'
+      Tags:
+        - Key: Project
+          Value: receipt-pipeline
+
+  PollerInstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      InstanceProfileName: receipt-pipeline-ec2-profile
+      Roles:
+        - !Ref PollerRole
+
+  # Network: no inbound ports at all. The poller only makes outbound calls to
+  # AWS, and Session Manager also works over outbound connections.
+  PollerSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Receipt poller - no inbound access, outbound only
+      # No rules listed: a new security group allows no inbound traffic and all
+      # outbound traffic by default, which is exactly what the poller needs.
+      Tags:
+        - Key: Project
+          Value: receipt-pipeline
+
+  # Compute: an always-on virtual machine, billed per hour while running.
+  PollerInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: !Ref LatestAmiId
+      InstanceType: !Ref InstanceType
+      IamInstanceProfile: !Ref PollerInstanceProfile
+      SecurityGroupIds:
+        - !GetAtt PollerSecurityGroup.GroupId
+      MetadataOptions:
+        HttpTokens: required  # IMDSv2 only, the safer way for code to fetch its credentials
+      Tags:
+        - Key: Name
+          Value: receipt-pipeline-ec2
+        - Key: Project
+          Value: receipt-pipeline
+      # Runs once, on first boot: installs Python libraries and starts the
+      # poller as a service that restarts on failure and on every reboot.
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash
+          set -euxo pipefail
+          dnf install -y python3-pip unzip
+          mkdir -p /opt/receipt
+          # Libraries go in the poller's own folder, apart from the system Python
+          # that the server's built-in AWS tools use.
+          python3 -m pip install --quiet --target /opt/receipt/lib boto3 pypdf
+
+          cat > /etc/receipt-poller.env <<'ENV'
+          TABLE_NAME=${TableName}
+          TOPIC_ARN=${TopicArn}
+          BUCKET=${BucketName}
+          PIPELINE_SOURCE=ec2
+          POLL_SECONDS=${PollSeconds}
+          AWS_DEFAULT_REGION=${AWS::Region}
+          PYTHONPATH=/opt/receipt/lib
+          ENV
+
+          cat > /etc/systemd/system/receipt-poller.service <<'UNIT'
+          [Unit]
+          Description=Receipt pipeline poller (EC2 version)
+          After=network-online.target
+          Wants=network-online.target
+
+          [Service]
+          EnvironmentFile=/etc/receipt-poller.env
+          WorkingDirectory=/opt/receipt
+          # Fetch the latest code on every start, so a restart picks up changes.
+          ExecStartPre=/usr/bin/aws s3 cp s3://${BucketName}/deploy/ec2-code.zip /opt/receipt/code.zip --region ${AWS::Region}
+          ExecStartPre=/usr/bin/unzip -o /opt/receipt/code.zip -d /opt/receipt
+          ExecStart=/usr/bin/python3 -u /opt/receipt/poller.py
+          Restart=always
+          RestartSec=10
+
+          [Install]
+          WantedBy=multi-user.target
+          UNIT
+
+          systemctl daemon-reload
+          systemctl enable --now receipt-poller
+
+Outputs:
+  InstanceId:
+    Description: The EC2 instance running the poller
+    Value: !Ref PollerInstance
+  RoleName:
+    Description: IAM role used by the server
+    Value: !Ref PollerRole
+  SecurityGroupId:
+    Description: Security group with no inbound rules
+    Value: !GetAtt PollerSecurityGroup.GroupId

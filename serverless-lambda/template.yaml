@@ -1,0 +1,123 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: >
+  Serverless version (Person A) - receipt processor. Creates the least-privilege
+  IAM role, the Lambda function, its log group, and the permission that lets the
+  S3 bucket invoke the function. The bucket, table and topic come from the shared-infrastructure stack.
+
+Parameters:
+  BucketName:
+    Type: String
+    Description: S3 bucket from the shared-infrastructure stack.
+  TableName:
+    Type: String
+    Description: DynamoDB table from the shared-infrastructure stack.
+  TopicArn:
+    Type: String
+    Description: SNS topic ARN from the shared-infrastructure stack.
+  CodeS3Key:
+    Type: String
+    Description: Key of the Lambda code zip inside the bucket (set by deploy.sh).
+
+Resources:
+  # Monitoring: created here (not auto-created by Lambda) so the role can be
+  # limited to this one log group, and so old logs expire on their own.
+  ProcessorLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: /aws/lambda/receipt-pipeline-processor
+      RetentionInDays: 14
+
+  # Security: the function can do exactly five things and nothing else.
+  ProcessorRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: receipt-pipeline-lambda-role
+      Description: Least-privilege role for the receipt processing Lambda function.
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: receipt-pipeline-least-privilege
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Sid: ReadUploadedReceipts
+                Effect: Allow
+                Action: s3:GetObject
+                Resource: !Sub 'arn:aws:s3:::${BucketName}/serverless/*'
+              - Sid: SaveExtractedData
+                Effect: Allow
+                Action: dynamodb:PutItem
+                Resource: !Sub 'arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/${TableName}'
+              - Sid: SendNotification
+                Effect: Allow
+                Action: sns:Publish
+                Resource: !Ref TopicArn
+              - Sid: OcrImages
+                Effect: Allow
+                Action: rekognition:DetectText
+                # Rekognition does not support resource-level permissions for
+                # this action, so "*" is the narrowest setting available.
+                Resource: '*'
+              - Sid: WriteOwnLogs
+                Effect: Allow
+                Action:
+                  - logs:CreateLogStream
+                  - logs:PutLogEvents
+                Resource: !GetAtt ProcessorLogGroup.Arn
+      Tags:
+        - Key: Project
+          Value: receipt-pipeline
+
+  # Compute: runs only when a receipt is uploaded, billed per millisecond.
+  ProcessorFunction:
+    Type: AWS::Lambda::Function
+    DependsOn: ProcessorLogGroup
+    Properties:
+      FunctionName: receipt-pipeline-processor
+      Description: Extracts vendor, amount and date from uploaded receipts.
+      Runtime: python3.13
+      Handler: lambda_function.lambda_handler
+      Role: !GetAtt ProcessorRole.Arn
+      Code:
+        S3Bucket: !Ref BucketName
+        S3Key: !Ref CodeS3Key
+      MemorySize: 256
+      Timeout: 30
+      Environment:
+        Variables:
+          TABLE_NAME: !Ref TableName
+          TOPIC_ARN: !Ref TopicArn
+          PIPELINE_SOURCE: lambda
+      Tags:
+        - Key: Project
+          Value: receipt-pipeline
+
+  # Integration: allows S3 (this bucket, this account only) to invoke the function.
+  # The trigger itself is attached to the bucket by deploy.sh.
+  S3InvokePermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref ProcessorFunction
+      Action: lambda:InvokeFunction
+      Principal: s3.amazonaws.com
+      SourceArn: !Sub 'arn:aws:s3:::${BucketName}'
+      SourceAccount: !Ref AWS::AccountId
+
+Outputs:
+  FunctionName:
+    Description: Lambda function name
+    Value: !Ref ProcessorFunction
+  FunctionArn:
+    Description: Lambda function ARN
+    Value: !GetAtt ProcessorFunction.Arn
+  RoleName:
+    Description: IAM role used by the function
+    Value: !Ref ProcessorRole
+  LogGroup:
+    Description: CloudWatch log group for the function
+    Value: !Ref ProcessorLogGroup

@@ -1,0 +1,86 @@
+[
+  {
+    "file": "01-nilgiri-office-supplies.pdf",
+    "vendor": "Nilgiri Office Supplies",
+    "amount": "2242.00",
+    "date": "2026-09-18",
+    "words": 49
+  },
+  {
+    "file": "02-spice-garden.pdf",
+    "vendor": "SPICE GARDEN RESTAURANT",
+    "amount": "231.00",
+    "date": "2026-10-03",
+    "words": 44
+  },
+  {
+    "file": "03-coastal-power.pdf",
+    "vendor": "Coastal Power Distribution Ltd",
+    "amount": "2345.00",
+    "date": "2026-09-15",
+    "words": 31
+  },
+  {
+    "file": "04-brightline-order.pdf",
+    "vendor": "Brightline Retail Pvt Ltd",
+    "amount": "1180.00",
+    "date": "2026-09-12",
+    "words": 35
+  },
+  {
+    "file": "05-blue-ridge-coffee.pdf",
+    "vendor": "Blue Ridge Coffee Co",
+    "amount": "4.90",
+    "date": "2026-09-05",
+    "words": 21
+  },
+  {
+    "file": "06-metro-pharmacy.pdf",
+    "vendor": "Metro Pharmacy",
+    "amount": "450.00",
+    "date": "2026-09-28",
+    "words": 30
+  },
+  {
+    "file": "07-city-cabs.pdf",
+    "vendor": "City Cabs",
+    "amount": "1180",
+    "date": "2026-10-02",
+    "words": 27
+  },
+  {
+    "file": "08-kaveri-machine-tools.pdf",
+    "vendor": "Kaveri Machine Tools",
+    "amount": "123456.78",
+    "date": "2026-08-01",
+    "words": 25
+  },
+  {
+    "file": "09-quick-mart-no-date.pdf",
+    "vendor": "Quick Mart",
+    "amount": "155.00",
+    "date": null,
+    "words": 24
+  },
+  {
+    "file": "10-annapoorna.pdf",
+    "vendor": "Annapoorna Veg Restaurant",
+    "amount": "473.00",
+    "date": "2026-10-05",
+    "words": 35
+  },
+  {
+    "file": "11-fresh-mart-photo.png",
+    "vendor": "FRESH MART SUPERMARKET",
+    "amount": "845.50",
+    "date": "2026-10-07",
+    "words": 26
+  },
+  {
+    "file": "12-bookworm-photo.png",
+    "vendor": "BOOKWORM BOOKS",
+    "amount": "1299.00",
+    "date": "2026-10-12",
+    "words": 23
+  }
+]

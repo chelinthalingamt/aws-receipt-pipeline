@@ -1,0 +1,98 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: >
+  Receipt pipeline website. One small Lambda function, reachable at a public
+  function URL, serves the upload page and hands out short-lived upload passes.
+  Uploads land in serverless/web/, where the existing pipeline processes them.
+
+Parameters:
+  BucketName:
+    Type: String
+  TableName:
+    Type: String
+  CodeS3Key:
+    Type: String
+    Description: Key of the website code zip inside the bucket (set by deploy.sh).
+
+Resources:
+  WebLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: /aws/lambda/receipt-pipeline-web
+      RetentionInDays: 14
+
+  # Least privilege again: the website can only put and read files in
+  # serverless/web/ and read the receipts table. It cannot process, delete or email.
+  WebRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: receipt-pipeline-web-role
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: receipt-pipeline-web-least-privilege
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Sid: SignUploadsAndCheckThem
+                Effect: Allow
+                Action:
+                  - s3:PutObject   # the browser's upload pass is signed with this role
+                  - s3:GetObject   # to look up the uploaded file's version (ETag)
+                Resource: !Sub 'arn:aws:s3:::${BucketName}/serverless/web/*'
+              - Sid: ReadResults
+                Effect: Allow
+                Action:
+                  - dynamodb:GetItem
+                  - dynamodb:Scan
+                Resource: !Sub 'arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/${TableName}'
+              - Sid: WriteOwnLogs
+                Effect: Allow
+                Action:
+                  - logs:CreateLogStream
+                  - logs:PutLogEvents
+                Resource: !GetAtt WebLogGroup.Arn
+      Tags:
+        - Key: Project
+          Value: receipt-pipeline
+
+  WebFunction:
+    Type: AWS::Lambda::Function
+    DependsOn: WebLogGroup
+    Properties:
+      FunctionName: receipt-pipeline-web
+      Description: Serves the receipt upload page and its small API.
+      Runtime: python3.13
+      Handler: web_function.handler
+      Role: !GetAtt WebRole.Arn
+      Code:
+        S3Bucket: !Ref BucketName
+        S3Key: !Ref CodeS3Key
+      MemorySize: 256
+      Timeout: 10
+      Environment:
+        Variables:
+          BUCKET: !Ref BucketName
+          TABLE_NAME: !Ref TableName
+      Tags:
+        - Key: Project
+          Value: receipt-pipeline
+
+  # A public HTTPS address for the function. The two permissions it needs
+  # (InvokeFunctionUrl and InvokeFunction) are added by deploy.sh.
+  WebUrl:
+    Type: AWS::Lambda::Url
+    Properties:
+      TargetFunctionArn: !GetAtt WebFunction.Arn
+      AuthType: NONE
+
+Outputs:
+  WebsiteUrl:
+    Description: Open this in a browser
+    Value: !GetAtt WebUrl.FunctionUrl
+  FunctionName:
+    Value: !Ref WebFunction

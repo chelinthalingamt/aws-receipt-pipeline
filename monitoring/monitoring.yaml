@@ -1,0 +1,139 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: >
+  Monitoring for the receipt pipeline: one CloudWatch alarm that emails when the
+  Lambda function errors, and one dashboard showing how both versions behave.
+
+Parameters:
+  TopicArn:
+    Type: String
+    Description: SNS topic from the shared-infrastructure stack (alarm emails go to its subscribers).
+  InstanceId:
+    Type: String
+    Default: none
+    Description: EC2 instance from the ec2-server stack, for the CPU graph ("none" if absent).
+
+Resources:
+  # Fires when the function reports an error (permissions, AWS outage, a bug).
+  # A bad receipt file is NOT an error: it is saved as FAILED instead.
+  LambdaErrorAlarm:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmName: receipt-pipeline-lambda-errors
+      AlarmDescription: The receipt Lambda function returned an error in the last 5 minutes. Check its logs.
+      Namespace: AWS/Lambda
+      MetricName: Errors
+      Dimensions:
+        - Name: FunctionName
+          Value: receipt-pipeline-processor
+      Statistic: Sum
+      Period: 300
+      EvaluationPeriods: 1
+      Threshold: 1
+      ComparisonOperator: GreaterThanOrEqualToThreshold
+      TreatMissingData: notBreaching  # no uploads = no data = healthy
+      AlarmActions:
+        - !Ref TopicArn
+      OKActions:
+        - !Ref TopicArn
+
+  Dashboard:
+    Type: AWS::CloudWatch::Dashboard
+    Properties:
+      DashboardName: receipt-pipeline
+      DashboardBody: !Sub |
+        {
+          "widgets": [
+            {
+              "type": "alarm", "x": 0, "y": 0, "width": 24, "height": 2,
+              "properties": {
+                "title": "Health: Lambda error alarm",
+                "alarms": ["${LambdaErrorAlarm.Arn}"]
+              }
+            },
+            {
+              "type": "metric", "x": 0, "y": 2, "width": 12, "height": 6,
+              "properties": {
+                "title": "Lambda: runs and errors (per 5 min)",
+                "region": "${AWS::Region}", "view": "timeSeries", "stat": "Sum", "period": 300,
+                "metrics": [
+                  ["AWS/Lambda", "Invocations", "FunctionName", "receipt-pipeline-processor", {"label": "Runs"}],
+                  [".", "Errors", ".", ".", {"label": "Errors", "color": "#d62728"}]
+                ]
+              }
+            },
+            {
+              "type": "metric", "x": 12, "y": 2, "width": 12, "height": 6,
+              "properties": {
+                "title": "Lambda: run time in ms (whole invocation)",
+                "region": "${AWS::Region}", "view": "timeSeries", "period": 300,
+                "metrics": [
+                  ["AWS/Lambda", "Duration", "FunctionName", "receipt-pipeline-processor", {"stat": "Average", "label": "Average"}],
+                  ["...", {"stat": "Maximum", "label": "Slowest"}]
+                ]
+              }
+            },
+            {
+              "type": "log", "x": 0, "y": 8, "width": 8, "height": 6,
+              "properties": {
+                "title": "Receipts by status (Lambda)",
+                "region": "${AWS::Region}", "view": "pie",
+                "query": "SOURCE '/aws/lambda/receipt-pipeline-processor' | filter @message like /receipt_processed/ | parse @message /\"status\": \"(?<status>[A-Z_]+)\"/ | stats count(*) as receipts by status"
+              }
+            },
+            {
+              "type": "log", "x": 8, "y": 8, "width": 16, "height": 6,
+              "properties": {
+                "title": "Processing time per receipt in ms (extract to notify)",
+                "region": "${AWS::Region}", "view": "timeSeries",
+                "query": "SOURCE '/aws/lambda/receipt-pipeline-processor' | filter @message like /receipt_processed/ | parse @message /\"processing_ms\": (?<ms>\\d+)/ | stats avg(ms) as average_ms, max(ms) as slowest_ms by bin(1h)"
+              }
+            },
+            {
+              "type": "log", "x": 0, "y": 14, "width": 24, "height": 6,
+              "properties": {
+                "title": "Latest 20 receipts (Lambda)",
+                "region": "${AWS::Region}", "view": "table",
+                "query": "SOURCE '/aws/lambda/receipt-pipeline-processor' | filter @message like /receipt_processed/ | parse @message /\"s3_key\": \"(?<file>[^\"]+)\"/ | parse @message /\"status\": \"(?<status>[A-Z_]+)\"/ | parse @message /\"processing_ms\": (?<ms>\\d+)/ | sort @timestamp desc | limit 20 | display @timestamp, file, status, ms"
+              }
+            },
+            {
+              "type": "metric", "x": 0, "y": 20, "width": 8, "height": 6,
+              "properties": {
+                "title": "SNS: emails sent (both versions)",
+                "region": "${AWS::Region}", "view": "timeSeries", "stat": "Sum", "period": 300,
+                "metrics": [
+                  ["AWS/SNS", "NumberOfMessagesPublished", "TopicName", "receipt-pipeline-processed", {"label": "Published"}],
+                  [".", "NumberOfNotificationsDelivered", ".", ".", {"label": "Delivered"}],
+                  [".", "NumberOfNotificationsFailed", ".", ".", {"label": "Failed", "color": "#d62728"}]
+                ]
+              }
+            },
+            {
+              "type": "metric", "x": 8, "y": 20, "width": 8, "height": 6,
+              "properties": {
+                "title": "DynamoDB: rows written (both versions)",
+                "region": "${AWS::Region}", "view": "timeSeries", "stat": "Sum", "period": 300,
+                "metrics": [
+                  ["AWS/DynamoDB", "ConsumedWriteCapacityUnits", "TableName", "receipt-pipeline-receipts", {"label": "Write units"}]
+                ]
+              }
+            },
+            {
+              "type": "metric", "x": 16, "y": 20, "width": 8, "height": 6,
+              "properties": {
+                "title": "EC2 server: CPU % (billed even when idle)",
+                "region": "${AWS::Region}", "view": "timeSeries", "stat": "Average", "period": 300,
+                "yAxis": {"left": {"min": 0, "max": 100}},
+                "metrics": [
+                  ["AWS/EC2", "CPUUtilization", "InstanceId", "${InstanceId}", {"label": "CPU %"}]
+                ]
+              }
+            }
+          ]
+        }
+
+Outputs:
+  DashboardName:
+    Value: !Ref Dashboard
+  AlarmName:
+    Value: !Ref LambdaErrorAlarm

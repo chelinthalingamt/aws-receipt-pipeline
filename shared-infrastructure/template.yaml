@@ -1,0 +1,78 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: >
+  Shared resources for the receipt/invoice digitization mini project.
+  Creates the S3 bucket, DynamoDB table and SNS topic that both the serverless
+  (Lambda) version and the EC2 version will use.
+
+Parameters:
+  NotificationEmail:
+    Type: String
+    Description: Email address that receives the "receipt processed" notifications.
+    AllowedPattern: '^[^@\s]+@[^@\s]+\.[^@\s]+$'
+    ConstraintDescription: Must be a valid email address.
+
+Resources:
+  # Storage: uploaded receipts land here.
+  # Convention used by both versions:
+  #   serverless/  -> files here trigger the Lambda function
+  #   ec2/         -> files here are picked up by the EC2 script
+  ReceiptBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub 'receipt-pipeline-${AWS::AccountId}-${AWS::Region}'
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      Tags:
+        - Key: Project
+          Value: receipt-pipeline
+
+  # Database: one item per processed receipt.
+  # On-demand billing = pay per request, nothing to pay while idle.
+  ReceiptTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: receipt-pipeline-receipts
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: receipt_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: receipt_id
+          KeyType: HASH
+      Tags:
+        - Key: Project
+          Value: receipt-pipeline
+
+  # Integration: "your receipt has been processed" notifications.
+  NotificationTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: receipt-pipeline-processed
+      Tags:
+        - Key: Project
+          Value: receipt-pipeline
+
+  EmailSubscription:
+    Type: AWS::SNS::Subscription
+    Properties:
+      TopicArn: !Ref NotificationTopic
+      Protocol: email
+      Endpoint: !Ref NotificationEmail
+
+Outputs:
+  BucketName:
+    Description: S3 bucket for receipt uploads
+    Value: !Ref ReceiptBucket
+  TableName:
+    Description: DynamoDB table for extracted receipt data
+    Value: !Ref ReceiptTable
+  TopicArn:
+    Description: SNS topic ARN for processed notifications
+    Value: !Ref NotificationTopic

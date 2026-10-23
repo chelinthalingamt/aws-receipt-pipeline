@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Receipt Digitizer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: upload + live pipeline on the left, the result printed as a receipt on the right. */
+:root {
+  --bg: #f3f6f5; --surface: #ffffff; --ink: #14252b; --muted: #5b6b73; --line: #d6e2de;
+  --accent: #1b7f79; --accent-ink: #ffffff; --accent-soft: #e3f1ee; --amber: #c96f12; --amber-soft: #fbe9d2;
+  --bad: #b5402f; --bad-soft: #f8e1dd; --paper: #fffefa; --paper-edge: #e8ece9;
+  --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d1a1c; --surface: #132428; --ink: #e5efec; --muted: #9db0ad; --line: #24393d;
+    --accent: #3fb3a8; --accent-ink: #062321; --accent-soft: #173a3a; --amber: #f0a24e; --amber-soft: #3a2a17;
+    --bad: #f0846f; --bad-soft: #3b201b; --paper: #1a2c30; --paper-edge: #0d1a1c; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d1a1c; --surface: #132428; --ink: #e5efec; --muted: #9db0ad; --line: #24393d;
+  --accent: #3fb3a8; --accent-ink: #062321; --accent-soft: #173a3a; --amber: #f0a24e; --amber-soft: #3a2a17;
+  --bad: #f0846f; --bad-soft: #3b201b; --paper: #1a2c30; --paper-edge: #0d1a1c; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--sans); }
+.wrap { max-width: 1080px; margin: 0 auto; padding-inline: 16px; padding-block: 28px 48px; display: grid; gap: 24px; }
+header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; }
+.brand { font-weight: 700; font-size: 1.35rem; letter-spacing: -0.01em; }
+.brand span { color: var(--accent); }
+.pill { font: 600 .75rem/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted);
+  border: 1px solid var(--line); border-radius: 999px; padding: 6px 10px; }
+h1 { margin: 0; font-size: clamp(1.5rem, 3.2vw, 2.1rem); line-height: 1.2; letter-spacing: -0.02em; text-wrap: balance; max-width: 30ch; }
+.lead { margin: 6px 0 0; color: var(--muted); max-width: 62ch; }
+.grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+@media (max-width: 820px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; min-width: 0; }
+.card h2 { margin: 0 0 14px; font-size: .8rem; font-family: var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+
+/* drop zone */
+.drop { display: grid; place-items: center; text-align: center; gap: 6px; min-height: 170px; padding: 20px;
+  border: 2px dashed var(--line); border-radius: 12px; cursor: pointer; transition: border-color .15s, background .15s; }
+.drop:hover, .drop.over { border-color: var(--accent); background: var(--accent-soft); }
+.drop:focus-within { outline: 3px solid var(--accent); outline-offset: 2px; }
+.drop input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.drop svg { width: 34px; height: 34px; color: var(--accent); }
+.drop strong { font-size: 1.02rem; }
+.drop small { color: var(--muted); }
+.chosen { display: none; grid-template-columns: 64px minmax(0, 1fr); gap: 14px; align-items: center; margin-top: 14px; }
+.chosen.show { display: grid; }
+.thumb { width: 64px; height: 64px; border-radius: 8px; border: 1px solid var(--line); background: var(--paper);
+  object-fit: cover; display: grid; place-items: center; font: 600 .75rem var(--mono); color: var(--muted); overflow: hidden; }
+.fname { font-weight: 600; overflow-wrap: anywhere; }
+.fmeta { color: var(--muted); font-size: .85rem; }
+button.go { margin-top: 16px; width: 100%; padding: 13px 16px; border: 0; border-radius: 10px; cursor: pointer;
+  background: var(--accent); color: var(--accent-ink); font: 600 1rem var(--sans); }
+button.go:disabled { opacity: .45; cursor: not-allowed; }
+button.go:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+.error { display: none; margin-top: 12px; padding: 10px 12px; border-radius: 8px; background: var(--bad-soft); color: var(--bad); font-size: .9rem; }
+.error.show { display: block; }
+
+/* pipeline tracker */
+.steps { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 2px; }
+.step { display: grid; grid-template-columns: 26px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 7px 0; color: var(--muted); }
+.dot { width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--line); display: grid; place-items: center; }
+.step.active { color: var(--ink); }
+.step.active .dot { border-color: var(--accent); border-top-color: transparent; animation: spin .8s linear infinite; }
+.step.done { color: var(--ink); }
+.step.done .dot { background: var(--accent); border-color: var(--accent); }
+.step.done .dot::after { content: ""; width: 9px; height: 5px; border: 2px solid var(--accent-ink); border-top: 0; border-right: 0; transform: rotate(-45deg) translate(1px, -1px); }
+.svc { font: .75rem var(--mono); color: var(--muted); }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .step.active .dot { animation: none; border-top-color: var(--accent); } }
+.clock { display: flex; align-items: baseline; gap: 8px; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); }
+.clock b { font: 600 1.9rem/1 var(--mono); font-variant-numeric: tabular-nums; }
+.clock span { color: var(--muted); font-size: .88rem; }
+
+/* the result, printed as a receipt */
+.paper { position: relative; background: var(--paper); color: var(--ink); font-family: var(--mono); font-size: .92rem;
+  padding: 26px 22px; border-radius: 4px; box-shadow: 0 1px 0 var(--line), 0 10px 24px -18px rgba(0,0,0,.35); }
+.paper::before, .paper::after { content: ""; position: absolute; left: 0; right: 0; height: 10px;
+  background: radial-gradient(circle at 6px 0, var(--paper-edge) 5px, transparent 5.5px) 0 0 / 12px 10px repeat-x; }
+.paper::before { top: -1px; }
+.paper::after { bottom: -1px; transform: rotate(180deg); }
+.paper .head { text-align: center; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+.paper .sub { text-align: center; color: var(--muted); font-size: .78rem; }
+.rule { border: 0; border-top: 1px dashed var(--muted); opacity: .6; margin: 14px 0; }
+.row { display: flex; justify-content: space-between; gap: 16px; padding: 3px 0; }
+.row dt { color: var(--muted); text-transform: uppercase; font-size: .78rem; letter-spacing: .05em; padding-top: 2px; }
+.row dd { margin: 0; text-align: right; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+.total dd { font-size: 1.6rem; font-weight: 600; }
+.chip { display: inline-block; font: 600 .72rem/1 var(--mono); letter-spacing: .05em; padding: 5px 8px; border-radius: 999px; }
+.chip.PROCESSED { background: var(--accent-soft); color: var(--accent); }
+.chip.NEEDS_REVIEW { background: var(--amber-soft); color: var(--amber); }
+.chip.FAILED { background: var(--bad-soft); color: var(--bad); }
+.notice { margin-top: 12px; padding: 9px 11px; border-radius: 6px; font: .82rem/1.45 var(--sans); }
+.notice.fix { background: var(--accent-soft); color: var(--ink); }
+.notice.warn { background: var(--amber-soft); color: var(--ink); }
+.empty { color: var(--muted); text-align: center; padding: 26px 0; font-family: var(--sans); }
+.empty b { display: block; color: var(--ink); font-family: var(--mono); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 6px; }
+
+/* recent uploads */
+.tablewrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: .9rem; min-width: 560px; }
+th { text-align: left; font: 600 .72rem var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); padding: 8px 10px; border-bottom: 1px solid var(--line); }
+td { padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.num { font-family: var(--mono); text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+th.num { text-align: right; }
+.muted { color: var(--muted); }
+
+/* how it works */
+.flow { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font: .82rem var(--mono); color: var(--muted); }
+.flow b { color: var(--ink); font-weight: 600; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 6px 9px; }
+footer { color: var(--muted); font-size: .82rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">Receipt <span>Digitizer</span></div>
+    <div class="pill">Serverless on AWS · Sydney</div>
+  </header>
+
+  <section>
+    <h1>Drop a receipt. Get the vendor, total and date in seconds.</h1>
+    <p class="lead">Upload a PDF or a photo. It goes straight to Amazon S3, a Lambda function reads it, and the result is saved to DynamoDB and emailed out. Nothing runs until you upload.</p>
+  </section>
+
+  <div class="grid">
+    <section class="card" aria-labelledby="up-h">
+      <h2 id="up-h">1 · Upload</h2>
+      <label class="drop" id="drop">
+        <input type="file" id="file" accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 16V4m0 0-4 4m4-4 4 4"/><path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg>
+        <strong>Drop a receipt here, or choose a file</strong>
+        <small>PDF, JPG or PNG · up to 5 MB</small>
+      </label>
+      <div class="chosen" id="chosen">
+        <div class="thumb" id="thumb">PDF</div>
+        <div><div class="fname" id="fname"></div><div class="fmeta" id="fmeta"></div></div>
+      </div>
+      <button class="go" id="go" disabled>Read this receipt</button>
+      <div class="error" id="err" role="alert"></div>
+
+      <ol class="steps" aria-live="polite">
+        <li class="step" id="s-upload"><span class="dot"></span><span>Uploaded to storage</span><span class="svc">S3</span></li>
+        <li class="step" id="s-read"><span class="dot"></span><span>Reading vendor, total and date</span><span class="svc">Lambda</span></li>
+        <li class="step" id="s-save"><span class="dot"></span><span>Saved to the database</span><span class="svc">DynamoDB</span></li>
+        <li class="step" id="s-mail"><span class="dot"></span><span>Notification email sent</span><span class="svc">SNS</span></li>
+      </ol>
+      <div class="clock"><b id="clock">0.0 s</b><span id="clock-label">from upload to result</span></div>
+    </section>
+
+    <section class="card" aria-labelledby="res-h">
+      <h2 id="res-h">2 · Result</h2>
+      <div class="paper" id="paper">
+        <div class="empty"><b>Waiting for a receipt</b>The extracted details will print here.</div>
+      </div>
+    </section>
+  </div>
+
+  <section class="card" aria-labelledby="rec-h">
+    <h2 id="rec-h">Recent uploads from this page</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Processed (UTC)</th><th>Vendor</th><th class="num">Total</th><th>Date</th><th>Status</th><th class="num">Time</th></tr></thead>
+        <tbody id="recent"><tr><td colspan="6" class="muted">Loading…</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-label="How it works">
+    <div class="flow"><b>Browser</b>→<b>S3 upload</b>→<b>S3 event</b>→<b>Lambda</b>→<b>DynamoDB</b>+<b>SNS email</b></div>
+  </section>
+  <footer>College mini project: serverless receipt digitization, compared against an EC2 server version. Demo data only; please don't upload receipts with personal details.</footer>
+</div>
+
+<script>
+(() => {
+  const $ = (id) => document.getElementById(id);
+  const TYPES = ["pdf", "jpg", "jpeg", "png"];
+  const MAX = 5 * 1024 * 1024;
+  let file = null, clockTimer = null, started = 0;
+
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const money = (r) => r.amount == null ? "—" : `${r.currency ? r.currency + " " : ""}${Number(r.amount).toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+  const method = (m) => ({ "pdf-text": "PDF text layer", "rekognition-ocr": "Photo, OCR by Rekognition" }[m] || m || "—");
+
+  function showError(msg) { const e = $("err"); e.textContent = msg; e.classList.toggle("show", !!msg); }
+  function setStep(id, state) { const el = $("s-" + id); el.classList.remove("active", "done"); if (state) el.classList.add(state); }
+  function resetSteps() { ["upload", "read", "save", "mail"].forEach((s) => setStep(s, "")); }
+
+  function pick(f) {
+    showError("");
+    if (!f) return;
+    const ext = (f.name.split(".").pop() || "").toLowerCase();
+    if (!TYPES.includes(ext)) { showError("Please choose a PDF, JPG or PNG file."); return; }
+    if (f.size > MAX) { showError("That file is larger than 5 MB. Try a smaller photo."); return; }
+    file = f;
+    $("fname").textContent = f.name;
+    $("fmeta").textContent = `${(f.size / 1024).toFixed(0)} KB · ${ext.toUpperCase()}`;
+    const thumb = $("thumb");
+    if (ext === "pdf") { thumb.innerHTML = "PDF"; }
+    else { const img = new Image(); img.alt = ""; img.src = URL.createObjectURL(f); img.className = "thumb"; thumb.replaceChildren(img); }
+    $("chosen").classList.add("show");
+    $("go").disabled = false;
+  }
+
+  const drop = $("drop");
+  $("file").addEventListener("change", (e) => pick(e.target.files[0]));
+  ["dragenter", "dragover"].forEach((t) => drop.addEventListener(t, (e) => { e.preventDefault(); drop.classList.add("over"); }));
+  ["dragleave", "drop"].forEach((t) => drop.addEventListener(t, (e) => { e.preventDefault(); drop.classList.remove("over"); }));
+  drop.addEventListener("drop", (e) => pick(e.dataTransfer.files[0]));
+
+  function startClock() {
+    started = performance.now();
+    clearInterval(clockTimer);
+    clockTimer = setInterval(() => { $("clock").textContent = ((performance.now() - started) / 1000).toFixed(1) + " s"; }, 100);
+  }
+  function stopClock() { clearInterval(clockTimer); $("clock").textContent = ((performance.now() - started) / 1000).toFixed(1) + " s"; }
+
+  function render(r) {
+    const notices = [];
+    if (r.amount_corrected_from != null) notices.push(`<div class="notice fix">Total corrected from ${esc(r.amount_corrected_from)}: the camera misread the currency sign as a digit, and the item prices confirm the fix.</div>`);
+    if (r.note) notices.push(`<div class="notice warn">${esc(r.note)}</div>`);
+    $("paper").innerHTML = `
+      <div class="head">${esc(r.vendor || "Vendor not found")}</div>
+      <div class="sub">${esc((r.s3_key || "").split("/").pop())}</div>
+      <hr class="rule">
+      <dl>
+        <div class="row total"><dt>Total</dt><dd>${esc(money(r))}</dd></div>
+        <div class="row"><dt>Date</dt><dd>${esc(r.receipt_date || "—")}</dd></div>
+        <div class="row"><dt>Status</dt><dd><span class="chip ${esc(r.status)}">${esc((r.status || "").replace("_", " "))}</span></dd></div>
+      </dl>
+      <hr class="rule">
+      <dl>
+        <div class="row"><dt>Read from</dt><dd>${esc(method(r.extraction_method))}</dd></div>
+        <div class="row"><dt>Processing</dt><dd>${esc(r.processing_ms)} ms</dd></div>
+        <div class="row"><dt>Receipt ID</dt><dd>${esc(r.receipt_id)}</dd></div>
+      </dl>
+      ${notices.join("")}`;
+  }
+
+  async function loadRecent() {
+    try {
+      const res = await fetch("/api/recent");
+      const data = await res.json();
+      const rows = (data.receipts || []).map((r) => `<tr>
+        <td class="muted">${esc((r.processed_at || "").replace("T", " ").replace("Z", ""))}</td>
+        <td>${esc(r.vendor || "—")}</td><td class="num">${esc(money(r))}</td><td>${esc(r.receipt_date || "—")}</td>
+        <td><span class="chip ${esc(r.status)}">${esc((r.status || "").replace("_", " "))}</span></td>
+        <td class="num">${esc(r.processing_ms)} ms</td></tr>`);
+      $("recent").innerHTML = rows.join("") || `<tr><td colspan="6" class="muted">No receipts yet. Upload the first one above.</td></tr>`;
+    } catch { $("recent").innerHTML = `<tr><td colspan="6" class="muted">Could not load recent uploads.</td></tr>`; }
+  }
+
+  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+  $("go").addEventListener("click", async () => {
+    if (!file) return;
+    showError(""); resetSteps(); $("go").disabled = true; $("clock").textContent = "0.0 s"; $("clock-label").textContent = "from upload to result";
+    $("paper").innerHTML = `<div class="empty"><b>Working on it</b>Uploading and reading your receipt…</div>`;
+    try {
+      setStep("upload", "active");
+      const passRes = await fetch("/api/upload", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ filename: file.name, size: file.size }) });
+      const pass = await passRes.json();
+      if (!passRes.ok) throw new Error(pass.error || "Could not start the upload.");
+      const form = new FormData();
+      Object.entries(pass.fields).forEach(([k, v]) => form.append(k, v));
+      form.append("file", file);  // must be the last field
+      const up = await fetch(pass.url, { method: "POST", body: form });
+      if (!up.ok) throw new Error(`The upload to S3 was refused (${up.status}).`);
+      setStep("upload", "done"); setStep("read", "active"); startClock();
+
+      let r = null;
+      for (let i = 0; i < 60; i++) {           // check once a second, for up to a minute
+        await sleep(1000);
+        const res = await fetch("/api/result?key=" + encodeURIComponent(pass.key));
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || "Could not fetch the result.");
+        if (data.status !== "PROCESSING" && data.status !== "WAITING_FOR_UPLOAD") { r = data; break; }
+      }
+      if (!r) throw new Error("No result after a minute. The pipeline may be busy; check the Recent uploads table shortly.");
+      stopClock();
+      ["read", "save", "mail"].forEach((s) => setStep(s, "done"));
+      render(r);
+      loadRecent();
+    } catch (e) {
+      clearInterval(clockTimer); resetSteps();
+      showError(e.message || "Something went wrong.");
+      $("paper").innerHTML = `<div class="empty"><b>No result</b>Fix the problem above and try again.</div>`;
+    } finally {
+      $("go").disabled = !file;
+    }
+  });
+
+  loadRecent();
+})();
+</script>
+</body>
+</html>
