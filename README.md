@@ -58,7 +58,7 @@ python3 tests/test_experiments.py              # dress rehearsal of experiments.
 
 See `comparison/DATASETS.md` for the full list. In short:
 
-- **626 real receipts** from the ICDAR 2019 SROIE dataset (github.com/zzzDavid/ICDAR-2019-SROIE, MIT),
+- **626 real receipts** from the ICDAR 2019 SROIE dataset (github.com/zzzDavid/ICDAR-2019-SROIE; the repository carries an MIT licence, used here only for evaluation),
   with their correct vendor, date and total, in `comparison/real-receipts/`.
 - **170 GST invoice images** in `comparison/gst-invoices/`: 100 genuine ones from BillBook
   (github.com/Abh1j1th1/BillBook, Apache-2.0; computer-generated to look like photos, not real bills),

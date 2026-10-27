@@ -5,7 +5,7 @@ Lambda function with Amazon Rekognition (`python3 comparison/experiments.py accu
 
 | Set | Size | What it is | Source and licence |
 | --- | --- | --- | --- |
-| SROIE receipts | 626 images | Real scanned shop receipts (mostly Malaysian), each with the correct company, date and total | ICDAR 2019 Robust Reading Challenge on Scanned Receipts OCR and Information Extraction (SROIE). Copy used: github.com/zzzDavid/ICDAR-2019-SROIE (MIT licence) |
+| SROIE receipts | 626 images | Real scanned shop receipts (mostly Malaysian), each with the correct company, date and total | ICDAR 2019 Robust Reading Challenge on Scanned Receipts OCR and Information Extraction (SROIE). Copy used: github.com/zzzDavid/ICDAR-2019-SROIE (repository carries an MIT licence; the images are the competition data, used here only for evaluation and not redistributed) |
 | GST invoices, genuine | 100 images | Computer-generated Indian GST invoices made to look like photographed bills (tilted, blurred, compressed), with correct GSTIN, tax split and total | BillBook, github.com/Abh1j1th1/BillBook (Apache-2.0). The 20 images it ships, plus 80 more from its own `generate_samples.py` |
 | GST invoices, tampered | 60 images | Copies of the genuine invoices with one mistake each: wrong GSTIN check character, non-existent state code, CGST not equal to SGST, inflated total, IGST together with CGST/SGST, tax that does not add up (10 of each kind) | Made by `tests/make_gst_invoices.py` |
 | GST invoices, re-shot | 10 images | The same invoice drawn again with a different tilt, to test duplicate detection | Made by `tests/make_gst_invoices.py` |
