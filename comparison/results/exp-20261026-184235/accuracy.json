@@ -1,0 +1,43 @@
+{
+  "real_receipts": {
+    "n": 40,
+    "vendor_pct": 87.5,
+    "amount_pct": 85.0,
+    "date_pct": 97.5,
+    "all_pct": 80.0,
+    "ocr_calls": {
+      "n": 40,
+      "mean": 3.2,
+      "p50": 5.0,
+      "p95": 5.0,
+      "max": 5.0,
+      "min": 1.0
+    },
+    "processing_ms": {
+      "n": 40,
+      "mean": 3997.7,
+      "p50": 5343.0,
+      "p95": 7304.0,
+      "max": 7601.0,
+      "min": 747.0
+    },
+    "billed_ms": {
+      "n": 40,
+      "mean": 4044.8,
+      "p50": 5365.0,
+      "p95": 7326.0,
+      "max": 7623.0,
+      "min": 770.0
+    },
+    "over_100_words": 22
+  },
+  "gst_invoices": {
+    "n": 15,
+    "verdict_correct": "15/15",
+    "valid_passed": "9/9",
+    "tampered_caught": "6/6",
+    "gstin_read_correctly": "15/15",
+    "fields_all_correct_pct": 100.0,
+    "duplicate_detected": true
+  }
+}

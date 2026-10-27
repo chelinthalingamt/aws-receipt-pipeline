@@ -47,7 +47,7 @@ def stop(signum, frame):
 
 
 def list_new_files():
-    """Yield (key, etag) for every supported file under PREFIX not handled yet."""
+    """Yield (key, etag, upload time in epoch ms) for every supported file under PREFIX not handled yet."""
     paginator = s3.get_paginator("list_objects_v2")
     for page in paginator.paginate(Bucket=BUCKET, Prefix=PREFIX):
         for obj in page.get("Contents", []):
@@ -56,26 +56,26 @@ def list_new_files():
             if key.endswith("/") or ext not in shared.SUPPORTED_TYPES:
                 continue
             if (key, etag) not in seen:
-                yield key, etag
+                # S3 listings give the upload time to the whole second (on AWS's clock).
+                yield key, etag, int(obj["LastModified"].timestamp() * 1000)
 
 
 def already_saved(key, etag):
     """True if this exact file version is already in the table (e.g. before a reboot)."""
-    receipt_id = shared.receipt_id_for(BUCKET, key, etag)
-    return "Item" in shared.table.get_item(Key={"receipt_id": receipt_id}, ProjectionExpression="receipt_id")
+    return shared.already_saved(shared.receipt_id_for(BUCKET, key, etag))
 
 
 def poll_once():
     """One pass over the folder. Returns how many receipts were processed."""
     processed = 0
-    for key, etag in list_new_files():
+    for key, etag, uploaded_ms in list_new_files():
         if not running:
             break
         try:
             if already_saved(key, etag):
                 seen.add((key, etag))
                 continue
-            item = shared.process_receipt(BUCKET, key, etag)
+            item = shared.process_receipt(BUCKET, key, etag, uploaded_ms, "s3-listing")
             processed += 1
             log.info(json.dumps({"event": "ec2_processed", "s3_key": key, "status": item["status"],
                                  "processing_ms": item["processing_ms"]}))

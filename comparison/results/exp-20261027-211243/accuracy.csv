@@ -1,0 +1,797 @@
+experiment,file,all_ok,amount,amount_ok,billed_ms,category,date,date_ok,duplicate_of,duplicate_ok,group,gst_check,gst_ok,gstin,gstin_ok,ocr_calls,processing_ms,status,vendor,vendor_ok,want_amount,want_date,want_gst,want_vendor
+accuracy,sroie-000.jpg,False,9,True,1089.0,Office & stationery,2018-12-25,True,,,real,,,,,1,1067,PROCESSED,tan woon yann,False,9.00,2018-12-25,,BOOK TA .K (TAMAN DAYA) SDN BHD
+accuracy,sroie-001.jpg,False,60.3,True,2559.0,Home & hardware,2018-10-19,True,,,real,,,,,1,1539,PROCESSED,tan woon yann,False,60.30,2018-10-19,,INDAH GIFT & HOME DECO
+accuracy,sroie-002.jpg,True,33.9,True,4249.0,Home & hardware,2019-01-12,True,,,real,,,,,5,3242,PROCESSED,MR D.I.Y. (JOHOR) SDN BHD,True,33.90,2019-01-12,,MR D.I.Y. (JOHOR) SDN BHD
+accuracy,sroie-003.jpg,True,80.9,True,2580.0,Other,2018-12-25,True,,,real,,,,,5,2557,PROCESSED,YONGFATT ENTERPRISE,True,80.90,2018-12-25,,YONGFATT ENTERPRISE
+accuracy,sroie-004.jpg,True,30.9,True,4190.0,Home & hardware,2018-11-18,True,,,real,,,,,5,3168,PROCESSED,MR D.I.Y. (M) SDN BHD,True,30.90,2018-11-18,,MR D.I.Y. (M) SDN BHD
+accuracy,sroie-005.jpg,True,31,True,840.0,Other,2019-01-09,True,,,real,,,,,1,818,PROCESSED,ABC HO TRADING,True,31.00,2019-01-09,,ABC HO TRADING
+accuracy,sroie-006.jpg,True,327,True,2994.0,Home & hardware,2019-01-11,True,,,real,,,,,5,2972,PROCESSED,SOON HUAT MACHINERY ENTERPRISE,True,327.00,2019-01-11,,SOON HUAT MACHINERY ENTERPRISE
+accuracy,sroie-007.jpg,True,20,True,1931.0,Office & stationery,2019-01-23,True,,,real,,,,,1,1164,PROCESSED,S.H.H. MOTOR ( SUNGAI RENGIT ) SDN. BHD,True,20.00,2019-01-23,,S.H.H. MOTOR (SUNGAI RENGIT) SDN. BHD.
+accuracy,sroie-008.jpg,False,112.46,False,2591.0,Other,2018-02-12,True,,,real,,,,,5,2549,PROCESSED,PERNIAGAAN ZHENG HUI,True,112.45,2018-02-12,,PERNIAGAAN ZHENG HUI
+accuracy,sroie-009.jpg,True,26.6,True,4202.0,Food & dining,2018-01-18,True,,,real,,,,,5,4179,PROCESSED,Gerbang Alaf Restaurants Sdn Bhd,True,26.60,2018-01-18,,GERBANG ALAF RESTAURANTS SDN BHD
+accuracy,sroie-010.jpg,True,14.1,True,2951.0,Shopping,2017-12-29,True,,,real,,,,,5,2927,PROCESSED,SAM SAM TRADING со,True,14.10,2017-12-29,,SAM SAM TRADING CO
+accuracy,sroie-011.jpg,False,15,True,4078.0,Home & hardware,2017-06-15,True,,,real,,,,,5,4059,PROCESSED,ENTERPRISE (SETIA AIK HUAT HARDWARE,False,15.00,2017-06-15,,AIK HUAT HARDWARE ENTERPRISE (SETIA ALAM) SDN BHD
+accuracy,sroie-012.jpg,True,15.9,True,1282.0,Home & hardware,2017-12-22,True,,,real,,,,,1,1259,PROCESSED,HOME MASTER HARDWARE & ELECTRICAL,True,15.90,2017-12-22,,HOME MASTER HARDWARE & ELECTRICAL
+accuracy,sroie-013.jpg,False,None,False,1310.0,Food & dining,2017-12-28,True,,,real,,,,,1,1255,NEEDS_REVIEW,RESTORAN HASSANBISTRO,True,15.00,2017-12-28,,RESTORAN HASSANBISTRO
+accuracy,sroie-014.jpg,True,32.7,True,3539.0,Groceries,2017-12-22,True,,,real,,,,,5,3517,PROCESSED,ASIA MART,True,32.70,2017-12-22,,ASIA MART
+accuracy,sroie-015.jpg,True,15.9,True,1233.0,Home & hardware,2017-12-22,True,serverless/experiments/exp-20261027-211243/accuracy/real/sroie-012.jpg,,real,,,,,1,1191,NEEDS_REVIEW,HOME MASTER HARDWARE & ELECTRICAL,True,15.90,2017-12-22,,HOME MASTER HARDWARE & ELECTRICAL
+accuracy,sroie-016.jpg,True,73,True,3140.0,Other,2017-12-20,True,serverless/experiments/exp-20261027-211243/accuracy/real/sroie-018.jpg,,real,,,,,5,3118,NEEDS_REVIEW,LIGHTROOM GALLERY SDN BHD,True,73.00,2017-12-20,,LIGHTROOM GALLERY SDN BHD
+accuracy,sroie-017.jpg,True,39.8,True,3808.0,Home & hardware,2017-11-20,True,,,real,,,,,5,3786,PROCESSED,LIGHTROOM GALLERY SDN BHD,True,39.80,2017-11-20,,LIGHTROOM GALLERY SDN BHD
+accuracy,sroie-018.jpg,True,73,True,3052.0,Other,2017-12-20,True,,,real,,,,,5,3029,PROCESSED,LIGHTROOM GALLERY SDN BHD,True,73.00,2017-12-20,,LIGHTROOM GALLERY SDN BHD
+accuracy,sroie-019.jpg,False,None,False,2251.0,Travel & transport,2018-03-18,True,,,real,,,,,5,2227,NEEDS_REVIEW,Shell ISNI PETRO TRADING,True,86.00,2018-03-18,,SHELL ISNI PETRO TRADING
+accuracy,sroie-020.jpg,True,54.5,True,1167.0,Food & dining,2018-03-06,True,,,real,,,,,1,1143,PROCESSED,SYL ROASTED DELIGHTS SDN. BHD,True,54.50,2018-03-06,,SYL ROASTED DELIGHTS SDN. BHD.
+accuracy,sroie-021.jpg,True,4.9,True,2718.0,Office & stationery,2018-01-18,True,,,real,,,,,5,2694,PROCESSED,TEO HENG STATIONERY SBOOKS,True,4.90,2018-01-18,,TEO HENG STATIONERY & BOOKS
+accuracy,sroie-022.jpg,False,0.51,False,1114.0,Shopping,2018-01-25,True,,,real,,,,,1,1091,NEEDS_REVIEW,FUYI BR MINI No.: MARKET,True,9.00,2018-01-25,,FUYI MINI MARKET
+accuracy,sroie-023.jpg,True,27.55,True,2802.0,Office & stationery,2018-01-17,True,,,real,,,,,5,2783,PROCESSED,TEO HENG STATIONERY & BOOKS,True,27.55,2018-01-17,,TEO HENG STATIONERY & BOOKS
+accuracy,sroie-024.jpg,True,55.1,True,2929.0,Office & stationery,2018-01-15,True,,,real,,,,,5,2885,PROCESSED,TEO HENG STATIONERY & BOOKS,True,55.10,2018-01-15,,TEO HENG STATIONERY & BOOKS
+accuracy,sroie-025.jpg,True,18,True,2546.0,Office & stationery,2018-01-23,True,,,real,,,,,5,2523,PROCESSED,TEO HENG STATIONERY & BOOKS,True,18.00,2018-01-23,,TEO HENG STATIONERY & BOOKS
+accuracy,sroie-026.jpg,True,153.35,True,3489.0,Office & stationery,2018-02-12,True,,,real,,,,,5,3470,PROCESSED,TED HENG STATIONERY & BOOKS,True,153.35,2018-02-12,,TED HENG STATIONERY & BOOKS
+accuracy,sroie-027.jpg,True,37.1,True,2386.0,Other,2018-03-14,True,,,real,,,,,5,2344,PROCESSED,MR D.I.V. MM SDN BHD,True,37.10,2018-03-14,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-028.jpg,False,2.5,True,916.0,Groceries,2018-01-24,True,,,real,,,,,1,894,PROCESSED,99 SPEED MART S/B 2) JAMSPOIO,False,2.50,2018-01-24,,99 SPEED MART S/B
+accuracy,sroie-029.jpg,True,21.2,True,1234.0,Home & hardware,2018-03-01,True,,,real,,,,,1,1211,PROCESSED,с W KHOO HARDWARE SDN BHD,True,21.20,2018-03-01,,C W KHOO HARDWARE SDN BHD
+accuracy,sroie-030.jpg,True,8.2,True,989.0,Food & dining,2018-03-05,True,,,real,,,,,1,947,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.20,2018-03-05,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-031.jpg,True,75,True,1125.0,Shopping,2018-03-06,True,,,real,,,,,1,1102,PROCESSED,AEON CO. (M) BHD,True,75.00,2018-03-06,,AEON CO. (M) BHD
+accuracy,sroie-032.jpg,True,8.2,True,1029.0,Food & dining,2018-03-03,True,,,real,,,,,1,1005,PROCESSED,UNIHAKKA INTERNATIONAL .SDN BHD,True,8.20,2018-03-03,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-033.jpg,False,8.2,False,1313.0,Food & dining,2018-03-10,True,,,real,,,,,1,1291,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,,2018-03-10,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-034.jpg,True,332.3,True,3598.0,Home & hardware,2018-03-09,True,,,real,,,,,5,3575,PROCESSED,PERNIAGAAN ZHENG HUI,True,332.30,2018-03-09,,PERNIAGAAN ZHENG HUI
+accuracy,sroie-035.jpg,True,8.2,True,980.0,Food & dining,2018-03-12,True,,,real,,,,,1,957,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.20,2018-03-12,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-036.jpg,True,8.2,True,1004.0,Food & dining,2018-03-14,True,,,real,,,,,1,985,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.20,2018-03-14,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-037.jpg,True,57.8,True,2584.0,Food & dining,2018-03-10,True,,,real,,,,,5,2561,PROCESSED,WARAKUYA PERMAS CITY SDN BHD,True,57.80,2018-03-10,,WARAKUYA PERMAS CITY SDN BHD
+accuracy,sroie-038.jpg,True,13.1,True,2218.0,Food & dining,2018-03-11,True,,,real,,,,,5,2176,PROCESSED,YHM Aeon Tebrau City,True,13.10,2018-03-11,,YHM AEON TEBRAU CITY
+accuracy,sroie-039.jpg,True,189.75,True,2737.0,Food & dining,2018-03-30,True,,,real,,,,,5,2695,PROCESSED,Owner by Castle Blue S/B,True,189.75,2018-03-30,,OWNER BY CASTLE BLUE S/B
+accuracy,sroie-040.jpg,True,343.95,True,936.0,Food & dining,2018-03-12,True,,,real,,,,,1,913,PROCESSED,THREE STOOGES,True,343.95,2018-03-12,,THREE STOOGES
+accuracy,sroie-041.jpg,True,174.9,True,976.0,Food & dining,2018-03-03,True,,,real,,,,,1,953,PROCESSED,THREE STOOGES,True,174.90,2018-03-03,,THREE STOOGES
+accuracy,sroie-042.jpg,True,64.15,True,2997.0,Other,2018-03-05,True,,,real,,,,,5,2976,PROCESSED,Taste Of The Wor Id Sdn Bhd,True,64.15,2018-03-05,,TASTE OF THE WORLD SDN BHD
+accuracy,sroie-043.jpg,True,190,True,1178.0,Food & dining,2018-03-10,True,,,real,,,,,1,1143,PROCESSED,32 PUB & BISTRO own by CNU TRADING,True,190.00,2018-03-10,,32 PUB & BISTRO OWN BY CNU TRADING
+accuracy,sroie-044.jpg,True,8.6,True,934.0,Food & dining,2018-03-18,True,,,real,,,,,1,911,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.60,2018-03-18,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-045.jpg,False,6.9,True,881.0,Food & dining,,False,,,real,,,,,1,841,NEEDS_REVIEW,UNIHAKKA INTERNATIONAL SDN BHD,True,6.90,2018-03-27,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-046.jpg,True,28.6,True,3779.0,Food & dining,2018-03-18,True,,,real,,,,,5,2793,PROCESSED,PASAR MINI JIN SENG,True,28.60,2018-03-18,,PASAR MINI JIN SENG
+accuracy,sroie-047.jpg,True,170,True,708.0,Food & dining,2018-03-09,True,,,real,,,,,1,685,PROCESSED,RESTAURANT SIN DU,True,170.00,2018-03-09,,RESTAURANT SIN DU
+accuracy,sroie-048.jpg,True,100.9,True,2691.0,Home & hardware,2018-03-13,True,,,real,,,,,5,2668,PROCESSED,YONG TAT HARDWARE TRADING,True,100.90,2018-03-13,,YONG TAT HARDWARE TRADING
+accuracy,sroie-049.jpg,True,8,True,1160.0,Travel & transport,2018-03-15,True,,,real,,,,,1,1137,PROCESSED,PERNIAGAAN ZHENG HUI,True,8.00,2018-03-15,,PERNIAGAAN ZHENG HUI
+accuracy,sroie-050.jpg,True,593.1,True,2654.0,Food & dining,2018-03-23,True,,,real,,,,,5,2631,PROCESSED,Timeless Kitchenette Sdn Bhd,True,593.10,2018-03-23,,TIMELESS KITCHENETTE SDN BHD
+accuracy,sroie-051.jpg,True,7.6,True,1274.0,Food & dining,2018-03-22,True,,,real,,,,,1,1255,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,7.60,2018-03-22,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-052.jpg,False,10,True,1078.0,Shopping,2018-03-23,True,,,real,,,,,1,1055,PROCESSED,TQFOR SHOPPING WITH myNEWS.com,False,10.00,2018-03-23,,PAGOH REST AND SERVICE AREA
+accuracy,sroie-053.jpg,True,9.2,True,1051.0,Food & dining,2018-03-24,True,,,real,,,,,1,1010,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,9.20,2018-03-24,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-054.jpg,True,13.8,True,1207.0,Food & dining,2018-03-20,True,,,real,,,,,1,1168,PROCESSED,CARREFOUR RESTAURANT,True,13.80,2018-03-20,,CARREFOUR RESTAURANT
+accuracy,sroie-055.jpg,True,8.2,True,1079.0,Food & dining,2018-03-19,True,,,real,,,,,1,1057,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.20,2018-03-19,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-056.jpg,True,8.7,True,1047.0,Food & dining,2018-03-21,True,,,real,,,,,1,1005,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.70,2018-03-21,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-057.jpg,True,7.1,True,989.0,Food & dining,2018-03-29,True,,,real,,,,,1,966,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,7.10,2018-03-29,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-058.jpg,True,8.2,True,922.0,Food & dining,2018-03-30,True,,,real,,,,,1,899,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.20,2018-03-30,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-059.jpg,True,7.6,True,836.0,Food & dining,2018-03-25,True,,,real,,,,,1,813,PROCESSED,Triple Six Point Enterprise 666,True,7.60,2018-03-25,,TRIPLE SIX POINT ENTERPRISE 666
+accuracy,sroie-060.jpg,True,77.2,True,2583.0,Groceries,2018-03-12,True,,,real,,,,,5,2559,PROCESSED,BENS INDEPENDENT GROCER SDN. BHD,True,77.20,2018-03-12,,BENS INDEPENDENT GROCER SDN. BHD
+accuracy,sroie-061.jpg,False,7.3,False,2738.0,Food & dining,2018-03-28,True,,,real,,,,,5,2716,NEEDS_REVIEW,Nando 's Chickenland Mal laysia Sdn Bhd,True,129.30,2018-03-28,,NANDO'S CHICKENLAND MALAYSIA SDN BHD
+accuracy,sroie-062.jpg,True,11.4,True,932.0,Groceries,2018-03-19,True,,,real,,,,,1,910,PROCESSED,99 SPEED MART S/B,True,11.40,2018-03-19,,99 SPEED MART S/B
+accuracy,sroie-063.jpg,True,85.54,True,1358.0,Travel & transport,2018-02-26,True,,,real,,,,,1,1336,PROCESSED,PETRODELI ENTERPRISE,True,85.54,2018-02-26,,PETRODELI ENTERPRISE
+accuracy,sroie-064.jpg,True,88.17,True,1177.0,Travel & transport,2018-02-21,True,,,real,,,,,1,1159,PROCESSED,SUN WONG KUT SDN BHD,True,88.17,2018-02-21,,SUN WONG KUT SDN BHD
+accuracy,sroie-065.jpg,False,65.2,True,2629.0,Food & dining,2018-03-09,True,,,real,,,,,5,2607,PROCESSED,RESTAURANT JIAWEI,False,65.20,2018-03-09,,RESTAURANT JIAWEI JIAWEI HOUSE
+accuracy,sroie-066.jpg,False,None,False,3822.0,Other,2018-03-14,True,,,real,,,,,5,3780,NEEDS_REVIEW,PASARAYA BORONG PINTAR SDN BHD,True,8.20,2018-03-14,,PASARAYA BORONG PINTAR SDN BHD
+accuracy,sroie-067.jpg,False,None,False,2672.0,Food & dining,2018-01-06,True,,,real,,,,,5,2646,NEEDS_REVIEW,RESTAURANT SDN BHD,False,53.55,2018-01-06,,LIAN CHI PU TIAN VEGETARIAN RESTAURANT SDN BHD
+accuracy,sroie-068.jpg,False,None,False,1037.0,Food & dining,2018-03-04,False,,,real,,,,,1,999,NEEDS_REVIEW,PASARAYA BORONG PINTAR SDN BHD,True,3.20,,,PASARAYA BORONG PINTAR SDN BHD
+accuracy,sroie-069.jpg,True,9.9,True,2429.0,Groceries,2018-02-20,True,,,real,,,,,1,2411,PROCESSED,99 SPEED MART S/B,True,9.90,2018-02-20,,99 SPEED MART S/B
+accuracy,sroie-070.jpg,False,141.5,True,1166.0,Groceries,,False,,,real,,,,,1,1124,NEEDS_REVIEW,"KLANG, SCLANGOR",False,141.50,2018-02-05,,99 SPEED MART S/B
+accuracy,sroie-071.jpg,True,17.7,True,2525.0,Shopping,2018-02-19,True,,,real,,,,,5,2503,PROCESSED,AEON CO. (M) BHD,True,17.70,2018-02-19,,AEON CO. (M) BHD
+accuracy,sroie-072.jpg,True,49.4,True,4355.0,Office & stationery,2018-03-01,True,,,real,,,,,5,4332,PROCESSED,POPULAR BOOK CO. (M) SDN BHD,True,49.40,2018-03-01,,POPULAR BOOK CO. (M) SDN BHD
+accuracy,sroie-073.jpg,True,79.5,True,2116.0,Office & stationery,2018-03-27,True,,,real,,,,,5,2093,PROCESSED,UAN HING STATIONERY SDN BHD,True,79.50,2018-03-27,,LIAN HING STATIONERY SDN BHD
+accuracy,sroie-074.jpg,True,102,True,1214.0,Other,2018-03-20,True,,,real,,,,,1,1192,PROCESSED,GL HANDICRAFT & TAILORING,True,102.00,2018-03-20,,GL HANDICRAFT & TAIL ORING
+accuracy,sroie-075.jpg,True,159,True,2341.0,Office & stationery,2018-03-30,True,,,real,,,,,5,2318,PROCESSED,UAN HING STATIONERY SDN BHD,True,159.00,2018-03-30,,LIAN HING STATIONERY SDN BHD
+accuracy,sroie-076.jpg,True,12,True,1082.0,Office & stationery,2018-03-27,True,,,real,,,,,1,1059,PROCESSED,UAN HING STATIONERY SDN BHD,True,12.00,2018-03-27,,LIAN HING STATIONERY SDN BHD
+accuracy,sroie-077.jpg,True,23.25,True,4057.0,Food & dining,2017-10-29,True,,,real,,,,,5,4034,PROCESSED,Dimiliki: banh mi cafe sdn bhd,True,23.25,2017-10-29,,BANH MI CAFE SDN BHD
+accuracy,sroie-078.jpg,True,92.8,True,2810.0,Food & dining,2017-02-02,True,,,real,,,,,5,2768,PROCESSED,THAI DELICIOUS RESTAURANT,True,92.80,2017-02-02,,THAI DELICIOUS RESTAURANT
+accuracy,sroie-079.jpg,True,15.9,True,2907.0,Home & hardware,2017-09-19,True,,,real,,,,,5,2884,PROCESSED,MR.D.I.Y(M)SDN BHD,True,15.90,2017-09-19,,MR.D.I.Y(M)SDN BHD
+accuracy,sroie-080.jpg,True,10.4,True,2492.0,Home & hardware,2017-09-21,True,,,real,,,,,5,2470,PROCESSED,HON HWA HARDWARE TRADING,True,10.40,2017-09-21,,HON HWA HARDWARE TRADING
+accuracy,sroie-081.jpg,True,3.9,True,1120.0,Home & hardware,2017-11-24,True,,,real,,,,,1,1097,PROCESSED,MR. D.I.Y. SDN BHD,True,3.90,2017-11-24,,MR. D.I.Y. SDN BHD
+accuracy,sroie-082.jpg,True,277,True,2834.0,Home & hardware,2017-02-08,True,,,real,,,,,5,2793,PROCESSED,HON HWA HARDWARE TRADING,True,277.00,2017-02-08,,HON HWA HARDWARE TRADING
+accuracy,sroie-083.jpg,True,18.8,True,3036.0,Other,2017-05-30,True,,,real,,,,,5,3014,PROCESSED,VIVOPAC MARKETING SDN BHD,True,18.80,2017-05-30,,VIVOPAC MARKETING SDN BHD
+accuracy,sroie-084.jpg,True,5.9,True,1230.0,Home & hardware,2017-10-18,True,,,real,,,,,1,1207,PROCESSED,MR. D.I.Y. SDN BHD,True,5.90,2017-10-18,,MR. D.I.Y. SDN BHD
+accuracy,sroie-085.jpg,True,9.9,True,961.0,Home & hardware,2017-12-28,True,,,real,,,,,1,942,PROCESSED,MR. D.I.Y. SDN BHD,True,9.90,2017-12-28,,MR. D.I.Y. SDN BHD
+accuracy,sroie-086.jpg,True,37.8,True,2816.0,Home & hardware,2017-03-08,True,,,real,,,,,5,2793,PROCESSED,MR. D.I.Y. (KUCHAI) SDN BHD,True,37.80,2017-03-08,,MR. D.I.Y. (KUCHAI) SDN BHD
+accuracy,sroie-087.jpg,True,538,True,1097.0,Other,2017-07-27,True,,,real,,,,,1,1078,PROCESSED,IKANO HANDEL SDN BHD,True,538.00,2017-07-27,,IKANO HANDEL SDN BHD
+accuracy,sroie-088.jpg,True,99.8,True,1137.0,Other,2017-08-09,True,,,real,,,,,1,1114,PROCESSED,IKANO HANDEL SDN BHD,True,99.80,2017-08-09,,IKANO HANDEL SDN BHD
+accuracy,sroie-089.jpg,False,0.4,False,1169.0,Other,2017-12-04,True,,,real,,,,,1,1147,NEEDS_REVIEW,FY EAGLE ENTERPRISE,True,7.00,2017-12-04,,FY EAGLE ENTERPRISE
+accuracy,sroie-090.jpg,True,5,True,2862.0,Groceries,2017-03-13,True,,,real,,,,,5,2820,PROCESSED,TRI SHAAS SDN BHD,True,5.00,2017-03-13,,TRI SHAAS SDN BHD
+accuracy,sroie-091.jpg,True,85.1,True,3265.0,Groceries,2017-02-04,True,,,real,,,,,5,3242,PROCESSED,TRI SHAAS SDN BHD,True,85.10,2017-02-04,,TRI SHAAS SDN BHD
+accuracy,sroie-092.jpg,True,83,True,2546.0,Office & stationery,2018-03-23,True,,,real,,,,,5,2504,PROCESSED,ADVANCO COMPANY,True,83.00,2018-03-23,,ADVANCO COMPANY
+accuracy,sroie-093.jpg,True,5.9,True,1495.0,Shopping,2018-03-22,True,,,real,,,,,1,1473,PROCESSED,AEON CO. (M) BHD,True,5.90,2018-03-22,,AEON CO. (M) BHD.
+accuracy,sroie-094.jpg,True,5.9,True,1098.0,Office & stationery,2018-02-09,True,,,real,,,,,1,1076,PROCESSED,AEON CO. (M) BHD,True,5.90,2018-02-09,,AEON CO. (M) BHD
+accuracy,sroie-095.jpg,True,31.45,True,2933.0,Office & stationery,2018-01-07,True,,,real,,,,,5,2911,PROCESSED,POPULAR BOOK CO. (M) SDN BHD,True,31.45,2018-01-07,,POPULAR BOOK CO. (M) SDN BHD
+accuracy,sroie-096.jpg,False,9,False,2622.0,Office & stationery,2018-03-29,True,,,real,,,,,5,2599,PROCESSED,POPULAR BOOK CO. (M) SDN BHD,True,9.65,2018-03-29,,POPULAR BOOK CO. (M) SDN BHD
+accuracy,sroie-097.jpg,True,21,True,2642.0,Office & stationery,2018-01-12,True,,,real,,,,,5,2619,PROCESSED,POPULAR BOOK CO. (M) SDN BHD,True,21.00,2018-01-12,,POPULAR BOOK CO. (M) SDN BHD
+accuracy,sroie-098.jpg,False,42.4,True,2467.0,Home & hardware,2017-12-04,True,,,real,,,,,5,2443,PROCESSED,40225409 FAX : 603-40217507.,False,42.40,2017-12-04,,WAHIN HARDWARE SDN BHD
+accuracy,sroie-099.jpg,True,47.7,True,1272.0,Other,2017-12-04,True,,,real,,,,,1,1249,PROCESSED,SYARIKAT PERNIAGAAN GIN KEE,True,47.70,2017-12-04,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-100.jpg,False,7.42,True,1179.0,Home & hardware,2017-12-02,True,,,real,,,,,1,1156,PROCESSED,rugmu.A SIGI,False,7.42,2017-12-02,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-101.jpg,True,29.68,True,1314.0,Other,2017-12-02,True,,,real,,,,,1,1291,PROCESSED,SYARIKAT PERNIAGAAN GIN KEE,True,29.68,2017-12-02,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-102.jpg,True,73.3,True,3224.0,Other,2017-12-23,True,,,real,,,,,5,3203,PROCESSED,IKANO HANDEL SDN BHD,True,73.30,2017-12-23,,IKANO HANDEL SDN BHD
+accuracy,sroie-103.jpg,True,148.4,True,2515.0,Shopping,2017-12-28,True,,,real,,,,,5,2492,PROCESSED,SYARIKAT PERNIAGAAN GIN KEE,True,148.40,2017-12-28,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-104.jpg,False,102.39,False,2960.0,Food & dining,2012-08-03,False,,,real,,,,,5,2936,PROCESSED,T.A.S Leisure Sdn Bhd,True,102.40,2017-12-30,,T.A.S LEISURE SDN BHD
+accuracy,sroie-105.jpg,True,30.3,True,2680.0,Food & dining,2018-02-14,True,,,real,,,,,5,2661,PROCESSED,SWEET FOREST CAFE,True,30.30,2018-02-14,,SWEET FOREST CAFE
+accuracy,sroie-106.jpg,True,599.45,True,3753.0,Home & hardware,2018-03-14,True,,,real,,,,,5,3731,PROCESSED,BEYOND BROTHERS HARDWARE,True,599.45,2018-03-14,,BEYOND BROTHERS HARDWARE
+accuracy,sroie-107.jpg,True,48.15,True,2571.0,Food & dining,2018-03-21,True,,,real,,,,,5,2529,PROCESSED,ZAWIAJAYA FOOD N BEVERAGE SDN BHD,True,48.15,2018-03-21,,ZAWIAJAYA FOOD N BEVERAGE SDN BHD
+accuracy,sroie-108.jpg,True,7,True,1131.0,Home & hardware,2018-02-03,True,,,real,,,,,1,1089,PROCESSED,LIM SENG THO HARDWARE TRADING,True,7.00,2018-02-03,,LIM SENG THO HARDWARE TRADING
+accuracy,sroie-109.jpg,True,7,True,1104.0,Home & hardware,2018-02-09,True,,,real,,,,,1,1062,PROCESSED,LIM SENG THO HARDWARE TRADING,True,7.00,2018-02-09,,LIM SENG THO HARDWARE TRADING
+accuracy,sroie-110.jpg,False,None,False,1212.0,Home & hardware,2017-12-29,True,,,real,,,,,1,1174,NEEDS_REVIEW,LIM SENG THO HARDWARE TRADING,True,6.00,2017-12-29,,LIM SENG THO HARDWARE TRADING
+accuracy,sroie-111.jpg,True,465.34,True,3346.0,Home & hardware,2017-12-28,True,,,real,,,,,5,3304,PROCESSED,SYARIKAT PERNIAGAAN GIN KEE,True,465.34,2017-12-28,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-112.jpg,True,4,True,1108.0,Travel & transport,2018-01-14,True,,,real,,,,,1,1071,PROCESSED,SUN VICTORY SON BHD,True,4.00,2018-01-14,,SUN VICTORY SDN BHD
+accuracy,sroie-113.jpg,True,93.07,True,3086.0,Other,2018-01-02,True,,,real,,,,,5,3045,PROCESSED,SYARIKAT PERNIAGAAN GIN KEE,True,93.07,2018-01-02,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-114.jpg,True,44.73,True,2860.0,Other,2018-01-04,True,,,real,,,,,5,2836,PROCESSED,SYARIKAT PERNIAGAAN GIN KEE,True,44.73,2018-01-04,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-115.jpg,True,23.32,True,1355.0,Other,2018-01-10,True,,,real,,,,,1,1332,PROCESSED,SYARIKAT PERNIAGAAN GIN KEE,True,23.32,2018-01-10,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-116.jpg,True,116.28,True,3001.0,Other,2018-01-11,True,,,real,,,,,5,2978,PROCESSED,SYARIKAT PERNIAGAAN GIN KEE,True,116.28,2018-01-11,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-117.jpg,True,94.87,True,2877.0,Home & hardware,2018-01-03,True,,,real,,,,,5,2854,PROCESSED,SYARIKAT PERNIAGAAN GIN KEE,True,94.87,2018-01-03,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-118.jpg,True,13.25,True,2943.0,Other,2018-01-02,True,,,real,,,,,5,2903,PROCESSED,SYARIKAT PERNIAGAAN GIN KEE,True,13.25,2018-01-02,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-119.jpg,True,2.12,True,1242.0,Other,2018-01-02,True,,,real,,,,,1,1222,PROCESSED,SYARIKAT PERNIAGAAN GIN KEE,True,2.12,2018-01-02,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-120.jpg,True,6.36,True,1351.0,Other,2018-01-13,True,,,real,,,,,1,1326,PROCESSED,SYARIKAT PERNIAGAAN GIN KEE,True,6.36,2018-01-13,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-121.jpg,True,21.2,True,1421.0,Other,2018-01-11,True,,,real,,,,,1,1414,NEEDS_REVIEW,SYARIKAT PERNIAGAAN GIN KEE,True,21.20,2018-01-11,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-122.jpg,True,12.72,True,1575.0,Other,2018-01-13,True,,,real,,,,,1,1553,PROCESSED,SYARIKAT PERNIAGAAN GIN KEE,True,12.72,2018-01-13,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-123.jpg,True,39.75,True,3226.0,Other,2018-01-02,True,,,real,,,,,5,3203,NEEDS_REVIEW,SYARIKAT PERNIAGAAN GIN KEE,True,39.75,2018-01-02,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-124.jpg,True,5.3,True,1371.0,Other,2018-02-12,True,,,real,,,,,1,1328,PROCESSED,SYARIKAT PERNIAGAAN GIN KEE,True,5.30,2018-02-12,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-125.jpg,True,270.3,True,2923.0,Other,2018-02-12,True,,,real,,,,,5,2901,PROCESSED,SYARIKAT PERNIAGAAN GIN KEE,True,270.30,2018-02-12,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-126.jpg,True,60.95,True,3355.0,Other,2018-02-03,True,,,real,,,,,5,3333,PROCESSED,SYARIKAT PERNIAGAAN GIN KEE,True,60.95,2018-02-03,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-127.jpg,True,7.95,True,1625.0,Home & hardware,2018-01-12,True,,,real,,,,,1,1607,PROCESSED,SYARIKAT PERNIAGAAN GIN KEE,True,7.95,2018-01-12,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-128.jpg,True,82.68,True,2741.0,Other,2018-01-31,True,,,real,,,,,5,2718,PROCESSED,SYARIKAT PERNIAGAAN GIN KEE,True,82.68,2018-01-31,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-129.jpg,True,74.2,True,5699.0,Other,2018-01-24,True,,,real,,,,,5,5657,PROCESSED,SYARIKAT PERNIAGAAN GIN KEE,True,74.20,2018-01-24,,SYARIKAT PERNIAGAAN GIN KEE
+accuracy,sroie-130.jpg,True,63.6,True,2776.0,Home & hardware,2018-02-05,True,,,real,,,,,5,2753,PROCESSED,BEYOND BROTHERS HARDWARE,True,63.60,2018-02-05,,BEYOND BROTHERS HARDWARE
+accuracy,sroie-131.jpg,True,5.3,True,2628.0,Other,2018-03-19,True,,,real,,,,,5,2605,PROCESSED,RESTORAN IBRAHIM MAJU SB,True,5.30,2018-03-19,,RESTORAN IBRAHIM MAJU SB
+accuracy,sroie-132.jpg,False,111.3,False,2694.0,Other,2018-03-02,True,,,real,,,,,5,2652,PROCESSED,Farmasi Maluri S/B,True,79.35,2018-03-02,,FARMASI MALURI S/B
+accuracy,sroie-133.jpg,True,248.05,True,2620.0,Home & hardware,2017-09-27,True,,,real,,,,,5,2597,PROCESSED,ASO ELECTRICAL TRADING SDN BHD,True,248.05,2017-09-27,,ASO ELECTRICAL TRADING SDN BHD
+accuracy,sroie-134.jpg,True,21.4,True,3856.0,Groceries,2017-08-10,True,,,real,,,,,5,3833,PROCESSED,TRI SHAAS SDN BHD,True,21.40,2017-08-10,,TRI SHAAS SDN BHD
+accuracy,sroie-135.jpg,True,99,True,2857.0,Home & hardware,2017-12-04,True,,,real,,,,,5,2815,PROCESSED,ASO ELECTRICAL TRADING SDN BHD,True,99.00,2017-12-04,,ASO ELECTRICAL TRADING SDN BHD
+accuracy,sroie-136.jpg,True,6,True,1115.0,Other,2018-03-19,True,,,real,,,,,1,1093,PROCESSED,RESTORAN WAN SHENG,True,6.00,2018-03-19,,RESTORAN WAN SHENG
+accuracy,sroie-137.jpg,True,9.1,True,1140.0,Food & dining,2018-03-19,True,,,real,,,,,1,1119,PROCESSED,RESTORAN WAN SHENG,True,9.10,2018-03-19,,RESTORAN WAN SHENG
+accuracy,sroie-138.jpg,True,4.8,True,984.0,Other,2018-03-14,True,,,real,,,,,1,961,PROCESSED,RESTORAN WAN SHENG,True,4.80,2018-03-14,,RESTORAN WAN SHENG
+accuracy,sroie-139.jpg,True,6.7,True,1181.0,Other,2018-03-21,True,,,real,,,,,1,1139,PROCESSED,RESTORAN WAN SHENG,True,6.70,2018-03-21,,RESTORAN WAN SHENG
+accuracy,sroie-140.jpg,True,9.6,True,2540.0,Other,2018-03-16,True,,,real,,,,,1,1526,PROCESSED,RESTORAN WAN SHENG,True,9.60,2018-03-16,,RESTORAN WAN SHENG
+accuracy,sroie-141.jpg,True,7,True,1391.0,Other,2018-03-12,True,,,real,,,,,1,1368,PROCESSED,RESTORAN WAN SHENG,True,7.00,2018-03-12,,RESTORAN WAN SHENG
+accuracy,sroie-142.jpg,True,2.3,True,1021.0,Other,2018-03-14,True,,,real,,,,,1,998,PROCESSED,RESTORAN WAN SHENG,True,2.30,2018-03-14,,RESTORAN WAN SHENG
+accuracy,sroie-143.jpg,True,6,True,1053.0,Other,2018-03-05,True,,,real,,,,,1,1031,PROCESSED,RESTORAN WAN SHENG,True,6.00,2018-03-05,,RSTORAN WAN SHENG
+accuracy,sroie-144.jpg,True,25.4,True,2760.0,Food & dining,2018-03-21,True,,,real,,,,,5,2718,PROCESSED,Gerbang Alaf Restaurants Sdn Bhd,True,25.40,2018-03-21,,GERBANG ALAF RESTAURANTS SDN BHD
+accuracy,sroie-145.jpg,True,8.5,True,1208.0,Food & dining,2018-03-10,True,,,real,,,,,1,1185,PROCESSED,Gerbang Alaf Restaurants Sdn Bhd,True,8.50,2018-03-10,,GERBANG ALAF RESTAURANTS SDN BHD
+accuracy,sroie-146.jpg,False,72.95,False,2775.0,Other,2018-03-24,True,,,real,,,,,5,2752,PROCESSED,PappaRich BMC,True,72.93,2018-03-24,,PAPPARICH BMC
+accuracy,sroie-147.jpg,True,65.55,True,3708.0,Food & dining,2018-03-31,True,,,real,,,,,5,3690,PROCESSED,MIZU MENTAI SDN. BHD,True,65.55,2018-03-31,,MIZU MENTAI SDN. BHD.
+accuracy,sroie-148.jpg,True,13.1,True,1309.0,Food & dining,2018-03-18,True,,,real,,,,,1,1290,PROCESSED,Gerbang Alaf Restaurants Sdn Bhd,True,13.10,2018-03-18,,GERBANG ALAF RESTAURANTS SDN BHD
+accuracy,sroie-149.jpg,False,26.8,False,1096.0,Other,2018-03-20,True,,,real,,,,,1,1073,PROCESSED,HAPPY SNACKS ENTERPRISE,True,26.82,2018-03-20,,HAPPY SNACKS ENTERPRISE
+accuracy,sroie-150.jpg,True,30,True,2600.0,Other,2018-03-28,True,,,real,,,,,5,2579,PROCESSED,SWC ENTERPRISE SDN BHD,True,30.00,2018-03-28,,SWC ENTERPRISE SDN BHD
+accuracy,sroie-151.jpg,True,9,True,1268.0,Other,2018-03-21,True,,,real,,,,,1,1225,PROCESSED,L TWO FLORIST & HANDICRAFT,True,9.00,2018-03-21,,L TWO FLORIST & HANDICRAFT
+accuracy,sroie-152.jpg,True,41.45,True,4795.0,Health,,True,,,real,,,,,5,3938,NEEDS_REVIEW,Watson's Personal Care Stores Sdn Bhd,True,41.45,,,WATSON'S PERSONAL CARE STORES SDN BHD
+accuracy,sroie-153.jpg,True,14.65,True,3291.0,Office & stationery,2018-02-06,True,,,real,,,,,5,3268,PROCESSED,POPULAR BOOK CO. (M) SDN BHD,True,14.65,2018-02-06,,POPULAR BOOK CO. (M) SDN BHD
+accuracy,sroie-154.jpg,True,101.75,True,4623.0,Home & hardware,2018-03-22,True,,,real,,,,,5,4600,PROCESSED,KHE ELECTRICAL TRADING,True,101.75,2018-03-22,,KHE ELECTRICAL TRADING
+accuracy,sroie-155.jpg,True,28.5,True,1334.0,Food & dining,2018-03-02,True,,,real,,,,,1,1312,PROCESSED,erbang Alaf Restaurants Sdn Bhd,True,28.50,2018-03-02,,GERBANG ALAF RESTAURANTS SDN BHD
+accuracy,sroie-156.jpg,False,29.7,True,5641.0,Food & dining,2018-01-17,True,,,real,,,,,5,5599,PROCESSED,KIKU JAPANESE RESTAURANT,False,29.70,2018-01-17,,TK DIVISION KITCHEN SDN BHD
+accuracy,sroie-157.jpg,True,21.5,True,4119.0,Office & stationery,2018-02-16,True,,,real,,,,,5,3364,PROCESSED,Golden Scoop Sdn Bhd,True,21.50,2018-02-16,,GOLDEN SCOOP SDN BHD
+accuracy,sroie-158.jpg,True,3.7,True,2875.0,Groceries,2018-02-03,True,,,real,,,,,1,1886,PROCESSED,99 SPEED MART S/B,True,3.70,2018-02-03,,99 SPEED MART S/B
+accuracy,sroie-159.jpg,True,29.8,True,1070.0,Other,2018-01-05,True,,,real,,,,,1,1049,PROCESSED,FUN N CHEER (MALURI),True,29.80,2018-01-05,,FUN N CHEER (MALURI)
+accuracy,sroie-160.jpg,False,8.6,True,2697.0,Travel & transport,2018-01-21,True,,,real,,,,,5,2674,PROCESSED,Ottogo Enterprise,False,8.60,2018-01-21,,CT281 - TEALIVE SHELL KEPONG OTTOGO ENTERPRISE
+accuracy,sroie-161.jpg,True,39,True,757.0,Other,2018-02-22,True,,,real,,,,,1,716,PROCESSED,NADEJE PRESTIGE SDN BHD,True,39.00,2018-02-22,,NADEJE PRESTIGE SDN BHD
+accuracy,sroie-162.jpg,True,213,True,901.0,Groceries,2018-02-17,True,,,real,,,,,1,878,PROCESSED,99 SPEED MART S/B,True,213.00,2018-02-17,,99 SPEED MART S/B
+accuracy,sroie-163.jpg,True,108.5,True,841.0,Groceries,2018-02-17,True,,,real,,,,,1,799,PROCESSED,99 SPEED MART S/B,True,108.50,2018-02-17,,99 SPEED MART S/B
+accuracy,sroie-164.jpg,False,71.3,False,1096.0,Food & dining,2018-01-05,True,,,real,,,,,1,1054,PROCESSED,SUNFISH,True,28.70,2018-01-05,,SUNFISH
+accuracy,sroie-165.jpg,True,71,True,1222.0,Other,2018-01-05,True,,,real,,,,,1,1199,PROCESSED,Mr .Dakgalbi Solaris,True,71.00,2018-01-05,,MR . DAKGALBI SOLARIS
+accuracy,sroie-166.jpg,True,35.8,True,2540.0,Shopping,2018-01-14,True,,,real,,,,,5,2519,PROCESSED,THE STORE (MALAYSIA) SDN BHD,True,35.80,2018-01-14,,THE STORE (MALAYSIA) SDN BHD
+accuracy,sroie-167.jpg,True,53.6,True,1124.0,Travel & transport,2018-03-18,True,,,real,,,,,1,1101,PROCESSED,LITTLE CRAVINGS SDN BHD,True,53.60,2018-03-18,,LITTLE CRAVINGS SDN BHD
+accuracy,sroie-168.jpg,True,25.15,True,2827.0,Other,2018-03-11,True,,,real,,,,,5,2785,PROCESSED,KING'S CONFECTIONERY S/B (KSB),True,25.15,2018-03-11,,KING'S CONFECTIONERY S/B
+accuracy,sroie-169.jpg,True,29.3,True,1113.0,Groceries,2018-03-18,True,,,real,,,,,1,1072,PROCESSED,Yam Fresh,True,29.30,2018-03-18,,YAM FRESH
+accuracy,sroie-170.jpg,True,105,True,4463.0,Food & dining,2018-03-25,True,,,real,,,,,5,4440,PROCESSED,Zen and coffee 28 S/B,True,105.00,2018-03-25,,ZEN AND COFFEE 28 S/B
+accuracy,sroie-171.jpg,True,12,True,4770.0,Health,2018-03-04,True,,,real,"PROBLEM: CGST and SGST must be charged together; taxable 12.00 + GST 12.00 = 24.00, but the total is 12.00",,,,5,4747,NEEDS_REVIEW,Guardian Health And Beauty Sdn Bhd,True,12.00,2018-03-04,,GUARDIAN HEALTH AND BEAUTY SDN BHD
+accuracy,sroie-172.jpg,True,53.3,True,3052.0,Home & hardware,2018-03-16,True,,,real,,,,,5,3029,PROCESSED,MR. D.I.Y. (KUCHAI) SDN BHD,True,53.30,2018-03-16,,MR. D. I. Y. (KUCHAI) SDN BHD
+accuracy,sroie-173.jpg,False,33,False,11576.0,Food & dining,2018-03-26,True,,,real,,,,,5,11553,PROCESSED,DOMINO'S PIZZA,False,60.60,2018-03-26,,DOMMAL FOOD SERVICES SDN BHD
+accuracy,sroie-174.jpg,True,20.5,True,2615.0,Health,2018-02-01,True,,,real,,,,,5,2592,PROCESSED,MY HAPPY PHARMACY PLT,True,20.50,2018-02-01,,MY HAPPY PHARMACY PLT
+accuracy,sroie-175.jpg,True,11.8,True,6153.0,Office & stationery,2018-02-11,True,,,real,,,,,5,6130,PROCESSED,POPULAR BOOK CO. (M) SDN BHD,True,11.80,2018-02-11,,POPULAR BOOK CO. (M) SDN BHD
+accuracy,sroie-176.jpg,True,101.76,True,4421.0,Other,2018-02-28,True,,,real,,,,,5,4398,PROCESSED,KEDAI PAPAN YEW CHUAN,True,101.76,2018-02-28,,KEDAI PAPAN YEW CHUAN
+accuracy,sroie-177.jpg,True,127.2,True,5289.0,Other,2018-03-06,True,,,real,,,,,5,5267,PROCESSED,KEDAI PAPAN YEW CHUAN,True,127.20,2018-03-06,,KEDAI PAPAN YEW CHUAN
+accuracy,sroie-178.jpg,True,174.9,True,9908.0,Other,2018-03-31,True,,,real,,,,,5,8880,PROCESSED,KEDAI PAPAN YEW CHUAN,True,174.90,2018-03-31,,KEDAI PAPAN YEW CHUAN
+accuracy,sroie-179.jpg,False,174.9,True,6610.0,Other,2018-03-17,True,,,real,,,,,5,6587,PROCESSED,Cele R,False,174.90,2018-03-17,,KEDAI PAPAN YEW CHUAN
+accuracy,sroie-180.jpg,True,41.95,True,5420.0,Travel & transport,2018-01-18,True,,,real,,,,,5,5381,PROCESSED,BHPetrol Subang Airport,True,41.95,2018-01-18,,BHPETROL SUBANG AIRPORT
+accuracy,sroie-181.jpg,True,6,True,906.0,Travel & transport,2018-03-24,True,,,real,,,,,1,865,PROCESSED,BHPetrol Palekbang,True,6.00,2018-03-24,,BHPETROL PALEKBANG
+accuracy,sroie-182.jpg,False,3.61,False,3016.0,Other,2018-02-22,True,,,real,,,,,1,2998,PROCESSED,Description Qty Price Amount,False,63.80,2018-02-22,,BILLION SIX ENTERPRISE
+accuracy,sroie-183.jpg,False,21.2,True,3634.0,Groceries,2018-03-03,False,,,real,,,,,5,3615,PROCESSED,SLF CASH & CARRY,True,21.20,2018-02-03,,SLF CASH & CARRY
+accuracy,sroie-184.jpg,True,48,True,1238.0,Groceries,2018-02-02,True,,,real,,,,,1,1215,PROCESSED,SLF CASH & CARRY,True,48.00,2018-02-02,,SLF CASH & CARRY
+accuracy,sroie-185.jpg,True,367.1,True,10810.0,Groceries,2018-02-12,True,,,real,,,,,5,10787,PROCESSED,SUPER SEVEN CASH & CARRY SDN 3HD,True,367.10,2018-02-12,,SUPER SEVEN CASH & CARRY SDN BHD
+accuracy,sroie-186.jpg,False,45.34,False,1247.0,Groceries,2018-02-07,True,,,real,,,,,1,1211,PROCESSED,99 SPEED MART S/B,True,45.35,2018-02-07,,99 SPEED MART S/B
+accuracy,sroie-187.jpg,False,24,False,7276.0,Food & dining,2018-02-27,True,,,real,,,,,5,7253,PROCESSED,URBAN IDEA SDN BHD,True,22.65,2018-02-27,,URBAN IDEA SDN BHD
+accuracy,sroie-188.jpg,True,31,True,10405.0,Food & dining,2018-04-09,True,,,real,,,,,5,10382,PROCESSED,KMF FOODICIOUS SDN BHD,True,31.00,2018-04-09,,KMF FOODICIOUS SDN BHD
+accuracy,sroie-189.jpg,True,63.35,True,1000.0,Other,2018-03-02,True,,,real,,,,,1,977,PROCESSED,YONG CEN ENTERPRISE,True,63.35,2018-03-02,,YONG CEN ENTERPRISE
+accuracy,sroie-190.jpg,False,71.9,True,13951.0,Other,2018-03-02,True,,,real,,,,,5,13909,PROCESSED,KAWASAN PERINDUSTRIAN BALAKONG,False,71.90,2018-03-02,,MR. D. I. Y. (M) SDN BHD
+accuracy,sroie-191.jpg,True,34,True,4675.0,Home & hardware,2018-03-10,True,,,real,,,,,5,4653,PROCESSED,ENW Hardware Centre (M) Sdn. Bhd,True,34.00,2018-03-10,,ENW HARDWARE CENTRE (M) SDN BHD
+accuracy,sroie-192.jpg,True,38.8,True,1221.0,Home & hardware,2018-03-28,True,,,real,,,,,1,1179,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,38.80,2018-03-28,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-193.jpg,True,4,True,13790.0,Office & stationery,2018-03-01,True,,,real,,,,,5,13769,PROCESSED,POPULAR BOOK CO. (M) SDN BHD,True,4.00,2018-03-01,,POPULAR BOOK CO. (M) SDN BHD
+accuracy,sroie-194.jpg,False,88.97,False,7696.0,Shopping,2018-02-28,True,,,real,,,,,5,7674,PROCESSED,AEÚN CO. (M) BHD,True,88.95,2018-02-28,,AEON CO. (M) BHD.
+accuracy,sroie-195.jpg,True,31,True,4918.0,Shopping,2018-03-09,True,,,real,,,,,5,4895,PROCESSED,AEON CO. (M) BHD,True,31.00,2018-03-09,,AEON CO. (M) BHD
+accuracy,sroie-196.jpg,True,5.75,True,8469.0,Office & stationery,2018-03-11,True,,,real,,,,,5,8448,PROCESSED,POPULAR BOOK CO. (M) SDN BHD,True,5.75,2018-03-11,,POPULAR BOOK CO. (M) SDN BHD
+accuracy,sroie-197.jpg,True,42.5,True,15420.0,Shopping,2018-03-12,True,,,real,,,,,5,15379,PROCESSED,AEON CO. (M) BHD,True,42.50,2018-03-12,,AEON CO. (M) BHD
+accuracy,sroie-198.jpg,True,45,True,14409.0,Home & hardware,2018-03-12,True,,,real,,,,,1,14368,PROCESSED,MR. D.I.Y. (KUCHAI) SDN BHD,True,45.00,2018-03-12,,MR. D.I.Y. (KUCHAI) SDN BHD
+accuracy,sroie-199.jpg,True,8,True,6620.0,Utilities & bills,2017-10-10,True,,,real,,,,,1,6597,PROCESSED,TSH POWER HARDWARE TRADING,True,8.00,2017-10-10,,TSH POWER HARDWARE TRADING
+accuracy,sroie-200.jpg,True,42.9,True,2620.0,Home & hardware,2018-03-17,True,,,real,,,,,5,2597,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,42.90,2018-03-17,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-201.jpg,True,10.6,True,923.0,Home & hardware,2018-03-18,True,,,real,,,,,1,900,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,10.60,2018-03-18,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-202.jpg,True,35.4,True,962.0,Shopping,2018-03-20,True,,,real,,,,,1,939,PROCESSED,BAIFU (M) Sdn 'Bhd,True,35.40,2018-03-20,,BAIFU (M) SDN BHD
+accuracy,sroie-203.jpg,True,28,True,2542.0,Home & hardware,2018-03-26,True,,,real,,,,,5,2502,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,28.00,2018-03-26,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-204.jpg,True,50.8,True,1175.0,Home & hardware,2018-03-25,True,,,real,,,,,1,1134,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,50.80,2018-03-25,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-205.jpg,True,26.1,True,1186.0,Home & hardware,2018-03-23,True,,,real,,,,,1,1163,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,26.10,2018-03-23,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-206.jpg,True,21,True,1277.0,Other,2018-03-24,True,,,real,,,,,1,1256,PROCESSED,GOLDEN KEY MAKER,True,21.00,2018-03-24,,GOLDEN KEY MAKER
+accuracy,sroie-207.jpg,True,14.9,True,1278.0,Home & hardware,2018-03-24,True,,,real,,,,,1,1237,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,14.90,2018-03-24,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-208.jpg,True,12.3,True,2750.0,Home & hardware,2018-03-24,True,,,real,,,,,5,2726,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,12.30,2018-03-24,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-209.jpg,False,60,True,2878.0,Shopping,,False,,,real,,,,,5,2839,NEEDS_REVIEW,Elitetrax Marketing Sdn Bhd,True,60.00,2018-02-11,,ELITETRAX MARKETING SDN BHD
+accuracy,sroie-210.jpg,True,7838.8,True,6466.0,Shopping,2018-01-29,True,,,real,,,,,5,6430,PROCESSED,KAISON FURNISHING SDN BHD,True,7838.80,2018-01-29,,KAISON FURNISHING SDN BHD
+accuracy,sroie-211.jpg,True,374.2,True,5004.0,Other,2018-02-02,True,,,real,,,,,5,4981,PROCESSED,LEE WAH FLORIST SDN BHD,True,374.20,2018-02-02,,LEE WAH FLORIST SDN BHD
+accuracy,sroie-212.jpg,True,29,True,1283.0,Other,2018-01-17,True,,,real,,,,,1,1260,PROCESSED,ADVANCO COMPANY,True,29.00,2018-01-17,,ADVANCO COMPANY
+accuracy,sroie-213.jpg,False,10.45,True,2672.0,Other,2018-02-28,True,,,real,,,,,5,2649,PROCESSED,"Wangsa Link, Wangsa Maju",False,10.45,2018-02-28,,ADVANCO COMPANY
+accuracy,sroie-214.jpg,True,13.5,True,1010.0,Food & dining,2018-02-06,True,,,real,,,,,1,986,PROCESSED,SINNATHAMBY HOLDINGS SDN. BHD,True,13.50,2018-02-06,,SINNATHAMBY HOLDINGS SDN. BHD.
+accuracy,sroie-215.jpg,True,109.7,True,2737.0,Other,2018-02-06,True,,,real,,,,,5,2716,PROCESSED,SINNATHAMBY HOLDINGS SDN. BHD,True,109.70,2018-02-06,,SINNATHAMBY HOLDINGS SDN. BHD.
+accuracy,sroie-216.jpg,True,7,True,2644.0,Other,2018-01-17,True,,,real,,,,,5,2621,PROCESSED,ADVANCO COMPANY,True,7.00,2018-01-17,,ADVANCO COMPANY
+accuracy,sroie-217.jpg,True,22,True,1117.0,Food & dining,2018-04-25,True,,,real,,,,,1,1094,PROCESSED,IKANO HANDEL SDN BHD,True,22.00,2018-04-25,,IKANO HANDEL SDN BHD
+accuracy,sroie-218.jpg,True,329.1,True,4869.0,Other,2018-01-15,True,,,real,,,,,5,4846,PROCESSED,TRENDYMAX (M) SDN. BHD,True,329.10,2018-01-15,,TRENDYMAX (M) SDN. BHD.
+accuracy,sroie-219.jpg,True,100,True,5863.0,Office & stationery,2018-01-12,True,,,real,,,,,5,5841,PROCESSED,PRINT EXPERT SDN BHD n,True,100.00,2018-01-12,,PRINT EXPERT SDN BHD
+accuracy,sroie-220.jpg,True,4.25,True,3583.0,Office & stationery,2018-01-12,True,,,real,,,,,5,3560,PROCESSED,PRINT EXPERT SDN BHD,True,4.25,2018-01-12,,PRINT EXPERT SDN BHD
+accuracy,sroie-221.jpg,True,30.1,True,5451.0,Office & stationery,2018-01-24,True,,,real,,,,,5,5410,PROCESSED,POPULAR BOOK CO. (M) SDN BHD,True,30.10,2018-01-24,,POPULAR BOOK CO. (M) SDN BHD
+accuracy,sroie-222.jpg,True,41,True,6436.0,Office & stationery,2018-02-27,True,,,real,,,,,5,6414,PROCESSED,POPULAR BOOK CO. (M) SDN BHD,True,41.00,2018-02-27,,POPULAR BOOK CO. (M) SDN BHD
+accuracy,sroie-223.jpg,True,9.9,True,7059.0,Office & stationery,2018-03-05,True,,,real,,,,,5,7022,PROCESSED,POPULAR BOOK CO. (M) SDN BHD,True,9.90,2018-03-05,,POPULAR BOOK CO. (M) SDN BHD
+accuracy,sroie-224.jpg,True,31.8,True,1235.0,Other,2018-03-19,True,,,real,,,,,1,1193,PROCESSED,BOON SENG PAPER SDN BHD,True,31.80,2018-03-19,,BOON SENG PAPER SDN BHD
+accuracy,sroie-225.jpg,True,56,True,3082.0,Food & dining,2018-03-30,True,,,real,,,,,1,3041,PROCESSED,RELAIS TOTAL OULMES,True,56.00,2018-03-30,,RELAIS TOTAL OULMES
+accuracy,sroie-226.jpg,True,100.6,True,6361.0,Shopping,2018-03-29,True,,,real,,,,,5,6341,PROCESSED,TONYMOLY VIVA CITY,True,100.60,2018-03-29,,TONYMOLY VIVA CITY
+accuracy,sroie-227.jpg,True,39.9,True,1294.0,Office & stationery,2018-03-29,True,,,real,,,,,1,1273,PROCESSED,TONYMOLY VIVA CITY,True,39.90,2018-03-29,,TONYMOLY VIVA CITY
+accuracy,sroie-228.jpg,True,48.95,True,9070.0,Shopping,2018-03-29,True,,,real,,,,,5,9047,PROCESSED,TONYMOLY VIVA CITY,True,48.95,2018-03-29,,TONYMOLY VIVA CITY
+accuracy,sroie-229.jpg,True,7.4,True,5229.0,Office & stationery,2018-03-21,True,,,real,,,,,5,5206,PROCESSED,Anzel Advertising (M) Sdn bhd,True,7.40,2018-03-21,,ANZEL ADVERTISING (M) SDN BHD
+accuracy,sroie-230.jpg,True,8.5,True,5182.0,Office & stationery,2018-03-27,True,,,real,,,,,5,5159,PROCESSED,Anzel Advertising (M) Sdn bhd,True,8.50,2018-03-27,,ANZEL ADVERTISING (M) SDN BHD
+accuracy,sroie-231.jpg,True,119.7,True,6969.0,Home & hardware,2018-03-15,True,,,real,,,,,5,5991,PROCESSED,MR. D.I.Y. (KUCHAI) SDN BHD,True,119.70,2018-03-15,,MR. D.I.Y. (KUCHAI) SDN BHD
+accuracy,sroie-232.jpg,False,25.44,False,7863.0,Office & stationery,2017-02-08,True,,,real,,,,,7,7841,PROCESSED,PREMIO STATIONERY SDN BHD,True,25.45,2017-02-08,,PREMIO STATIONERY SDN BHD
+accuracy,sroie-233.jpg,False,None,False,5981.0,Groceries,2017-02-09,True,,,real,,,,,5,5943,NEEDS_REVIEW,Y SOON FATT S/R,True,362.50,2017-02-09,,Y SOON FATT S/B
+accuracy,sroie-234.jpg,True,165,True,2601.0,Other,,True,,,real,,,,,1,2559,NEEDS_REVIEW,BEMED (SP) SDN. BHD,True,165.00,,,BEMED (SP) SDN BHD
+accuracy,sroie-235.jpg,True,7.4,True,9975.0,Food & dining,2017-02-10,True,,,real,,,,,1,9953,PROCESSED,в & BEST RESTAURANT,True,7.40,2017-02-10,,B & BEST RESTAURANT
+accuracy,sroie-236.jpg,True,14.85,True,3349.0,Food & dining,2017-03-20,True,,,real,,,,,1,3326,PROCESSED,13 & BEST RESTAURANT,True,14.85,2017-03-20,,B & BEST RESTAURANT
+accuracy,sroie-237.jpg,True,7.4,True,9250.0,Food & dining,2017-02-10,True,serverless/experiments/exp-20261027-211243/accuracy/real/sroie-235.jpg,,real,,,,,1,8266,NEEDS_REVIEW,в & BEST RESTAURANT,True,7.40,2017-02-10,,B & BEST RESTAURANT
+accuracy,sroie-238.jpg,True,12.15,True,3203.0,Health,2017-03-31,True,,,real,,,,,5,3180,PROCESSED,LIVE9 PHARMACY SDN BHD,True,12.15,2017-03-31,,OLIVE9 PHARMACY SDN BHD
+accuracy,sroie-239.jpg,False,50.45,True,1032.0,Groceries,2017-04-06,True,,,real,,,,,1,990,PROCESSED,"Her Pt17920 Sek U9, Shah Alam Cash & Carry Sdn. .Bhd",False,50.45,2017-04-06,,SEGI CASH & CARRY SDN. BHD.
+accuracy,sroie-240.jpg,True,62,True,3334.0,Office & stationery,2017-03-17,True,,,real,,,,,5,3311,PROCESSED,TANJONGMAS BOOKCENTRE (PJ) SDN BHD,True,62.00,2017-03-17,,TANJONGMAS BOOKCENTRE (PJ) SDN BHD
+accuracy,sroie-241.jpg,True,217,True,2581.0,Other,,True,,,real,,,,,5,2540,NEEDS_REVIEW,BEMED (SP) SDN. BHD,True,217.00,,,BEMED (SP) SDN. BHD.
+accuracy,sroie-242.jpg,False,12.6,True,5240.0,Groceries,2017-01-05,True,,,real,,,,,5,5217,PROCESSED,*REDEEM VOUCHER BEFORE POINTS EXPIRY!*,False,12.60,2017-01-05,,SEGI CASH & CARRY SDN.BHD
+accuracy,sroie-243.jpg,False,20.05,True,9719.0,Groceries,2017-01-04,True,,,real,,,,,5,9696,PROCESSED,VOUCHER BEFORE POINTS EXPIRY!*,False,20.05,2017-01-04,,SEGI CASH & CARRY SDN.BHD
+accuracy,sroie-244.jpg,True,29.3,True,5550.0,Food & dining,2016-12-25,True,,,real,,,,,5,5527,PROCESSED,Golden Arches Restaurants Sdn Bhd,True,29.30,2016-12-25,,GOLDEN ARCHES RESTAURANTS SDN BHD
+accuracy,sroie-245.jpg,True,67.85,True,2683.0,Food & dining,2017-01-22,True,,,real,,,,,5,2660,PROCESSED,MEI LET RESTAURANT,True,67.85,2017-01-22,,MEI LET RESTAURANT
+accuracy,sroie-246.jpg,False,20,False,1473.0,Health,2017-02-02,True,,,real,,,,,1,1451,PROCESSED,KING'S CONFECTIONERY S/B (GKJ),True,7.50,2017-02-02,,KING'S CONFECTIONERY S/B
+accuracy,sroie-247.jpg,False,26.12,False,4790.0,Other,2017-02-06,True,,,real,,,,,5,4748,NEEDS_REVIEW,YONG SOON FATT S/B,True,758.70,2017-02-06,,YONG SOON FATT S/B
+accuracy,sroie-248.jpg,False,6.6,False,4665.0,Travel & transport,2018-04-16,True,,,real,,,,,1,4646,PROCESSED,First City Parking 4-1 Sdn Bhd,True,7.00,2018-04-16,,AMPANG 210 FIRST CITY PARKING SDN BHD
+accuracy,sroie-249.jpg,True,130,True,2950.0,Other,2018-03-27,True,,,real,,,,,1,2927,PROCESSED,GL HANDICRAFT & TAIL ORING,True,130.00,2018-03-27,,GL HANDICRAFT & TAII ORING
+accuracy,sroie-250.jpg,True,104,True,1246.0,Other,2018-04-09,True,,,real,,,,,1,1223,PROCESSED,GL HANDICRAFT & TAIL ORING,True,104.00,2018-04-09,,GL HANDICRAFT & TAII ORING
+accuracy,sroie-251.jpg,True,15.4,True,4489.0,Office & stationery,2017-04-10,True,,,real,,,,,1,4447,PROCESSED,ARTRANGE STATIONERS & PRINT SDN BHD,True,15.40,2017-04-10,,ARTRANGE STATIONERS & PRINT SDN BHD
+accuracy,sroie-252.jpg,True,12.37,True,4920.0,Office & stationery,2017-04-23,True,,,real,,,,,5,4897,PROCESSED,TIMES BOOKSTORES,True,12.37,2017-04-23,,TIMES BOOKSTORES
+accuracy,sroie-253.jpg,True,113.8,True,5358.0,Food & dining,2017-04-23,True,,,real,,,,,5,5336,PROCESSED,TOKYO KITCHEN (CITTA MALL) TOKYO KITCHEN SDN BHD KITCHEN TOCYOJAPAN,True,113.80,2017-04-23,,TOKYO KITCHEN (CITTA MALL) TOKYO KITCHEN SDN BHD
+accuracy,sroie-254.jpg,True,635,True,1517.0,Other,,True,,,real,,,,,1,1450,NEEDS_REVIEW,BEMED (SP) SDN. BHD,True,635.00,,,BEMED (SP) SDN. BHD.
+accuracy,sroie-255.jpg,False,84,False,1241.0,Other,2017-04-25,True,,,real,,,,,1,1218,PROCESSED,YONG CEN ENTERPRISE,True,94.00,2017-04-25,,YONG CEN ENTERPRISE
+accuracy,sroie-256.jpg,False,None,False,962.0,Food & dining,2017-05-04,True,,,real,,,,,1,924,NEEDS_REVIEW,Description Qly Price Amount,False,12.00,2017-05-04,,BILLION SIX ENTERPRISE
+accuracy,sroie-257.jpg,True,3,True,1110.0,Travel & transport,2017-04-30,True,,,real,,,,,1,1086,PROCESSED,AMANO MALAYSIA SDN BHD,True,3.00,2017-04-30,,AMANO MALAYSIA SDN BHD
+accuracy,sroie-258.jpg,True,1,True,966.0,Travel & transport,2017-04-30,True,,,real,,,,,1,943,PROCESSED,AMANO MALAYSIA SON BHD,True,1.00,2017-04-30,,AMANO MALAYSIA SDN BHD
+accuracy,sroie-259.jpg,False,42.33,False,2457.0,Groceries,2017-05-05,True,,,real,,,,,5,2416,PROCESSED,99 SPEED MART S/B,True,42.35,2017-05-05,,99 SPEED MART S/B
+accuracy,sroie-260.jpg,True,22.6,True,1873.0,Shopping,2017-05-10,True,,,real,,,,,1,1852,PROCESSED,PERNIAGAAN RIANG RIÁ,True,22.60,2017-05-10,,PERNIAGAAN RIANG RIA
+accuracy,sroie-261.jpg,True,191.2,True,1246.0,Other,,True,,,real,,,,,1,1190,NEEDS_REVIEW,BEMED (SP) SDN. BHD. (p),True,191.20,,,BEMED (SP) SDN. BHD.
+accuracy,sroie-262.jpg,False,20.8,True,899.0,Groceries,2017-05-21,True,,,real,,,,,1,878,PROCESSED,POSTER,False,20.80,2017-05-21,,99 SPEED MART S/B
+accuracy,sroie-263.jpg,False,1.5,False,2351.0,Utilities & bills,2017-05-17,True,,,real,,,,,5,2329,NEEDS_REVIEW,HERO DISTRIBUTION SDN BHD,True,41.50,2017-05-17,,HERO DISTRIBUTION SDN BHD
+accuracy,sroie-264.jpg,False,118.35,True,6569.0,Food & dining,2017-05-25,True,,,real,,,,,5,6546,PROCESSED,"Pt17920 Sek Carry U9, Shah Alam Cash & Sdn. Bhd",False,118.35,2017-05-25,,SEGI CASH & CARRY SDN. BHD.
+accuracy,sroie-265.jpg,True,4.7,True,1178.0,Other,2017-05-15,True,,,real,,,,,1,1156,PROCESSED,Broadview Marketing 5dn Bhd,True,4.70,2017-05-15,,BROADVIEW MARKETING SDN BHD
+accuracy,sroie-266.jpg,True,62.8,True,1142.0,Other,2017-11-12,True,,,real,,,,,1,1119,PROCESSED,RESTORAN WAN SHENG,True,62.80,2017-11-12,,RESTORAN WAN SHENG
+accuracy,sroie-267.jpg,False,181.98,False,7365.0,Groceries,2017-11-22,True,,,real,,,,,5,7341,PROCESSED,99 SPEED MART S/B,True,182.00,2017-11-22,,99 SPEED MART S/B
+accuracy,sroie-268.jpg,True,52.1,True,3228.0,Groceries,2017-11-01,True,,,real,,,,,5,3205,PROCESSED,99 SPEED MART S/B,True,52.10,2017-11-01,,99 SPEED MART S/B
+accuracy,sroie-269.jpg,True,250,True,7840.0,Other,2017-10-21,True,,,real,,,,,5,7818,PROCESSED,IN-SPARKLE TRADING SDN BHD,True,250.00,2017-10-21,,IN-SPARKLE TRADING SDN BHD
+accuracy,sroie-270.jpg,True,250,True,6429.0,Other,2017-10-10,True,,,real,,,,,5,6388,PROCESSED,ELKEN SERVICE SDN BHD,True,250.00,2017-10-10,,ELKEN SERVICE SDN BHD
+accuracy,sroie-271.jpg,False,45,True,1342.0,Groceries,2017-06-19,True,,,real,,,,,1,1319,PROCESSED,MOSTED,False,45.00,2017-06-19,,FIVE STAR CASH & CARRY
+accuracy,sroie-272.jpg,True,18,True,1072.0,Other,2017-06-03,True,,,real,,,,,1,1049,PROCESSED,Broadview Marketing Sdn Bhd,True,18.00,2017-06-03,,BROADVIEW MARKETING SDN BHD
+accuracy,sroie-273.jpg,True,165,True,1119.0,Other,,True,,,real,,,,,1,1062,NEEDS_REVIEW,BEMED (SP) SDN. BHD,True,165.00,,,BEMED (SP) SDN. BHD.
+accuracy,sroie-274.jpg,True,28.05,True,4506.0,Groceries,2017-06-22,True,,,real,,,,,5,4483,PROCESSED,SUPER_SEVEN CASH & CARRY SDN 3HD 28.05,True,28.05,2017-06-22,,SUPER.SEVEN CASH & CARRY SDN BHD
+accuracy,sroie-275.jpg,True,11.5,True,3885.0,Other,2017-05-10,True,,,real,,,,,1,3863,PROCESSED,99 SPEED NART S/B,True,11.50,2017-05-10,,99 SPEED MART S/B
+accuracy,sroie-276.jpg,True,72.75,True,10707.0,Groceries,2017-05-10,True,,,real,,,,,5,10684,PROCESSED,99 SPEED MART S/B,True,72.75,2017-05-10,,99 SPEED MART S/B
+accuracy,sroie-277.jpg,True,72,True,1337.0,Office & stationery,2017-01-05,True,,,real,,,,,1,1315,PROCESSED,S&Y STATIONERY,True,72.00,2017-01-05,,S&Y STATIONERY
+accuracy,sroie-278.jpg,False,19.8,True,990.0,Home & hardware,2017-01-19,True,,,real,,,,,1,971,PROCESSED,Worf Catching 11,False,19.80,2017-01-19,,FIVE STAR CASH & CARRY
+accuracy,sroie-279.jpg,False,20,False,1883.0,Other,2017-02-09,True,,,real,,,,,1,1860,PROCESSED,KING'S CONFECTIONERY S/B (KJ1),True,19.20,2017-02-09,,KING'S CONFECTIONERY S/B
+accuracy,sroie-280.jpg,True,22.25,True,917.0,Food & dining,2017-04-22,True,,,real,,,,,1,894,PROCESSED,в & BEST RESTAURANT,True,22.25,2017-04-22,,B & BEST RESTAURANT
+accuracy,sroie-281.jpg,True,35,True,2734.0,Food & dining,2018-04-07,True,,,real,,,,,5,2711,PROCESSED,DI HUAN YA RESTAURANT,True,35.00,2018-04-07,,DI HUAN YA RESTAURANT
+accuracy,sroie-282.jpg,True,275.9,True,3099.0,Food & dining,2018-04-27,True,,,real,,,,,5,3076,PROCESSED,RESTORAN SIAM VILLAGE,True,275.90,2018-04-27,,RESTORAN SIAM VILLAGE
+accuracy,sroie-283.jpg,True,8.2,True,1415.0,Food & dining,2018-04-02,True,,,real,,,,,1,1392,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.20,2018-04-02,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-284.jpg,True,7.1,True,1160.0,Food & dining,2018-04-03,True,,,real,,,,,1,1118,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,7.10,2018-04-03,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-285.jpg,True,8.2,True,1214.0,Food & dining,2018-04-09,True,,,real,,,,,1,1191,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.20,2018-04-09,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-286.jpg,True,7.6,True,1452.0,Food & dining,2018-04-10,True,,,real,,,,,1,1413,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,7.60,2018-04-10,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-287.jpg,True,8.2,True,1371.0,Food & dining,2018-04-11,True,,,real,,,,,1,1349,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.20,2018-04-11,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-288.jpg,True,50,True,3068.0,Travel & transport,2018-04-06,True,,,real,,,,,5,3026,PROCESSED,HASHA PETROKIOSK,True,50.00,2018-04-06,,HASHA PETROKIOSK
+accuracy,sroie-289.jpg,True,50,True,1194.0,Travel & transport,2018-04-10,True,,,real,,,,,1,1155,PROCESSED,BHPetrol Permas Jaya 2,True,50.00,2018-04-10,,BHPETROL PERMAS JAYA 2
+accuracy,sroie-290.jpg,True,12.3,True,3186.0,Food & dining,2018-04-14,True,,,real,,,,,5,3144,PROCESSED,LAVENDER CONFECTIONERY & BAKERY S/B,True,12.30,2018-04-14,,LAVENDER CONFECTIONERY & BAKERY S/B
+accuracy,sroie-291.jpg,True,7,True,1509.0,Food & dining,2018-04-18,True,,,real,,,,,1,1486,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,7.00,2018-04-18,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-292.jpg,True,8.2,True,1542.0,Food & dining,2018-04-16,True,,,real,,,,,1,1520,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.20,2018-04-16,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-293.jpg,False,270,True,2409.0,Other,2018-04-06,True,,,real,,,,,1,2387,PROCESSED,Duty Free Zone (JB),False,270.00,2018-04-06,,SELASIH EKSLUSIF SDN BHD
+accuracy,sroie-294.jpg,True,44.9,True,3217.0,Food & dining,2018-04-15,True,,,real,,,,,5,3194,PROCESSED,PASAR MINI JIN SENG,True,44.90,2018-04-15,,PASAR MINI JIN SENG
+accuracy,sroie-295.jpg,True,9.9,True,3016.0,Food & dining,2018-04-19,True,,,real,,,,,5,2993,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,9.90,2018-04-19,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-296.jpg,False,3.9,False,3640.0,Food & dining,2018-04-17,True,,,real,,,,,5,3598,PROCESSED,DOMINO'S PIZZA,True,25.60,2018-04-17,,DOMINO'S PIZZA
+accuracy,sroie-297.jpg,False,12.4,False,3222.0,Food & dining,2018-04-11,True,,,real,,,,,5,3199,PROCESSED,TAX INVOI CE,False,21.60,2018-04-11,,DOMINO'S PIZZA
+accuracy,sroie-298.jpg,False,12,True,3013.0,Food & dining,2018-04-08,True,,,real,,,,,5,2990,PROCESSED,& TEA LEAF (M) SDN. BHD,False,12.00,2018-04-08,,THE COFFEE BEAN & TEA LEAF (M) SDN. BHD.
+accuracy,sroie-299.jpg,True,21.8,True,1093.0,Food & dining,2018-04-14,True,,,real,,,,,1,1070,PROCESSED,De Maximum Thai Express Sdn Bhd,True,21.80,2018-04-14,,DE MAXIMUM THAI EXPRESS SDN BHD
+accuracy,sroie-300.jpg,True,1.75,True,2971.0,Shopping,2018-04-18,True,,,real,,,,,5,2949,PROCESSED,AEON CO. (M) BHD,True,1.75,2018-04-18,,AEON CO. (M) BHD
+accuracy,sroie-301.jpg,True,10.2,True,3257.0,Shopping,2018-04-22,True,,,real,,,,,5,3234,PROCESSED,AEON CO. (M) BHD,True,10.20,2018-04-22,,AEON CO. (M) SDN BHD
+accuracy,sroie-302.jpg,True,98.35,True,3378.0,Shopping,2018-04-22,True,,,real,,,,,5,3355,PROCESSED,AEON CO. (M) BHD,True,98.35,2018-04-22,,AEON CO. (M) BHD
+accuracy,sroie-303.jpg,True,30.9,True,3119.0,Food & dining,2018-04-28,True,,,real,,,,,5,3097,PROCESSED,DOMINO'S PIZZA,True,30.90,2018-04-28,,DOMINO'S PIZZA
+accuracy,sroie-304.jpg,True,39.6,True,3531.0,Food & dining,2018-04-28,True,,,real,,,,,5,3508,PROCESSED,DOMINO 'S PIZZA,True,39.60,2018-04-28,,DOMINO'S PIZZA
+accuracy,sroie-305.jpg,True,81.8,True,3956.0,Food & dining,2018-04-17,True,,,real,,,,,5,3914,PROCESSED,YHM Aeon Tebrau City,True,81.80,2018-04-17,,YHM AEON TEBRAU CITY
+accuracy,sroie-306.jpg,True,18.9,True,3224.0,Other,2018-04-08,True,,,real,,,,,5,3201,PROCESSED,THE TOAST F&B SDN BHD,True,18.90,2018-04-08,,THE TOAST F&B SDN BHD
+accuracy,sroie-307.jpg,True,46.55,True,3080.0,Shopping,2018-04-20,True,,,real,,,,,5,3056,PROCESSED,AEON CO. (M) BHD,True,46.55,2018-04-20,,AEON CO. (M) BHD
+accuracy,sroie-308.jpg,True,4.4,True,1545.0,Shopping,2018-04-12,True,,,real,,,,,1,1524,PROCESSED,AEON CO. (M) BHD,True,4.40,2018-04-12,,AEON CO. (M) BHD
+accuracy,sroie-309.jpg,True,6.4,True,1533.0,Groceries,2018-04-20,True,,,real,,,,,1,1491,PROCESSED,PASARAYA JALAL SDN BHD,True,6.40,2018-04-20,,PASARAYA JALAL SDN BHD
+accuracy,sroie-310.jpg,False,7.2,True,3031.0,Food & dining,2018-04-27,True,,,real,,,,,5,3008,PROCESSED,TAX INVOI CE,False,7.20,2018-04-27,,DOMINO'S PIZZA
+accuracy,sroie-311.jpg,True,122.8,True,4073.0,Food & dining,2018-04-01,True,,,real,,,,,5,4032,PROCESSED,AEON CO. (M) BHD,True,122.80,2018-04-01,,AEON CO. (M) BHD
+accuracy,sroie-312.jpg,True,38.37,True,2907.0,Health,2018-05-19,True,,,real,"PROBLEM: CGST and SGST must be charged together; taxable 38.37 + GST 38.37 = 76.74, but the total is 38.37",,,,5,2885,NEEDS_REVIEW,Guardian Health And Beauty Sdn Bhd,True,38.37,2018-05-19,,GUARDIAN HEALTH AND BEAUTY SDN BHD
+accuracy,sroie-313.jpg,True,52.8,True,2372.0,Groceries,2018-05-19,True,,,real,,,,,5,2350,PROCESSED,TF Value-Mart Sdn Bhd,True,52.80,2018-05-19,,TF VALUE-MART SDN BHD
+accuracy,sroie-314.jpg,False,20,True,2910.0,Groceries,2018-04-28,False,,,real,,,,,5,2868,PROCESSED,SEE the DE THANK YOU وزارة M,False,20.00,,,CHECKERS HYPERMARKET SDN BHD (JALAN KLANG LAMA)
+accuracy,sroie-315.jpg,False,11.25,True,2975.0,Other,2018-04-18,True,,,real,,,,,5,2933,PROCESSED,staff ref,False,11.25,2018-04-18,,BERRY'S CAKE HOUSE
+accuracy,sroie-316.jpg,False,1.38,True,969.0,Office & stationery,2018-04-30,True,,,real,,,,,1,947,PROCESSED,STATIONERY SDN. BHD,False,1.38,2018-04-30,,WESTERN EASTERN STATIONERY SDN. BHD
+accuracy,sroie-317.jpg,False,None,False,1014.0,Office & stationery,2018-04-16,True,,,real,,,,,1,992,NEEDS_REVIEW,STaTIONERY SDN. BHD,False,5.00,2018-04-16,,WESTERN EASTERN ST TIONERY SDN. BHD
+accuracy,sroie-318.jpg,True,25,True,1105.0,Shopping,2018-04-13,True,,,real,,,,,1,1068,PROCESSED,GH DISTRIBUTOR & MARKETING SDN BHD,True,25.00,2018-04-13,,GHEE HIANG GH DISTRIBUTOR & MARKETING SDN BHD
+accuracy,sroie-319.jpg,True,41.5,True,3282.0,Food & dining,2018-04-21,True,,,real,,,,,5,3259,PROCESSED,MENTAL INITIAL SDN BHD,True,41.50,2018-04-21,,MENTAI INITIAL SDN BHD
+accuracy,sroie-320.jpg,False,20.4,True,817.0,Food & dining,2013-05-04,False,,,real,,,,,1,775,PROCESSED,Roti the,False,20.40,2018-05-04,,THE ROTI MAN BAKERY
+accuracy,sroie-321.jpg,True,3.7,True,927.0,Groceries,2018-04-20,True,,,real,,,,,1,904,PROCESSED,Maxincone Resources Sdn Bhd,True,3.70,2018-04-20,,HAXINCONE RESOURCES SDN BHD
+accuracy,sroie-322.jpg,False,18.8,True,1114.0,Groceries,2018-04-16,True,,,real,,,,,1,1091,PROCESSED,Maxincome Resources Sdn Bhd,False,18.80,2018-04-16,,FAMILYMART
+accuracy,sroie-323.jpg,True,9.5,True,1107.0,Other,2018-04-19,True,,,real,,,,,1,1065,PROCESSED,R&C VENTURE SDN BHD,True,9.50,2018-04-19,,R&C VENTURE SDN BHD
+accuracy,sroie-324.jpg,False,90,False,2843.0,Health,2017-10-29,True,,,real,,,,,5,2820,PROCESSED,AA PHARMACY,False,28.90,2017-10-29,,SUBANG HEALTHCARE SDN BHD
+accuracy,sroie-325.jpg,False,234.4,True,1221.0,Health,2017-10-13,True,,,real,,,,,1,1179,PROCESSED,D9001-BP009 OSCAR COLOUR LAB,False,234.40,2017-10-13,,DIGI TELECOMMUNICATIONS SDN BHD
+accuracy,sroie-326.jpg,True,28.4,True,945.0,Other,2017-09-25,True,,,real,,,,,1,922,PROCESSED,KHIAM AIK CHAN SDN BHD,True,28.40,2017-09-25,,KHIAM AIK CHAN SDN BHD
+accuracy,sroie-327.jpg,False,10,False,2984.0,Health,2017-08-11,True,,,real,,,,,5,2962,NEEDS_REVIEW,AA PHARMACY,False,78.10,2017-08-11,,SUBANG HEALTHCARE SDN BHD
+accuracy,sroie-328.jpg,True,33.05,True,3100.0,Groceries,2017-07-21,True,,,real,,,,,5,3059,PROCESSED,GARDENIA BAKERIES (KL)SDN BHD,True,33.05,2017-07-21,,GARDENIA BAKERIES (KI ) SDN BHD
+accuracy,sroie-329.jpg,True,53.14,True,2769.0,Groceries,2017-08-30,True,,,real,,,,,5,2727,PROCESSED,GARDENIA BAKERIES (KiL) SDN BHD,True,53.14,2017-08-30,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-330.jpg,True,20.21,True,4116.0,Groceries,2017-07-30,True,,,real,,,,,5,4094,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,20.21,2017-07-30,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-331.jpg,True,94.19,True,2740.0,Groceries,2017-07-27,True,,,real,,,,,5,2717,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,94.19,2017-07-27,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-332.jpg,True,24.83,True,2608.0,Groceries,2017-07-25,True,,,real,,,,,5,2567,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,24.83,2017-07-25,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-333.jpg,True,27.1,True,4298.0,Groceries,2017-07-24,True,,,real,,,,,5,4275,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,27.10,2017-07-24,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-334.jpg,True,36.36,True,3793.0,Groceries,2017-08-25,True,,,real,,,,,5,3771,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,36.36,2017-08-25,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-335.jpg,True,41.44,True,3104.0,Groceries,2017-08-28,True,,,real,,,,,5,3081,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,41.44,2017-08-28,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-336.jpg,True,39.78,True,5518.0,Groceries,2017-08-24,True,,,real,,,,,5,5481,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,39.78,2017-08-24,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-337.jpg,True,73.55,True,4421.0,Groceries,2017-08-21,True,,,real,,,,,5,4398,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,73.55,2017-08-21,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-338.jpg,True,50.6,True,9925.0,Groceries,2017-08-19,True,,,real,,,,,5,9902,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,50.60,2017-08-19,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-339.jpg,True,7.97,True,6375.0,Groceries,2017-08-17,True,,,real,,,,,5,6333,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,7.97,2017-08-17,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-340.jpg,True,68.41,True,2791.0,Groceries,2017-08-06,True,,,real,,,,,5,2767,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,68.41,2017-08-06,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-341.jpg,False,50,False,968.0,Groceries,2017-08-05,True,,,real,,,,,1,926,PROCESSED,MAKASSAR FRESH MARKET S/B,True,40.00,2017-08-05,,MAKASSAR FRESH MARKET S/B
+accuracy,sroie-342.jpg,True,19.31,True,2945.0,Groceries,2017-08-05,True,,,real,,,,,5,2922,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,19.31,2017-08-05,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-343.jpg,False,9,False,5015.0,Groceries,2017-08-03,True,,,real,,,,,5,4992,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,51.88,2017-08-03,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-344.jpg,True,54.15,True,21306.0,Groceries,2017-09-05,True,,,real,,,,,5,21283,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,54.15,2017-09-05,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-345.jpg,True,29.59,True,6079.0,Groceries,2017-09-03,True,,,real,,,,,5,6056,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,29.59,2017-09-03,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-346.jpg,True,26.8,True,3125.0,Groceries,2017-09-30,True,,,real,,,,,5,3102,PROCESSED,GARDENIA BAKERIES (KL.) SDN BHD,True,26.80,2017-09-30,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-347.jpg,False,12.98,False,5702.0,Groceries,2017-09-29,True,,,real,,,,,5,5661,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,1.73,2017-09-29,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-348.jpg,True,48.04,True,3697.0,Groceries,2017-09-28,True,,,real,,,,,5,3674,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,48.04,2017-09-28,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-349.jpg,True,36.55,True,8120.0,Groceries,2017-09-25,True,,,real,,,,,5,8095,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,36.55,2017-09-25,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-350.jpg,True,1007.5,True,2683.0,Other,2017-09-23,True,,,real,,,,,5,2665,PROCESSED,PINGHWAI TRADING SDN BHD,True,1007.50,2017-09-23,,PINGHWAI TRADING SDN BHD
+accuracy,sroie-351.jpg,True,616.6,True,7766.0,Other,2017-09-30,True,,,real,,,,,5,7747,PROCESSED,PINGHWAI TRADING SDN BHD,True,616.60,2017-09-30,,PINGHWAI TRADING SDN BHD
+accuracy,sroie-352.jpg,True,22.58,True,7549.0,Groceries,2017-09-19,True,,,real,,,,,5,7525,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,22.58,2017-09-19,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-353.jpg,True,5.9,True,6069.0,Groceries,2017-09-18,True,,,real,,,,,5,6061,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,5.90,2017-09-18,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-354.jpg,True,40.18,True,9683.0,Groceries,2017-09-17,True,,,real,,,,,5,9642,PROCESSED,GARDENIA BAKERIES (KL) )SDN BHD,True,40.18,2017-09-17,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-355.jpg,False,3.21,True,5271.0,Groceries,2017-09-16,True,,,real,,,,,5,5229,NEEDS_REVIEW,"Shah Alam, Selangor",False,3.21,2017-09-16,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-356.jpg,True,65.5,True,8805.0,Groceries,2017-09-11,True,,,real,,,,,5,8782,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,65.50,2017-09-11,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-357.jpg,True,23.2,True,12515.0,Groceries,2017-09-08,True,,,real,,,,,5,12474,PROCESSED,GARDENIA BAKERIES (KL.) SDN BHD,True,23.20,2017-09-08,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-358.jpg,False,62.6,True,7825.0,Groceries,2017-10-30,True,,,real,,,,,5,7802,PROCESSED,"Shah Alam, Selangor",False,62.60,2017-10-30,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-359.jpg,True,14.79,True,6652.0,Groceries,2017-10-20,True,,,real,,,,,5,6630,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,14.79,2017-10-20,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-360.jpg,True,41.87,True,2823.0,Groceries,2017-10-24,True,,,real,,,,,5,2800,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,41.87,2017-10-24,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-361.jpg,True,31.05,True,5090.0,Groceries,2017-10-18,True,,,real,,,,,5,5051,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,31.05,2017-10-18,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-362.jpg,True,39.87,True,3510.0,Groceries,2017-10-23,True,,,real,,,,,5,3469,PROCESSED,GARDENIA BAKERIES (KL.) SDN BHD,True,39.87,2017-10-23,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-363.jpg,True,58.86,True,2878.0,Groceries,2017-10-29,True,,,real,,,,,5,2855,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,58.86,2017-10-29,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-364.jpg,True,35.01,True,3000.0,Groceries,2017-10-25,True,,,real,,,,,5,2981,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,35.01,2017-10-25,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-365.jpg,True,34.21,True,2674.0,Groceries,2017-10-22,True,,,real,,,,,5,2651,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,34.21,2017-10-22,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-366.jpg,True,68.63,True,4644.0,Groceries,2017-10-19,True,,,real,,,,,5,4623,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,68.63,2017-10-19,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-367.jpg,True,110.46,True,3662.0,Groceries,2017-10-17,True,,,real,,,,,5,3639,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,110.46,2017-10-17,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-368.jpg,True,23.56,True,5297.0,Groceries,2017-10-15,True,,,real,,,,,5,5275,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,23.56,2017-10-15,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-369.jpg,True,33.8,True,16376.0,Groceries,2017-10-14,True,,,real,,,,,5,16353,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,33.80,2017-10-14,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-370.jpg,True,59.54,True,5110.0,Groceries,2017-10-12,True,,,real,,,,,5,5069,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,59.54,2017-10-12,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-371.jpg,True,27.2,True,9674.0,Groceries,2017-10-10,True,,,real,,,,,5,9652,PROCESSED,GARDENIA BAKERIES (KL.) SDN BHD,True,27.20,2017-10-10,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-372.jpg,True,60.24,True,18740.0,Groceries,2017-10-09,True,,,real,,,,,5,18698,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,60.24,2017-10-09,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-373.jpg,True,46.06,True,5695.0,Groceries,2017-10-08,True,,,real,,,,,5,5657,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,46.06,2017-10-08,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-374.jpg,True,51.42,True,4914.0,Groceries,2017-10-05,True,,,real,,,,,5,4891,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,51.42,2017-10-05,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-375.jpg,True,31.32,True,7576.0,Groceries,2017-10-01,True,,,real,,,,,5,7535,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,31.32,2017-10-01,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-376.jpg,True,54.19,True,3633.0,Groceries,2017-10-26,True,,,real,,,,,5,3610,PROCESSED,GARDENIA BAKERIES (KL) SDN BHD,True,54.19,2017-10-26,,GARDENIA BAKERIES (KL) SDN BHD
+accuracy,sroie-377.jpg,True,8.6,True,1089.0,Home & hardware,2016-04-06,True,,,real,,,,,1,1067,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,8.60,2016-04-06,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-378.jpg,True,3.3,True,4081.0,Home & hardware,2016-04-17,True,,,real,,,,,1,4059,PROCESSED,MR. D.I.Y. (KUCHAI) SDN BHD,True,3.30,2016-04-17,,MR. D.I.Y. (KUCHAI) SDN BHD
+accuracy,sroie-379.jpg,True,22.9,True,6446.0,Home & hardware,2016-04-17,True,,,real,,,,,5,6423,PROCESSED,MR. D.I.Y. (KUCHAI) SDN BHD,True,22.90,2016-04-17,,MR. D.I.Y. (KUCHAI) SDN BHD
+accuracy,sroie-380.jpg,True,61.65,True,3694.0,Groceries,2016-12-14,True,,,real,,,,,5,3671,PROCESSED,99 SPEED MART S/B,True,61.65,2016-12-14,,99 SPEED MART S/B
+accuracy,sroie-381.jpg,False,10.56,False,3971.0,Other,2016-12-06,True,,,real,,,,,5,3948,NEEDS_REVIEW,COSWAY (IV) SDN BHD,True,111.90,2016-12-06,,COSWAY (M) SDN BHD
+accuracy,sroie-382.jpg,True,47.7,True,4528.0,Office & stationery,2016-12-15,True,,,real,,,,,5,4505,PROCESSED,HAI-0 RAYA BHD,True,47.70,2016-12-15,,HAI-O RAYA BHD
+accuracy,sroie-383.jpg,False,180.1,True,11577.0,Health,2016-12-13,True,,,real,,,,,5,11554,PROCESSED,"KEPONG,KL",False,180.10,2016-12-13,,GREEN LANE PHARMACY SDN BHD
+accuracy,sroie-384.jpg,True,31.8,True,1104.0,Groceries,2016-11-21,True,,,real,,,,,1,1081,PROCESSED,99 SPEED MART S/B,True,31.80,2016-11-21,,99 SPEED MART S/B
+accuracy,sroie-385.jpg,True,15.9,True,899.0,Groceries,2016-12-05,True,,,real,,,,,1,877,PROCESSED,99 SPEED MART S/B,True,15.90,2016-12-05,,99 SPEED MART S/B
+accuracy,sroie-386.jpg,True,2.56,True,3156.0,Health,2016-02-11,True,,,real,,,,,5,3114,PROCESSED,Guardian Health And Beauty Scin Bhd,True,2.56,2016-02-11,,GUARDIAN HEALTH AND BEAUTY SDN BHD
+accuracy,sroie-387.jpg,True,82.8,True,1020.0,Groceries,2016-02-03,True,,,real,,,,,1,996,PROCESSED,99 SPEED MART S/B,True,82.80,2016-02-03,,99 SPEED MART S/B
+accuracy,sroie-388.jpg,True,96.2,True,5801.0,Food & dining,2016-02-13,True,,,real,,,,,5,5778,PROCESSED,CHEF LEE SDN BHD,True,96.20,2016-02-13,,CHEF LEE SDN BHD
+accuracy,sroie-389.jpg,True,21,True,1223.0,Home & hardware,2016-01-25,True,,,real,,,,,1,1200,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,21.00,2016-01-25,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-390.jpg,True,57.4,True,2692.0,Home & hardware,2016-01-24,True,,,real,,,,,5,2669,PROCESSED,MR. D.I.Y. (KUCHAI) SDN BHD,True,57.40,2016-01-24,,MR. D.I.Y. (KUCHAI) SDN BHD
+accuracy,sroie-391.jpg,False,13.58,False,1073.0,Groceries,2016-01-24,True,,,real,,,,,1,1050,PROCESSED,99 SPEED MART S/B,True,13.60,2016-01-24,,99 SPEED MART S/B
+accuracy,sroie-392.jpg,True,64.7,True,3027.0,Home & hardware,2016-01-08,True,,,real,,,,,5,3005,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,64.70,2016-01-08,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-393.jpg,True,28.2,True,1147.0,Food & dining,2016-07-24,True,,,real,,,,,1,1105,PROCESSED,Golden Arches Restaurants Sdn Bhd,True,28.20,2016-07-24,,GOLDEN ARCHES RESTAURANTS SDN BHD
+accuracy,sroie-394.jpg,False,27.28,False,1202.0,Groceries,2016-06-30,True,,,real,,,,,1,1179,PROCESSED,99 SPEED MART S/B,True,27.30,2016-06-30,,99 SPEED MART S/B
+accuracy,sroie-395.jpg,True,8.35,True,957.0,Groceries,2016-07-31,True,,,real,,,,,1,934,PROCESSED,Yam Fresh,True,8.35,2016-07-31,,YAM FRESH
+accuracy,sroie-396.jpg,True,43.9,True,1087.0,Food & dining,2016-07-06,True,,,real,,,,,1,1063,PROCESSED,FOUR QUARTERS SDN BHD,True,43.90,2016-07-06,,FOUR QUARTERS SDN BHD
+accuracy,sroie-397.jpg,False,2.1,False,3338.0,Shopping,2016-07-29,True,,,real,,,,,5,3315,NEEDS_REVIEW,eCosway.com SON BHD,True,78.30,2016-07-29,,ECOSWAY.COM SDN BHD
+accuracy,sroie-398.jpg,True,2.1,True,1099.0,Groceries,2016-06-04,True,,,real,,,,,1,1076,PROCESSED,99 SPEED MART S/B,True,2.10,2016-06-04,,99 SPEED MART S/B
+accuracy,sroie-399.jpg,True,13.3,True,1104.0,Home & hardware,2016-06-07,True,,,real,,,,,1,1080,PROCESSED,MR. D.I.Y. (KUCHAI) SDN BHD,True,13.30,2016-06-07,,MR. D.I.Y. (KUCHAI) SDN BHD
+accuracy,sroie-400.jpg,True,110,True,2952.0,Other,2016-02-28,True,,,real,,,,,5,2929,PROCESSED,SIN THYE & COMPANY,True,110.00,2016-02-28,,SIN THYE & COMPANY
+accuracy,sroie-401.jpg,True,12.5,True,923.0,Home & hardware,2016-04-22,True,,,real,,,,,1,899,PROCESSED,MR. D.I.Y. (KUCHAI) SDN BHD,True,12.50,2016-04-22,,MR. D.I.Y. (KUCHAI) SDN BHD
+accuracy,sroie-402.jpg,True,51.3,True,1013.0,Shopping,2016-05-01,True,,,real,,,,,1,991,PROCESSED,NADEJE PLATINUM SDN BHD,True,51.30,2016-05-01,,NADEJE PLATINUM SDN BHD
+accuracy,sroie-403.jpg,True,68.1,True,2821.0,Home & hardware,2016-04-22,True,,,real,,,,,5,2799,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,68.10,2016-04-22,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-404.jpg,True,6.85,True,2683.0,Groceries,2016-05-19,True,,,real,,,,,5,2660,PROCESSED,Areka Intertrade Marketing Sdn Bhd,True,6.85,2016-05-19,,ANEKA INTERTRADE MARKETING SDN BHD
+accuracy,sroie-405.jpg,False,177.22,False,3129.0,Groceries,2016-05-11,True,,,real,,,,,5,3106,PROCESSED,99 SPEED MART S/B,True,177.20,2016-05-11,,99 SPEED MART S/B
+accuracy,sroie-406.jpg,True,21.5,True,1226.0,Home & hardware,2016-05-22,True,,,real,,,,,1,1205,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,21.50,2016-05-22,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-407.jpg,False,89,True,1151.0,Office & stationery,2016-05-01,True,,,real,,,,,1,1128,PROCESSED,BD1187 MUHAMMAD SHAFIK,False,89.00,2016-05-01,,BEST DENKI MALAYSIA
+accuracy,sroie-408.jpg,True,9.75,True,4138.0,Food & dining,2016-10-20,True,,,real,,,,,5,4115,PROCESSED,EDEN IMPRESSION SDN BHD,True,9.75,2016-10-20,,EDEN IMPRESSION SDN BHD
+accuracy,sroie-409.jpg,True,87.1,True,5517.0,Food & dining,2018-05-14,True,,,real,,,,,5,5494,PROCESSED,UROKO JAPANESE CUISINE SDN BHD,True,87.10,2018-05-14,,UROKO JAPANESE CUISINE SDN BHD
+accuracy,sroie-410.jpg,False,31.6,True,2746.0,Food & dining,,False,,,real,,,,,5,2705,NEEDS_REVIEW,FACE TO FACE NOODLE HOUSE,True,31.60,2018-05-21,,FTOF NOODLE HOUSE
+accuracy,sroie-411.jpg,False,39.9,True,3306.0,Food & dining,2018-05-24,True,,,real,,,,,1,3285,PROCESSED,EIGHT OUNCE,False,39.90,2018-05-24,,EIGHT OUNCE COFFEE CO.
+accuracy,sroie-412.jpg,True,142,True,2529.0,Home & hardware,2017-11-01,True,,,real,,,,,5,2507,PROCESSED,SKCA HARDWARE & TIMBER SDN. BHD. HT,True,142.00,2017-11-01,,SKCA HARDWARE & TIMBER SDN. BHD.
+accuracy,sroie-413.jpg,True,66,True,2571.0,Other,2017-09-30,True,,,real,,,,,1,2548,PROCESSED,ANN GIAP TRADING SDN BHD SE,True,66.00,2017-09-30,,ANN GIAP TRADING SDN BHD
+accuracy,sroie-414.jpg,True,33.9,True,2012.0,Health,2016-10-03,True,,,real,,,,,1,1970,PROCESSED,Kedai Uhat Dan Runcit CHONG HWA,True,33.90,2016-10-03,,KEDAI UHAT DAN RUNCIT CHONG HWA
+accuracy,sroie-415.jpg,True,14.4,True,1122.0,Groceries,2017-08-14,True,,,real,,,,,1,1103,PROCESSED,99 SPEED MART S/B,True,14.40,2017-08-14,,99 SPEED MART S/B
+accuracy,sroie-416.jpg,True,13.78,True,3322.0,Health,2017-07-07,True,,,real,,,,,5,3280,PROCESSED,Guardian Health And Beauty Sdn Bhd,True,13.78,2017-07-07,,GUARDIAN HEALTH AND BEAUTY SDN BHD
+accuracy,sroie-417.jpg,True,148,True,1121.0,Office & stationery,2017-07-15,True,,,real,,,,,1,1098,PROCESSED,K STATIONERY & OFFICE SUPPLIES,True,148.00,2017-07-15,,K STATIONERY & OFFICE SUPPLIES
+accuracy,sroie-418.jpg,True,31.45,True,2770.0,Office & stationery,2017-12-11,True,,,real,,,,,5,2747,PROCESSED,MPH BOOKSTORES SDN BHD,True,31.45,2017-12-11,,MPH BOOKSTORES SDN BHD
+accuracy,sroie-419.jpg,False,247.55,True,3271.0,Other,2017-09-13,True,,,real,,,,,5,3248,PROCESSED,Becon Enterprise Sdn Bhd,False,247.55,2017-09-13,,BECON STATIONER BECON ENTERPRISE SDN BHD
+accuracy,sroie-420.jpg,False,5,False,2716.0,Health,2018-05-18,True,,,real,,,,,5,2674,PROCESSED,Guardian Health And Beauty San Bhd,True,2.28,2018-05-18,,GUARDIAN HEALTH AND BEAUTY SDN BHD
+accuracy,sroie-421.jpg,False,4.8,False,2644.0,Health,2018-05-24,True,,,real,,,,,5,2621,PROCESSED,Guardian Health And Beauty Ydn Bhd,True,4.50,2018-05-24,,GUARDIAN HEALTH AND BEAUTY SDN BHD
+accuracy,sroie-422.jpg,True,16.3,True,2699.0,Shopping,2018-02-26,True,,,real,,,,,5,2676,PROCESSED,Eco-Shop Marketing Sdn Bhd,True,16.30,2018-02-26,,ECO-SHOP MARKETING SDN BHD
+accuracy,sroie-423.jpg,True,30.7,True,1367.0,Food & dining,2018-05-17,True,,,real,,,,,1,1344,PROCESSED,De Maximum Thai Express Sdn Bhd,True,30.70,2018-05-17,,DE MAXIMUM THAI EXPRESS SDN BHD
+accuracy,sroie-424.jpg,True,8.2,True,1193.0,Food & dining,2018-05-15,True,,,real,,,,,1,1170,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.20,2018-05-15,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-425.jpg,False,70,False,1706.0,Food & dining,2018-05-30,True,,,real,,,,,1,1683,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.70,2018-05-30,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-426.jpg,True,99.9,True,3539.0,Shopping,2018-05-27,True,,,real,,,,,5,3497,PROCESSED,AEON CO. (M) BHD,True,99.90,2018-05-27,,AEON CO. (M) BHD
+accuracy,sroie-427.jpg,True,476.8,True,3853.0,Shopping,2018-05-11,True,,,real,,,,,5,3830,PROCESSED,AEON CO. (M) BHD,True,476.80,2018-05-11,,AEON CO. (M) BHD
+accuracy,sroie-428.jpg,True,8.2,True,1386.0,Food & dining,2018-05-16,True,,,real,,,,,1,1367,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.20,2018-05-16,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-429.jpg,True,8.9,True,1615.0,Food & dining,2018-05-14,True,,,real,,,,,1,1592,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.90,2018-05-14,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-430.jpg,True,8.7,True,1567.0,Food & dining,2018-05-07,True,,,real,,,,,1,1525,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.70,2018-05-07,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-431.jpg,True,10.3,True,1440.0,Food & dining,2018-05-10,True,,,real,,,,,1,1417,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,10.30,2018-05-10,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-432.jpg,True,6.6,True,1158.0,Food & dining,2018-05-09,True,,,real,,,,,1,1135,NEEDS_REVIEW,UNIHAKKA INTERNATIONAL SDN BHD,True,6.60,2018-05-09,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-433.jpg,True,31,True,3120.0,Other,2018-05-11,True,,,real,,,,,5,3097,PROCESSED,THE TOAST F&B SDN BHD,True,31.00,2018-05-11,,THE TOAST F&B SDN BHD
+accuracy,sroie-434.jpg,True,12,True,3019.0,Groceries,2018-05-12,True,,,real,,,,,5,2997,PROCESSED,DE LUXE CIRCLE FRESH MART SDN BHD,True,12.00,2018-05-12,,DE LUXE CIRCLE FRESH MART SDN BHD
+accuracy,sroie-435.jpg,False,75,False,3271.0,Food & dining,2018-05-12,True,,,real,,,,,5,3248,PROCESSED,VERBENA CONFECTIUNERY SDN BHD,True,75.70,2018-05-12,,VERBENA CONFECTIONERY SDN BHD
+accuracy,sroie-436.jpg,True,11.4,True,1530.0,Food & dining,2018-05-22,True,,,real,,,,,1,1489,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,11.40,2018-05-22,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-437.jpg,True,11.1,True,1423.0,Food & dining,2018-05-25,True,,,real,,,,,1,1382,PROCESSED,Gerbang Alaf Restaurants Sdn Bhd,True,11.10,2018-05-25,,GERBANG ALAF RESTAURANTS SDN BHD
+accuracy,sroie-438.jpg,True,8.4,True,1421.0,Food & dining,2018-05-24,True,,,real,,,,,1,1399,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.40,2018-05-24,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-439.jpg,True,10.7,True,1333.0,Food & dining,2018-05-27,True,,,real,,,,,1,1291,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,10.70,2018-05-27,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-440.jpg,False,6.7,True,4073.0,Food & dining,2018-05-08,True,,,real,,,,,5,4050,PROCESSED,TAX INVOI CE,False,6.70,2018-05-08,,DOMINO'S PIZZA TAMAN UNIVERSITI
+accuracy,sroie-441.jpg,True,31.2,True,2552.0,Home & hardware,2018-04-06,True,,,real,,,,,5,2529,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,31.20,2018-04-06,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-442.jpg,True,9,True,2331.0,Home & hardware,2018-04-11,True,,,real,,,,,5,2309,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,9.00,2018-04-11,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-443.jpg,True,15.4,True,2566.0,Home & hardware,2018-04-19,True,,,real,,,,,5,2543,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,15.40,2018-04-19,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-444.jpg,True,34.8,True,2710.0,Home & hardware,2018-04-19,True,,,real,,,,,5,2687,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,34.80,2018-04-19,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-445.jpg,True,34.8,True,2594.0,Home & hardware,2018-04-19,True,serverless/experiments/exp-20261027-211243/accuracy/real/sroie-444.jpg,,real,,,,,5,2572,NEEDS_REVIEW,MR. D.I.Y. (M) SDN BHD,True,34.80,2018-04-19,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-446.jpg,True,48.1,True,2308.0,Home & hardware,2018-04-25,True,,,real,,,,,5,2284,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,48.10,2018-04-25,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-447.jpg,True,2.1,True,1089.0,Home & hardware,2018-04-26,True,,,real,,,,,1,1066,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,2.10,2018-04-26,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-448.jpg,True,38,True,992.0,Home & hardware,2018-04-27,True,,,real,,,,,1,969,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,38.00,2018-04-27,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-449.jpg,True,26.1,True,2806.0,Shopping,2018-04-28,True,,,real,,,,,5,2784,PROCESSED,AEON CO. (M) BHD,True,26.10,2018-04-28,,AEON CO. (M) BHD
+accuracy,sroie-450.jpg,True,53.2,True,2400.0,Home & hardware,2018-04-28,True,,,real,,,,,5,2377,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,53.20,2018-04-28,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-451.jpg,True,5,True,5710.0,Home & hardware,2018-04-30,True,,,real,,,,,5,5686,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,5.00,2018-04-30,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-452.jpg,True,72,True,1229.0,Office & stationery,2017-01-05,True,serverless/experiments/exp-20261027-211243/accuracy/real/sroie-277.jpg,,real,,,,,1,1205,NEEDS_REVIEW,S&Y STATIONERY,True,72.00,2017-01-05,,S&Y STATIONERY
+accuracy,sroie-453.jpg,False,37.44,False,911.0,Groceries,2017-02-07,True,,,real,,,,,1,888,PROCESSED,99 SPEED MART S/B,True,37.45,2017-02-07,,99 SPEED MART S/B
+accuracy,sroie-454.jpg,True,27,True,4549.0,Home & hardware,2018-04-13,True,,,real,,,,,5,4525,PROCESSED,ENW Hardware Centre (M) Sdn. Bhd,True,27.00,2018-04-13,,ENW HARDWARE CENTRE (M) SDN. BHD.
+accuracy,sroie-455.jpg,True,156,True,2641.0,Home & hardware,2018-04-14,True,,,real,,,,,5,2619,PROCESSED,ENW Hardware Centre (M) Sdn. Bhd,True,156.00,2018-04-14,,ENW HARDWARE CENTRE (M) SDN. BHD.
+accuracy,sroie-456.jpg,True,51,True,2845.0,Home & hardware,2018-04-09,True,,,real,,,,,5,2822,PROCESSED,ENW Hardware Centre (M) Sdn. Bhd,True,51.00,2018-04-09,,ENW HARDWARE CENTRE (M) SDN. BHD.
+accuracy,sroie-457.jpg,True,23,True,3189.0,Home & hardware,2018-04-27,True,,,real,,,,,5,3151,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,23.00,2018-04-27,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-458.jpg,True,11.6,True,860.0,Other,2018-05-27,True,,,real,,,,,1,837,PROCESSED,KFA SUPPLY,True,11.60,2018-05-27,,KFA SUPPLY
+accuracy,sroie-459.jpg,True,8.7,True,1318.0,Food & dining,2018-05-13,True,,,real,,,,,1,1299,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.70,2018-05-13,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-460.jpg,True,9.45,True,4970.0,Food & dining,2018-05-11,True,,,real,,,,,5,4929,PROCESSED,Dimiliki oleh T PLUS F&B SDN. BHD,True,9.45,2018-05-11,,DIMILIKI OLEH T PLUS F&B SDN. BHD.
+accuracy,sroie-461.jpg,True,11.2,True,1423.0,Food & dining,2018-05-05,True,,,real,,,,,1,1401,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,11.20,2018-05-05,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-462.jpg,True,164.8,True,7011.0,Food & dining,2018-05-26,True,,,real,,,,,5,6988,PROCESSED,Dimiliki Oleh : Dove Holdings Sdn Bhd,True,164.80,2018-05-26,,DIMILIKI OLEH : DOVE HOLDINGS SDN BHD
+accuracy,sroie-463.jpg,True,28.5,True,3166.0,Food & dining,2018-05-05,True,,,real,,,,,5,3146,PROCESSED,Old Town Kopitiam Sdn Bhd,True,28.50,2018-05-05,,OLD TOWN KOPITIAM SDN BHD
+accuracy,sroie-464.jpg,False,15.15,True,1328.0,Other,2018-05-06,True,,,real,,,,,1,1305,PROCESSED,THE MARCO POLO KITCH,False,15.15,2018-05-06,,THE MARCO POLO KITCH BUKIT INDAH
+accuracy,sroie-465.jpg,True,24.4,True,3399.0,Food & dining,2018-05-07,True,,,real,,,,,5,3357,PROCESSED,WARAKUYA PERMAS CITY SDN BHD,True,24.40,2018-05-07,,WARAKUYA PERMAS CITY SDN BHD
+accuracy,sroie-466.jpg,True,70.3,True,3465.0,Food & dining,2018-05-21,True,,,real,,,,,5,3441,PROCESSED,Gerbang Alaf Restaurants Sdn Bhd,True,70.30,2018-05-21,,GERBANG ALAF RESTAURANTS SDN BHD
+accuracy,sroie-467.jpg,True,25,True,2512.0,Other,2018-05-20,True,,,real,,,,,5,2489,PROCESSED,FARMASI LIGAMAS,True,25.00,2018-05-20,,FARMASI LIGAMAS
+accuracy,sroie-468.jpg,True,41.2,True,1426.0,Other,2018-03-23,True,,,real,,,,,1,1412,PROCESSED,SWC ENTERPRISE SDN BHD,True,41.20,2018-03-23,,SWC ENTERPRISE SDN BHD
+accuracy,sroie-469.jpg,True,35,True,3051.0,Office & stationery,2017-05-22,True,,,real,,,,,5,3029,PROCESSED,SANYU STATIONERY SHOP,True,35.00,2017-05-22,,SANYU STATIONERY SHOP
+accuracy,sroie-470.jpg,True,14.9,True,5124.0,Office & stationery,2017-09-05,True,,,real,,,,,5,5101,PROCESSED,SANYU STATIONERYSHOP,True,14.90,2017-09-05,,SANYU STATIONERY SHOP
+accuracy,sroie-471.jpg,True,8.7,True,5344.0,Office & stationery,2017-04-10,True,,,real,,,,,5,5324,PROCESSED,SANYUSTATIONERY SHOP,True,8.70,2017-04-10,,SANYU STATIONERY SHOP
+accuracy,sroie-472.jpg,True,8.7,True,4559.0,Office & stationery,2017-04-18,True,,,real,,,,,5,4537,PROCESSED,SANYUSTATIONERY: SHOP,True,8.70,2017-04-18,,SANYU STATIONERY SHOP
+accuracy,sroie-473.jpg,True,3,True,13600.0,Office & stationery,2017-04-18,True,,,real,,,,,5,13577,PROCESSED,SANYU STATIONERY SHOP,True,3.00,2017-04-18,,SANYU STATIONERY SHOP
+accuracy,sroie-474.jpg,True,43.7,True,8950.0,Office & stationery,2017-05-07,True,,,real,,,,,5,8927,PROCESSED,SANYUSTATIONERYS SHOP,True,43.7,2017-05-07,,SANYU STATIONERY SHOP
+accuracy,sroie-475.jpg,True,14.9,True,13091.0,Office & stationery,2017-04-04,True,,,real,,,,,5,13072,PROCESSED,SANYU STATIONERY SHOP,True,14.90,2017-04-04,,SANYU STATIONERY SHOP
+accuracy,sroie-476.jpg,True,2,True,6343.0,Office & stationery,2017-07-05,True,,,real,,,,,5,6319,PROCESSED,SANYUSTATIONERY SHOP,True,2.00,2017-07-05,,SANYU STATIONERY SHOP
+accuracy,sroie-477.jpg,True,3,True,4244.0,Office & stationery,2017-08-12,True,,,real,,,,,5,4222,PROCESSED,SANYUSTATIONERY SHOP,True,3.00,2017-08-12,,SANYU STATIONERY SHOP
+accuracy,sroie-478.jpg,False,5.8,True,9659.0,Food & dining,2017-05-24,True,,,real,,,,,5,9636,PROCESSED,TAX INVOICE,False,5.80,2017-05-24,,SANYU STATIONERY SHOP
+accuracy,sroie-479.jpg,True,5.8,True,6762.0,Office & stationery,2017-07-24,True,,,real,,,,,5,6741,PROCESSED,SANYU STATIONERY SHOP,True,5.80,2017-07-24,,SANYU STATIONERY SHOP
+accuracy,sroie-480.jpg,True,36,True,3029.0,Office & stationery,2017-12-14,True,,,real,,,,,5,3011,PROCESSED,SANYU STATIONERY SHOP,True,36.00,2017-12-14,,SANYU STATIONERY SHOP
+accuracy,sroie-481.jpg,True,3.9,True,3310.0,Office & stationery,2017-10-31,True,,,real,,,,,5,3288,PROCESSED,SANYU STATIONERY SHOP,True,3.90,2017-10-31,,SANYU STATIONERY SHOP
+accuracy,sroie-482.jpg,True,33.5,True,23179.0,Office & stationery,2017-11-01,True,,,real,,,,,5,23156,PROCESSED,SANYU STATIONERY SHOP,True,33.50,2017-11-01,,SANYU STATIONERY SHOP
+accuracy,sroie-483.jpg,True,2,True,2821.0,Office & stationery,2017-11-07,True,,,real,,,,,5,2780,PROCESSED,SANYU STATIONERYSHOP,True,2.00,2017-11-07,,SANYU STATIONERY SHOP
+accuracy,sroie-484.jpg,False,9.3,True,3274.0,Food & dining,2017-11-18,True,,,real,,,,,5,3251,PROCESSED,TAX INVOICE,False,9.30,2017-11-18,,SANYU STATIONERY SHOP
+accuracy,sroie-485.jpg,True,12,True,2790.0,Office & stationery,2017-09-20,True,,,real,,,,,5,2767,PROCESSED,SANYU STATIONERYSHOP,True,12.00,2017-09-20,,SANYU STATIONERY SHOP
+accuracy,sroie-486.jpg,True,8.7,True,2690.0,Office & stationery,2017-10-20,True,,,real,,,,,5,2668,PROCESSED,SANYU STATIONERY SHOP,True,8.70,2017-10-20,,SANYU STATIONERY SHOP
+accuracy,sroie-487.jpg,True,12.4,True,2832.0,Office & stationery,2017-09-18,True,,,real,,,,,5,2809,PROCESSED,SANYU STATIONERY SHOP,True,12.40,2017-09-18,,SANYU STATIONERY SHOP
+accuracy,sroie-488.jpg,False,8.7,True,2486.0,Food & dining,2017-09-06,True,,,real,,,,,5,2463,PROCESSED,WARDER,False,8.70,2017-09-06,,SANYU STATIONERY SHOP
+accuracy,sroie-489.jpg,True,8.7,True,4369.0,Office & stationery,2017-10-27,True,,,real,,,,,5,4346,PROCESSED,SANYU STATIONERYSHOP,True,8.70,2017-10-27,,SANYU STATIONERY SHOP
+accuracy,sroie-490.jpg,True,8.7,True,3743.0,Office & stationery,2017-11-06,True,,,real,,,,,5,3720,PROCESSED,SANYU STATIONERY 'SHOP,True,8.70,2017-11-06,,SANYU STATIONERY SHOP
+accuracy,sroie-491.jpg,True,46.9,True,10106.0,Office & stationery,2017-12-28,True,,,real,,,,,5,10083,PROCESSED,SANYUSTATIONERYSHOP,True,46.90,2017-12-28,,SANYU STATIONERY SHOP
+accuracy,sroie-492.jpg,True,10,True,3671.0,Office & stationery,2017-03-21,True,,,real,,,,,5,3649,PROCESSED,SANYU STATIONERYSHOP,True,10.00,2017-03-21,,SANYU STATIONERY SHOP
+accuracy,sroie-493.jpg,True,16.5,True,3566.0,Office & stationery,2017-03-28,True,,,real,,,,,5,2937,PROCESSED,SANYU STATIONERY SHOP,True,16.50,2017-03-28,,SANYU STATIONERY SHOP
+accuracy,sroie-494.jpg,True,35,True,16661.0,Office & stationery,2017-07-18,True,,,real,,,,,5,16639,PROCESSED,SANYUSTATIONERY SHOP,True,35.00,2017-07-18,,SANYU STATIONERY SHOP
+accuracy,sroie-495.jpg,True,8.7,True,2615.0,Office & stationery,2017-07-15,True,,,real,,,,,5,12166,PROCESSED,SANYUSTATIONERY SHOP,True,8.70,2017-07-15,,SANYU STATIONERY SHOP
+accuracy,sroie-496.jpg,True,4.5,True,4866.0,Office & stationery,2017-07-06,True,,,real,,,,,5,4843,PROCESSED,SANYU STATIONERY SHOP,True,4.50,2017-07-06,,SANYU STATIONERY SHOP
+accuracy,sroie-497.jpg,True,8.7,True,10021.0,Office & stationery,2017-07-08,True,,,real,,,,,5,9998,PROCESSED,SANYU STATIONERY SHOP,True,8.70,2017-07-08,,SANYU STATIONERY SHOP
+accuracy,sroie-498.jpg,True,5,True,6084.0,Office & stationery,2017-07-19,True,,,real,,,,,5,6061,PROCESSED,SANYU STATIONERY SHOP,True,5.00,2017-07-19,,SANYU STATIONERY SHOP
+accuracy,sroie-499.jpg,True,5,True,5208.0,Office & stationery,2017-07-19,True,serverless/experiments/exp-20261027-211243/accuracy/real/sroie-498.jpg,,real,,,,,5,5169,NEEDS_REVIEW,SANYUSTATIONERY/SHOP,True,5.00,2017-07-19,,SANYU STATIONERY SHOP
+accuracy,sroie-500.jpg,True,8.7,True,3431.0,Office & stationery,2017-12-02,True,,,real,,,,,5,3408,PROCESSED,SANYUSTATIONERY SHOP,True,8.70,2017-12-02,,SANYU STATIONERY SHOP
+accuracy,sroie-501.jpg,True,9.3,True,5707.0,Office & stationery,2017-11-26,True,,,real,,,,,5,5685,PROCESSED,SANYUS STATIONERY SHOP,True,9.30,2017-11-26,,SANYU STATIONERY SHOP
+accuracy,sroie-502.jpg,False,33.6,True,7443.0,Office & stationery,2017-11-29,True,,,real,,,,,5,7420,PROCESSED,Coun fee,False,33.60,2017-11-29,,SANYU STATIONERY SHOP
+accuracy,sroie-503.jpg,True,3.9,True,4442.0,Office & stationery,2017-12-04,True,,,real,,,,,5,4425,PROCESSED,SANYU STATIONERY SHOP,True,3.90,2017-12-04,,SANYU STATIONERY SHOP
+accuracy,sroie-504.jpg,True,7,True,6540.0,Office & stationery,2017-12-11,True,,,real,,,,,5,6498,PROCESSED,SANYUSTATIONERY SHOP,True,7.00,2017-12-11,,SANYU STATIONERY SHOP
+accuracy,sroie-505.jpg,False,None,False,2888.0,Home & hardware,2017-07-13,True,,,real,,,,,5,2850,NEEDS_REVIEW,AIK HUAT HARDWARE ENTERPRISE (SETIA,True,4.00,2017-07-13,,AIK HUAT HARDWARE ENTERPRISE (SETIA ALAM) SDN BHD
+accuracy,sroie-506.jpg,True,14,True,4298.0,Home & hardware,2017-09-28,True,,,real,,,,,5,4275,PROCESSED,AIK HUAT HARDWARE ENTERPRISE (SETTA,True,14.00,2017-09-28,,AIK HUAT HARDWARE ENTERPRISE (SETIA ALAM) SDN BHD
+accuracy,sroie-507.jpg,False,None,False,6981.0,Home & hardware,2017-03-30,True,,,real,,,,,5,6940,NEEDS_REVIEW,AIK HUAT HARDWARE ENTERPRISE (SETIA,True,6.00,2017-03-30,,AIK HUAT HARDWARE ENTERPRISE (SETIA ALAM) SDN BHD
+accuracy,sroie-508.jpg,False,None,False,2549.0,Home & hardware,2017-11-15,True,,,real,,,,,5,2525,NEEDS_REVIEW,ENTERPRISE (SETIA AIK HUAT HARDWARE,False,16.00,2017-11-15,,AIK HUAT HARDWARE ENTERPRISE (SETIA ALAM) SDN BHD
+accuracy,sroie-509.jpg,False,None,False,19389.0,Home & hardware,2017-09-12,True,,,real,,,,,5,19349,NEEDS_REVIEW,AIK HUAT HARDWARE ENTERPRISE (SETIA,True,30.00,2017-09-12,,AIK HUAT HARDWARE ENTERPRISE (SETIA ALAM) SDN BHD
+accuracy,sroie-510.jpg,True,24,True,2926.0,Home & hardware,2017-12-13,True,,,real,,,,,5,2903,PROCESSED,AIK HUAT HARDWARE ENTERPRISE (SETIA,True,24.00,2017-12-13,,AIK HUAT HARDWARE ENTERPRISE (SETIA ALAM) SDN BHD
+accuracy,sroie-511.jpg,False,None,False,8649.0,Home & hardware,2017-12-29,True,,,real,,,,,5,7525,NEEDS_REVIEW,AIK HUAT HARDWARE ENTERPRISE ( SETIA,True,7.00,2017-12-29,,AIK HUAT HARDWARE ENTERPRISE (SETIA ALAM) SDN BHD
+accuracy,sroie-512.jpg,False,None,False,4627.0,Home & hardware,2017-09-15,True,,,real,,,,,5,4592,NEEDS_REVIEW,AIK HUAT HARDWARE ENTERPRISE (SETIA,True,24.00,2017-09-15,,AIK HUAT HARDWARE ENTERPRISE (SETIA ALAM) SDN BHD
+accuracy,sroie-513.jpg,False,None,False,8436.0,Home & hardware,2017-05-10,True,,,real,,,,,5,8397,NEEDS_REVIEW,ENTERPRISE (SETIA AIK HUAT HARDWARE,False,16.00,2017-05-10,,AIK HUAT HARDWARE ENTERPRISE (SETIA ALAM) SDN BHD
+accuracy,sroie-514.jpg,False,0.14,False,5426.0,Home & hardware,2017-12-25,True,,,real,,,,,5,5403,NEEDS_REVIEW,AIK HUAT HARDWARE ENTERPRISE (SETTA,True,2.50,2017-12-25,,AIK HUAT HARDWARE ENTERPRISE (SETIA ALAM) SDN BHD
+accuracy,sroie-515.jpg,False,None,False,9326.0,Other,2017-09-04,True,,,real,,,,,5,9288,NEEDS_REVIEW,AIK HUAT HARDWARD ENTERPRISE (SETIA,True,28.00,2017-09-04,,AIK HUAT HARDWARE ENTERPRISE (SETIA ALAM) SDN BHD
+accuracy,sroie-516.jpg,False,None,False,5793.0,Other,2018-05-24,True,,,real,,,,,5,5753,NEEDS_REVIEW,FY EAGLE ENTERPRISE,True,52.00,2018-05-24,,FY EAGLE ENTERPRISE
+accuracy,sroie-517.jpg,False,6,True,1171.0,Shopping,2018-06-28,True,,,real,,,,,1,1156,PROCESSED,TQ FOR SHOPPING WITH myNEWS.com,False,6.00,2018-06-28,,MYNEWS RETAIL SB
+accuracy,sroie-518.jpg,True,30,True,13989.0,Other,2018-06-18,True,,,real,,,,,5,13948,PROCESSED,RAPID RAIL SUN BHD,True,30.00,2018-06-18,,RAPID RAIL SDN BHD
+accuracy,sroie-519.jpg,False,50,True,4596.0,Travel & transport,2018-06-30,True,,,real,,,,,1,4573,PROCESSED,BHPetrol Permas Jaya 2,False,50.00,2018-06-30,,ESJAY FUEL ENTERPRISE
+accuracy,sroie-520.jpg,True,7.7,True,1376.0,Food & dining,2018-06-04,True,,,real,,,,,1,1353,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,7.70,2018-06-04,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-521.jpg,True,21.85,True,3370.0,Food & dining,2018-06-04,True,,,real,,,,,5,3347,PROCESSED,MOONLIGHT CAKE HOUSE SDN BHD,True,21.85,2018-06-04,,MOONLIGHT CAKE HOUSE SDN BHD
+accuracy,sroie-522.jpg,True,7.7,True,1330.0,Food & dining,2018-06-09,True,,,real,,,,,1,1308,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,7.70,2018-06-09,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-523.jpg,True,8.5,True,1306.0,Food & dining,2018-06-10,True,,,real,,,,,1,1284,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.50,2018-06-10,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-524.jpg,True,15.4,True,3063.0,Food & dining,2018-06-09,True,,,real,,,,,5,3021,PROCESSED,MOONLIGHT CAKE HOUSE SDN BHD 80Z7Z5-U,True,15.40,2018-06-09,,MOONLIGHT CAKE HOUSE SDN BHD
+accuracy,sroie-525.jpg,True,127.35,True,3945.0,Shopping,2018-06-10,True,,,real,,,,,5,3903,PROCESSED,AEON CO. (M) BHD,True,127.35,2018-06-10,,AEON CO. (M) BHD
+accuracy,sroie-526.jpg,True,7.7,True,1495.0,Food & dining,2018-06-12,True,,,real,,,,,1,1470,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,7.70,2018-06-12,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-527.jpg,True,6,True,1399.0,Food & dining,2018-06-11,True,,,real,,,,,1,1355,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,6.00,2018-06-11,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-528.jpg,True,25.85,True,3115.0,Groceries,2018-06-02,True,,,real,,,,,5,3093,PROCESSED,DE LUXE CIRCLE FRESH MART SDN BHD,True,25.85,2018-06-02,,DE LUXE CIRCLE FRESH MART SDN BHD
+accuracy,sroie-529.jpg,False,10.3,True,2979.0,Food & dining,2018-01-06,True,,,real,,,,,5,2956,PROCESSED,LEMON TREE RESTAURANT,False,10.30,2018-01-06,,LEMON TREE RESTAURANT JTJ FOODS SDN BHD
+accuracy,sroie-530.jpg,True,14.2,True,3345.0,Other,2018-06-15,True,,,real,,,,,5,3322,PROCESSED,PASARAYA CINWA SDN BHD,True,14.20,2018-06-15,,PASARAYA CINWA SDN BHD
+accuracy,sroie-531.jpg,True,28.15,True,3470.0,Food & dining,2018-06-16,True,,,real,,,,,5,3447,PROCESSED,THE TOAST F&B SDN BHD,True,28.15,2018-06-16,,THE TOAST F&B SDN BHD
+accuracy,sroie-532.jpg,True,43.4,True,1571.0,Other,2018-06-01,True,,,real,,,,,1,1549,PROCESSED,KEDAI RUNCIT ZBH,True,43.40,2018-06-01,,KEDAI RUNCIT ZBH
+accuracy,sroie-533.jpg,True,38.6,True,3254.0,Shopping,2018-06-12,True,,,real,,,,,5,3231,PROCESSED,AEON CO. (M) BHD,True,38.60,2018-06-12,,AEON CO. (M) BHD
+accuracy,sroie-534.jpg,True,473.3,True,3829.0,Food & dining,2018-06-13,True,,,real,,,,,5,3788,PROCESSED,GRANDMA HOMES RESTAURANT,True,473.30,2018-06-13,,GRANDMA HOMES RESTAURANT
+accuracy,sroie-535.jpg,True,7.7,True,1188.0,Food & dining,2018-06-16,True,,,real,,,,,1,1165,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,7.70,2018-06-16,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-536.jpg,True,8.2,True,1461.0,Food & dining,2018-06-18,True,,,real,,,,,1,1419,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.20,2018-06-18,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-537.jpg,True,8.2,True,1182.0,Food & dining,2018-06-20,True,,,real,,,,,1,1159,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.20,2018-06-20,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-538.jpg,True,14.2,True,3100.0,Food & dining,2018-06-20,True,,,real,,,,,5,3078,PROCESSED,MOONLIGHT CAKE HOUSE SDN BHD,True,14.20,2018-06-20,,MOONLIGHT CAKE HOUSE SDN BHD
+accuracy,sroie-539.jpg,True,12.8,True,1270.0,Food & dining,2018-06-24,True,,,real,,,,,1,1247,PROCESSED,Gerbang Alaf Restaurants Sdn Bhd,True,12.80,2018-06-24,,GERBANG ALAF RESTAURANTS SDN BHD
+accuracy,sroie-540.jpg,True,8.5,True,1397.0,Food & dining,2018-06-22,True,,,real,,,,,1,1355,PROCESSED,UNIHAKKA INTERNATIONAL SDN BHD,True,8.50,2018-06-22,,UNIHAKKA INTERNATIONAL SDN BHD
+accuracy,sroie-541.jpg,True,12,True,3063.0,Food & dining,2018-06-10,True,,,real,,,,,5,3041,PROCESSED,IDEAL MENU GROUP SDN BHD,True,12.00,2018-06-10,,IDEAL MENU GROUP SDN BHD
+accuracy,sroie-542.jpg,True,26.5,True,3263.0,Food & dining,2018-06-17,True,,,real,,,,,5,3221,PROCESSED,LAVENDER CONFECTIONERY & BAKERY S/B,True,26.50,2018-06-17,,LAVENDER CONFECTIONERY & BAKERY S/B
+accuracy,sroie-543.jpg,False,None,False,1479.0,Home & hardware,2018-06-23,True,,,real,,,,,1,1457,NEEDS_REVIEW,PASIR EMAS HARDWARE SDN BHD,True,36.00,2018-06-23,,PASIR EMAS HARDWARE SDN BHD
+accuracy,sroie-544.jpg,True,11.6,True,2287.0,Food & dining,2018-04-03,True,,,real,,,,,1,1415,NEEDS_REVIEW,RESTORAN DE COFFEE O,True,11.60,2018-04-03,,RESTORAN DE COFFEE O
+accuracy,sroie-545.jpg,True,7.8,True,2129.0,Other,2018-04-04,True,,,real,,,,,1,2107,PROCESSED,RESTORAN WAN SHENG,True,7.80,2018-04-04,,RESTORAN WAN SHENG
+accuracy,sroie-546.jpg,True,8.6,True,1277.0,Food & dining,2018-04-09,True,,,real,,,,,1,1239,PROCESSED,RESTORAN WAN SHENG,True,8.60,2018-04-09,,RESTORAN WAN SHENG
+accuracy,sroie-547.jpg,True,4.8,True,1220.0,Other,2018-05-26,True,,,real,,,,,1,1178,PROCESSED,RESTORAN WAN SHENG,True,4.80,2018-05-26,,RESTORAN WAN SHENG
+accuracy,sroie-548.jpg,True,19.4,True,965.0,Other,2018-05-05,True,,,real,,,,,1,943,PROCESSED,RESTORAN WAN SHENG,True,19.40,2018-05-05,,RESTORAN WAN SHENG
+accuracy,sroie-549.jpg,True,6.7,True,1105.0,Food & dining,2018-04-02,True,,,real,,,,,1,1082,PROCESSED,RESTORAN WAN SHENG,True,6.70,2018-04-02,,RESTORAN WAN SHENG
+accuracy,sroie-550.jpg,True,18.9,True,999.0,Food & dining,2018-05-11,True,,,real,,,,,1,977,PROCESSED,Gerbang Alaf Restaurants Sdn Bhd,True,18.90,2018-05-11,,GERBANG ALAF RESTAURANTS SDN BHD
+accuracy,sroie-551.jpg,True,2.4,True,1041.0,Other,2018-05-06,True,,,real,,,,,1,1019,PROCESSED,RESTORAN WAN SHENG,True,2.40,2018-05-06,,RESTORAN WAN SHENG
+accuracy,sroie-552.jpg,True,5,True,1049.0,Other,2018-05-06,True,,,real,,,,,1,1007,PROCESSED,RESTORAN WAN SHENG,True,5.00,2018-05-06,,RESTORAN WAN SHENG
+accuracy,sroie-553.jpg,True,2.5,True,1095.0,Food & dining,2018-05-03,True,,,real,,,,,1,1075,PROCESSED,SANG KEE CHERAS RESTAURANT,True,2.50,2018-05-03,,SANG KEE CHERAS RESTAURANT
+accuracy,sroie-554.jpg,True,2.7,True,1304.0,Home & hardware,2018-05-28,True,,,real,,,,,1,1281,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,2.70,2018-05-28,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-555.jpg,True,69.2,True,2483.0,Home & hardware,2018-05-03,True,,,real,,,,,5,2460,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,69.20,2018-05-03,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-556.jpg,True,4.2,True,1315.0,Other,2018-06-30,True,,,real,,,,,1,1280,PROCESSED,RESTORAN WAN SHENG,True,4.20,2018-06-30,,RESTORAN WAN SHENG
+accuracy,sroie-557.jpg,True,4.6,True,1294.0,Other,2018-06-23,True,,,real,,,,,1,1258,PROCESSED,RESTORAN WAN SHENG,True,4.60,2018-06-23,,RESTORAN WAN SHENG
+accuracy,sroie-558.jpg,True,6.5,True,1339.0,Other,2018-06-18,True,,,real,,,,,1,1297,PROCESSED,RESTORAN WAN SHENG,True,6.50,2018-06-18,,RESTORAN WAN SHENG
+accuracy,sroie-559.jpg,True,4.6,True,1226.0,Other,2018-06-12,True,,,real,,,,,1,1203,PROCESSED,RESTORAN WAN SHENG,True,4.60,2018-06-12,,RESTORAN WAN SHENG
+accuracy,sroie-560.jpg,True,4.8,True,1241.0,Other,2018-06-09,True,,,real,,,,,1,1222,PROCESSED,RESTORAN WAN SHENG,True,4.80,2018-06-09,,RESTORAN WAN SHENG
+accuracy,sroie-561.jpg,False,17.2,False,2900.0,Other,2018-06-15,True,,,real,,,,,5,2859,PROCESSED,PappaR Rich BMC,True,17.22,2018-06-15,,PAPPARICH BMC
+accuracy,sroie-562.jpg,True,15,True,1414.0,Food & dining,2018-06-11,True,,,real,,,,,1,1372,PROCESSED,10 GRAM Gourmet Sbn Bhd,True,15.00,2018-06-11,,10 GRAM GOURMET SBN BHD
+accuracy,sroie-563.jpg,True,50,True,1111.0,Travel & transport,2018-06-20,True,,,real,,,,,1,1088,PROCESSED,LEONG HENG SHELL SERVICE STATION,True,50.00,2018-06-20,,LEONG HENG SHELL SERVICE STATION
+accuracy,sroie-564.jpg,True,100,True,1291.0,Travel & transport,2018-06-26,True,,,real,,,,,1,1256,PROCESSED,PROSPER NIAGA,True,100.00,2018-06-26,,PROSPER NIAGA
+accuracy,sroie-565.jpg,True,4.8,True,1096.0,Other,2018-06-01,True,,,real,,,,,1,1073,PROCESSED,RESTORAN WAN SHENG,True,4.80,2018-06-01,,RESTORAN WAN SHENG
+accuracy,sroie-566.jpg,True,6.7,True,1167.0,Other,2018-06-04,True,,,real,,,,,1,1130,NEEDS_REVIEW,RESTORAN WAN SHENG,True,6.70,2018-06-04,,RESTORAN WAN SHENG
+accuracy,sroie-567.jpg,True,4.6,True,982.0,Other,2018-06-26,True,,,real,,,,,1,959,PROCESSED,RESTORAN WAN SHENG,True,4.60,2018-06-26,,RESTORAN WAN SHENG
+accuracy,sroie-568.jpg,True,4.1,True,1255.0,Other,2018-06-26,True,,,real,,,,,1,1213,PROCESSED,RESTORAN WAN SHENG,True,4.10,2018-06-26,,RESTORAN WAN SHENG
+accuracy,sroie-569.jpg,True,7.8,True,1211.0,Other,2018-06-11,True,,,real,,,,,1,1188,PROCESSED,RESTORAN WAN SHENG,True,7.80,2018-06-11,,RESTORAN WAN SHENG
+accuracy,sroie-570.jpg,True,9.6,True,1177.0,Food & dining,2018-06-20,True,,,real,,,,,1,1136,PROCESSED,RESTORAN WAN SHENG,True,9.60,2018-06-20,,RESTORAN WAN SHENG
+accuracy,sroie-571.jpg,True,68,True,3309.0,Food & dining,2018-06-04,True,,,real,,,,,5,3267,PROCESSED,MIZU MENTAI SDN. BHD,True,68.00,2018-06-04,,MIZU MENTAI SDN. BHD.
+accuracy,sroie-572.jpg,True,8.95,True,1129.0,Home & hardware,2018-06-15,True,,,real,,,,,1,1087,PROCESSED,MR. D.I.Y. (KUCHAI) SDN BHD,True,8.95,2018-06-15,,MR. D.I.Y. (KUCHAI) SDN BHD
+accuracy,sroie-573.jpg,True,27.25,True,2897.0,Home & hardware,2018-06-30,True,,,real,,,,,5,2874,PROCESSED,MR. D.I.Y. (KUCHAI) SDN BHD,True,27.25,2018-06-30,,MR. D.I.Y. (KUCHAI) SDN BHD
+accuracy,sroie-574.jpg,True,23.6,True,1048.0,Groceries,2018-05-02,True,,,real,,,,,1,1025,PROCESSED,99 SPEED MART 5/8,True,23.60,2018-05-02,,99 SPEED MART S/B
+accuracy,sroie-575.jpg,True,137.15,True,933.0,Groceries,2018-05-05,True,,,real,,,,,1,910,PROCESSED,99 SPEED MART 5/B,True,137.15,2018-05-05,,99 SPEED MART S/B
+accuracy,sroie-576.jpg,True,22.9,True,1291.0,Groceries,2018-05-13,True,,,real,,,,,1,1268,PROCESSED,99 SPEED MART S/B,True,22.90,2018-05-13,,99 SPEED MART S/B
+accuracy,sroie-577.jpg,True,23.4,True,2189.0,Groceries,2018-06-04,True,,,real,,,,,1,2166,PROCESSED,99 SPEED MART S/B,True,23.40,2018-06-04,,99 SPEED MART S/B
+accuracy,sroie-578.jpg,True,20.9,True,1272.0,Groceries,2018-06-04,True,,,real,,,,,1,1248,PROCESSED,99 SPEED MART S/B,True,20.90,2018-06-04,,99 SPEED MART S/B
+accuracy,sroie-579.jpg,True,11.25,True,1782.0,Home & hardware,2018-06-11,True,,,real,,,,,1,1759,PROCESSED,MR. D.I.Y. (KUCHAI) SDN BHD,True,11.25,2018-06-11,,MR. D.I.Y. (KUCHAI) SDN BHD
+accuracy,sroie-580.jpg,True,17.45,True,2688.0,Home & hardware,2018-06-25,True,,,real,,,,,1,2665,PROCESSED,MR. D.I.Y. (KUCHAI) SDN BHD,True,17.45,2018-06-25,,MR. D.I.Y. (KUCHAI) SDN BHD
+accuracy,sroie-581.jpg,True,100,True,1118.0,Travel & transport,2018-06-03,True,,,real,,,,,1,1076,PROCESSED,FILL IN ENTERPRISE,True,100.00,2018-06-03,,FILL IN ENTERPRISE
+accuracy,sroie-582.jpg,True,19,True,3127.0,Home & hardware,2018-05-04,True,,,real,,,,,5,3104,PROCESSED,с W КНОО HARDWARE SDN BHD,True,19.00,2018-05-04,,C W KHOO HARDWARE SDN BHD
+accuracy,sroie-583.jpg,True,5,True,1048.0,Travel & transport,2018-05-30,True,,,real,,,,,1,1025,PROCESSED,Dian Realties Sdn Bhd,True,5.00,2018-05-30,,DION REALTIES SDN BHD
+accuracy,sroie-584.jpg,False,10,False,10075.0,Travel & transport,2018-05-28,True,,,real,,,,,1,9280,PROCESSED,Dion Realties Sdn Bhd,True,5.00,2018-05-28,,DION REALTIES SDN BHD
+accuracy,sroie-585.jpg,True,1.5,True,1069.0,Travel & transport,2018-06-27,True,,,real,,,,,1,1042,PROCESSED,Sanjung Realiti Sdn. Bhd,True,1.50,2018-06-27,,SANJUNG REALITI SDN. BHD.
+accuracy,sroie-586.jpg,True,48,True,1737.0,Home & hardware,2018-06-11,True,,,real,,,,,1,1699,PROCESSED,с W КНОО HARDWARE SDN BHD,True,48.00,2018-06-11,,C W KHOO HARDWARE SDN BHD
+accuracy,sroie-587.jpg,False,10,False,1197.0,Travel & transport,2018-06-25,True,,,real,,,,,1,1174,PROCESSED,Dion Realties Sdn Bhd,True,5.00,2018-06-25,,DION REALTIES SDN BHD
+accuracy,sroie-588.jpg,True,8.1,True,5654.0,Home & hardware,2018-06-17,True,,,real,,,,,5,5632,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,8.10,2018-06-17,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-589.jpg,False,7.7,True,3706.0,Shopping,2018-06-29,True,,,real,,,,,5,3685,PROCESSED,TQ FOR SHOPPING WITH myNEWS.com,False,7.70,2018-06-29,,MYNEWS RETAIL SB
+accuracy,sroie-590.jpg,True,28.3,True,1283.0,Food & dining,2018-06-17,True,,,real,,,,,1,1261,PROCESSED,OGN GROUP SDN BHD,True,28.30,2018-06-17,,OGN GROUP SDN BHD
+accuracy,sroie-591.jpg,True,52.4,True,6140.0,Groceries,2018-06-24,True,,,real,"PROBLEM: taxable 74.66 + GST 52.40 = 127.06, but the total is 52.40",,,,5,6118,NEEDS_REVIEW,OGN GROUP SDN BHD,True,52.40,2018-06-24,,OGN GROUP SDN BHD
+accuracy,sroie-592.jpg,True,93,True,1895.0,Food & dining,2018-04-30,True,,,real,,,,,1,1853,PROCESSED,PANDAH INDAH PULAU KETAM RESTAURANT,True,93.00,2018-04-30,,PANDAH INDAH PULAU KETAM RESTAURANT
+accuracy,sroie-593.jpg,False,27,True,1786.0,Food & dining,2018-05-11,True,,,real,,,,,1,1763,PROCESSED,RESTAURANT JIAWEI,False,27.00,2018-05-11,,RESTAURANT JIAWEI JIAWEI HOUSE
+accuracy,sroie-594.jpg,True,19.9,True,1882.0,Groceries,2018-05-03,True,,,real,,,,,1,1859,PROCESSED,99 SPEED MART S/B,True,19.90,2018-05-03,,99 SPEED MART S/B
+accuracy,sroie-595.jpg,True,65.7,True,5704.0,Food & dining,2018-04-28,True,,,real,,,,,5,5682,PROCESSED,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD,True,65.70,2018-04-28,,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD
+accuracy,sroie-596.jpg,True,52,True,4407.0,Food & dining,2018-06-05,True,,,real,,,,,5,4385,PROCESSED,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD,True,52.00,2018-06-05,,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD
+accuracy,sroie-597.jpg,True,71,True,6353.0,Food & dining,2018-05-22,True,,,real,,,,,5,6330,PROCESSED,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD,True,71.00,2018-05-22,,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD
+accuracy,sroie-598.jpg,True,112.35,True,6159.0,Food & dining,2018-05-28,True,,,real,,,,,5,6136,PROCESSED,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD,True,112.35,2018-05-28,,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD
+accuracy,sroie-599.jpg,True,42.4,True,9777.0,Food & dining,2018-05-19,True,,,real,,,,,5,9756,PROCESSED,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD,True,42.40,2018-05-19,,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD
+accuracy,sroie-600.jpg,True,4.7,True,25212.0,Shopping,2018-05-09,True,,,real,,,,,5,25188,PROCESSED,MEGAH RETAIL SDN BHD,True,4.70,2018-05-09,,MEGAH RETAIL SDN BHD
+accuracy,sroie-601.jpg,True,27.9,True,8115.0,Groceries,2018-01-28,True,,,real,,,,,1,8091,PROCESSED,99 SPEED MART S/B,True,27.90,2018-01-28,,99 SPEED MART S/B
+accuracy,sroie-602.jpg,True,87.45,True,3125.0,Other,2018-04-20,True,,,real,,,,,5,3102,PROCESSED,KEDAI PAPAN YEW CHUAN,True,87.45,2018-04-20,,KEDAI PAPAN YEW CHUAN
+accuracy,sroie-603.jpg,True,190.8,True,3295.0,Other,2018-04-17,True,,,real,,,,,5,3272,PROCESSED,KEDAI PAPAN YEW CHUAN,True,190.80,2018-04-17,,KEDAI PAPAN YEW CHUAN
+accuracy,sroie-604.jpg,True,121.9,True,3534.0,Other,2018-05-26,True,,,real,,,,,5,3511,PROCESSED,KEDAI PAPAN YEW CHUAN,True,121.90,2018-05-26,,KEDAI PAPAN YEW CHUAN
+accuracy,sroie-605.jpg,True,178.08,True,3193.0,Other,2018-05-03,True,,,real,,,,,5,3171,PROCESSED,KEDAI PAPAN YEW CHUAN,True,178.08,2018-05-03,,KEDAI PAPAN YEW CHUAN
+accuracy,sroie-606.jpg,True,361.46,True,3354.0,Other,2018-05-02,True,,,real,,,,,5,3330,PROCESSED,KEDAI PAPAN YEW CHUAN,True,361.46,2018-05-02,,KEDAI PAPAN YEW CHUAN
+accuracy,sroie-607.jpg,True,404.39,True,3273.0,Other,2018-04-30,True,,,real,,,,,5,3250,PROCESSED,KEDAI PAPAN YEW CHUAN,True,404.39,2018-04-30,,KEDAI PAPAN YEW CHUAN
+accuracy,sroie-608.jpg,True,162.71,True,16036.0,Other,2018-05-23,True,,,real,,,,,5,15995,PROCESSED,KEDAI PAPAN YEW CHUAN,True,162.71,2018-05-23,,KEDAI PAPAN YEW CHUAN
+accuracy,sroie-609.jpg,True,68.9,True,4767.0,Other,2018-05-11,True,,,real,,,,,5,4744,PROCESSED,KEDAI PAPAN YEW CHUAN,True,68.90,2018-05-11,,KEDAI PAPAN YEW CHUAN
+accuracy,sroie-610.jpg,True,85.2,True,4968.0,Shopping,2018-06-20,True,,,real,,,,,5,4945,PROCESSED,GH DISTRIBUTOR & MARKETING SDN BHD,True,85.20,2018-06-20,,GH DISTRIBUTOR & MARKETING SDN BHD
+accuracy,sroie-611.jpg,True,136,True,2846.0,Home & hardware,2018-06-27,True,,,real,,,,,5,2822,PROCESSED,AMTECH ELECTRICAL SUPPLIES,True,136.00,2018-06-27,,AMTECH ELECTRICAL SUPPLIES
+accuracy,sroie-612.jpg,True,489.3,True,1248.0,Other,2018-06-09,True,,,real,,,,,1,1211,PROCESSED,KT WONG TRADING,True,489.30,2018-06-09,,KT WONG TRADING
+accuracy,sroie-613.jpg,True,7.3,True,12808.0,Office & stationery,2018-04-03,True,,,real,,,,,5,12789,PROCESSED,POPULAR BOOK CO. (M) SDN BHD,True,7.30,2018-04-03,,POPULAR BOOK CO. (M) SDN BHD
+accuracy,sroie-614.jpg,True,152,True,3156.0,Other,2018-06-27,True,,,real,,,,,1,3134,PROCESSED,OCEAN LC PACKAGING ENTERPRISE,True,152.00,2018-06-27,,OCEAN LC PACKAGING ENTERPRISE
+accuracy,sroie-615.jpg,True,7.15,True,2708.0,Home & hardware,2018-07-15,True,,,real,,,,,1,1512,PROCESSED,MR. D.I.Y. (M) SDN BHD,True,7.15,2018-07-15,,MR. D.I.Y. (M) SDN BHD
+accuracy,sroie-616.jpg,False,30.45,True,17644.0,Other,2018-07-03,True,,,real,,,,,5,17603,PROCESSED,(SEMENYIH) SDN BHD,False,30.45,2018-07-03,,PASAR RAYA MEGA MAJU (SEMENYIH) SDN BHD
+accuracy,sroie-617.jpg,True,59,True,14190.0,Food & dining,2018-06-14,True,,,real,,,,,5,14169,PROCESSED,ONE THREE SEAFOOD RESTAURANT SDN BHD,True,59.00,2018-06-14,,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD
+accuracy,sroie-618.jpg,True,35,True,2093.0,Food & dining,2018-06-13,True,,,real,,,,,1,2071,PROCESSED,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD,True,35.00,2018-06-13,,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD
+accuracy,sroie-619.jpg,True,87.45,True,19557.0,Food & dining,2018-05-30,True,,,real,,,,,5,18539,PROCESSED,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD,True,87.45,2018-05-30,,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD
+accuracy,sroie-620.jpg,True,58,True,6702.0,Food & dining,2018-06-17,True,,,real,,,,,5,6679,PROCESSED,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD,True,58.00,2018-06-17,,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD
+accuracy,sroie-621.jpg,True,148.5,True,2505.0,Food & dining,2018-06-15,True,,,real,,,,,1,2463,PROCESSED,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD,True,148.50,2018-06-15,,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD
+accuracy,sroie-622.jpg,True,38,True,14878.0,Food & dining,2018-06-20,True,,,real,,,,,1,14856,PROCESSED,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD,True,38.00,2018-06-20,,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD
+accuracy,sroie-623.jpg,True,179.5,True,8863.0,Food & dining,2018-06-23,True,,,real,,,,,5,7886,PROCESSED,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD,True,179.50,2018-06-23,,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD
+accuracy,sroie-624.jpg,True,102,True,1332.0,Other,2018-03-20,True,serverless/experiments/exp-20261027-211243/accuracy/real/sroie-074.jpg,,real,,,,,1,1310,NEEDS_REVIEW,GL HANDICRAFT & TAILORING,True,102.00,2018-03-20,,GL HANDICRAFT & TAIL ORING
+accuracy,sroie-625.jpg,True,12,True,3398.0,Office & stationery,2018-03-27,True,serverless/experiments/exp-20261027-211243/accuracy/real/sroie-076.jpg,,real,,,,,1,2406,NEEDS_REVIEW,UAN HING STATIONERY SDN BHD,True,12.00,2018-03-27,,LIAN HING STATIONERY SDN BHD
+accuracy,billbook-001.jpg,True,3867.44,True,11149.0,Home & hardware,2026-09-04,True,,,gst,OK,True,27CLVCF6953H1Z7,True,1,10189,PROCESSED,Coastal Electricals,True,3867.44,2026-09-04,OK,Coastal Electricals
+accuracy,billbook-002.jpg,True,30093.8,True,2130.0,Office & stationery,2026-08-22,True,,,gst,OK,True,30DJYLZ0578L1ZF,True,1,1114,PROCESSED,Anand Distributors,True,30093.80,2026-08-22,OK,Anand Distributors
+accuracy,billbook-003.jpg,True,4222.06,True,701.0,Home & hardware,2026-01-10,True,,,gst,OK,True,27KYMDK2145Y1ZS,True,1,678,PROCESSED,Coastal Electricals,True,4222.06,2026-01-10,OK,Coastal Electricals
+accuracy,billbook-004.jpg,True,10745.77,True,1790.0,Office & stationery,2026-06-24,True,,,gst,OK,True,27CQCPN9602N1ZC,True,1,971,PROCESSED,Fatima Stationers,True,10745.77,2026-06-24,OK,Fatima Stationers
+accuracy,billbook-005.jpg,True,2599.05,True,23720.0,Office & stationery,2026-06-15,True,,,gst,OK,True,30NXJFN5667G1ZK,True,1,22726,PROCESSED,Ravi Agencies,True,2599.05,2026-06-15,OK,Ravi Agencies
+accuracy,billbook-006.jpg,True,7447.7,True,736.0,Home & hardware,2026-09-18,True,,,gst,OK,True,30MEUHV9349Z1ZV,True,1,714,PROCESSED,Coastal Electricals,True,7447.70,2026-09-18,OK,Coastal Electricals
+accuracy,billbook-007.jpg,True,7739.92,True,15327.0,Health,2026-09-17,True,,,gst,OK,True,30XJLQX4955S1ZH,True,1,15304,PROCESSED,Sai Traders,True,7739.92,2026-09-17,OK,Sai Traders
+accuracy,billbook-008.jpg,True,8012.53,True,802.0,Office & stationery,2026-05-05,True,,,gst,OK,True,30LNMYS8925G1ZW,True,1,780,PROCESSED,Ravi Agencies,True,8012.53,2026-05-05,OK,Ravi Agencies
+accuracy,billbook-009.jpg,True,32846.76,True,963.0,Office & stationery,2026-03-26,True,,,gst,OK,True,30NBZUZ1207J1ZN,True,1,921,PROCESSED,Ravi Agencies,True,32846.76,2026-03-26,OK,Ravi Agencies
+accuracy,billbook-010.jpg,True,21350.24,True,4416.0,Office & stationery,2026-07-27,True,,,gst,OK,True,30EYRNE4628J1ZD,True,1,3661,PROCESSED,Sai Traders,True,21350.24,2026-07-27,OK,Sai Traders
+accuracy,billbook-011.jpg,True,17622.56,True,1758.0,Office & stationery,2026-10-13,True,,,gst,OK,True,30BEGAJ3930K1ZL,True,1,990,PROCESSED,Ravi Agencies,True,17622.56,2026-10-13,OK,Ravi Agencies
+accuracy,billbook-012.jpg,True,13436.49,True,1038.0,Health,2026-06-21,True,,,gst,OK,True,30TRBWX6781S1ZZ,True,1,1016,PROCESSED,Ravi Agencies,True,13436.49,2026-06-21,OK,Ravi Agencies
+accuracy,billbook-013.jpg,True,6373.13,True,4163.0,Home & hardware,2026-01-05,True,,,gst,OK,True,30TMVWF7264N1ZL,True,1,4123,PROCESSED,Mapusa Hardware,True,6373.13,2026-01-05,OK,Mapusa Hardware
+accuracy,billbook-014.jpg,True,11058.99,True,2650.0,Other,2026-03-10,True,,,gst,OK,True,30ZKXYB0723V1ZJ,True,1,1890,PROCESSED,Lakshmi Enterprises,True,11058.99,2026-03-10,OK,Lakshmi Enterprises
+accuracy,billbook-015.jpg,True,2887.11,True,727.0,Health,2026-09-18,True,,,gst,OK,True,27BKWBY7820X1Z3,True,1,704,PROCESSED,Mormugao Supplies,True,2887.11,2026-09-18,OK,Mormugao Supplies
+accuracy,billbook-016.jpg,True,30298.01,True,1041.0,Office & stationery,2026-09-24,True,,,gst,OK,True,29RBNVP4374T1ZK,True,1,1018,PROCESSED,Fatima Stationers,True,30298.01,2026-09-24,OK,Fatima Stationers
+accuracy,billbook-017.jpg,True,35382.25,True,906.0,Other,2026-05-05,True,,,gst,OK,True,30BYYNM4721X1ZF,True,1,883,PROCESSED,Sai Traders,True,35382.25,2026-05-05,OK,Sai Traders
+accuracy,billbook-018.jpg,True,18584.98,True,801.0,Other,2026-06-23,True,,,gst,OK,True,30NZGHW2550P1Z3,True,1,762,PROCESSED,Sai Traders,True,18584.98,2026-06-23,OK,Sai Traders
+accuracy,billbook-019.jpg,True,8446.23,True,825.0,Other,2026-03-03,True,,,gst,OK,True,30FUHYM1246V1ZK,True,1,804,PROCESSED,Lakshmi Enterprises,True,8446.23,2026-03-03,OK,Lakshmi Enterprises
+accuracy,billbook-020.jpg,True,13377.24,True,783.0,Home & hardware,2026-01-13,True,,,gst,OK,True,29JYCZE3884B1ZR,True,1,764,PROCESSED,Mapusa Hardware,True,13377.24,2026-01-13,OK,Mapusa Hardware
+accuracy,billbook-021.jpg,True,6163.32,True,776.0,Other,2026-04-17,True,,,gst,OK,True,27VCTMU7981R1ZI,True,1,754,PROCESSED,Sai Traders,True,6163.32,2026-04-17,OK,Sai Traders
+accuracy,billbook-022.jpg,True,9531.04,True,731.0,Home & hardware,2026-06-07,True,,,gst,OK,True,30CMTLF4667X1Z5,True,1,690,PROCESSED,Coastal Electricals,True,9531.04,2026-06-07,OK,Coastal Electricals
+accuracy,billbook-023.jpg,True,14709.35,True,687.0,Home & hardware,2026-01-27,True,,,gst,OK,True,30CEZPY3842X1ZY,True,1,665,PROCESSED,Coastal Electricals,True,14709.35,2026-01-27,OK,Coastal Electricals
+accuracy,billbook-024.jpg,True,16706.21,True,753.0,Office & stationery,2026-01-05,True,,,gst,OK,True,30ZSLBT8407M1ZD,True,1,730,PROCESSED,Anand Distributors,True,16706.21,2026-01-05,OK,Anand Distributors
+accuracy,billbook-025.jpg,True,4758.98,True,776.0,Home & hardware,2026-04-19,True,,,gst,OK,True,29KUVVH8093V1ZC,True,1,737,PROCESSED,Mapusa Hardware,True,4758.98,2026-04-19,OK,Mapusa Hardware
+accuracy,billbook-026.jpg,True,21592.67,True,719.0,Office & stationery,2026-06-03,True,,,gst,OK,True,29PLRLL0642V1ZU,True,1,696,PROCESSED,Ravi Agencies,True,21592.67,2026-06-03,OK,Ravi Agencies
+accuracy,billbook-027.jpg,True,12024.6,True,741.0,Office & stationery,2026-06-21,True,,,gst,OK,True,29HQXLG9456H1ZY,True,1,719,PROCESSED,Fatima Stationers,True,12024.60,2026-06-21,OK,Fatima Stationers
+accuracy,billbook-028.jpg,True,20266.1,True,742.0,Home & hardware,2026-07-08,True,,,gst,OK,True,30RZQRH0016P1ZU,True,1,719,PROCESSED,Ravi Agencies,True,20266.10,2026-07-08,OK,Ravi Agencies
+accuracy,billbook-029.jpg,True,29769.16,True,838.0,Home & hardware,2026-08-24,True,,,gst,OK,True,27FXBNK2070T1ZZ,True,1,815,PROCESSED,Lakshmi Enterprises,True,29769.16,2026-08-24,OK,Lakshmi Enterprises
+accuracy,billbook-030.jpg,True,14006.69,True,1734.0,Other,2026-07-08,True,,,gst,OK,True,29TGPLU5269G1Z8,True,1,1712,PROCESSED,Ravi Agencies,True,14006.69,2026-07-08,OK,Ravi Agencies
+accuracy,billbook-031.jpg,True,12736.35,True,1904.0,Office & stationery,2026-05-27,True,,,gst,OK,True,29SADRB0087G1ZE,True,1,1881,PROCESSED,Fatima Stationers,True,12736.35,2026-05-27,OK,Fatima Stationers
+accuracy,billbook-032.jpg,True,17594.75,True,905.0,Home & hardware,2026-09-12,True,,,gst,OK,True,30ANCMB5785K1Z9,True,1,863,PROCESSED,Anand Distributors,True,17594.75,2026-09-12,OK,Anand Distributors
+accuracy,billbook-033.jpg,True,5394.04,True,790.0,Other,2026-08-06,True,,,gst,OK,True,30XAEGX5382Q1ZX,True,1,766,PROCESSED,Anand Distributors,True,5394.04,2026-08-06,OK,Anand Distributors
+accuracy,billbook-034.jpg,True,13661.68,True,1474.0,Office & stationery,2026-05-17,True,,,gst,OK,True,30FYGYZ1611E1Z6,True,1,1452,PROCESSED,Fatima Stationers,True,13661.68,2026-05-17,OK,Fatima Stationers
+accuracy,billbook-035.jpg,True,16871.52,True,1796.0,Office & stationery,2026-05-02,True,,,gst,OK,True,29RLHRC4776J1Z4,True,1,1775,PROCESSED,Fatima Stationers,True,16871.52,2026-05-02,OK,Fatima Stationers
+accuracy,billbook-036.jpg,True,29946.81,True,1927.0,Office & stationery,2026-09-16,True,,,gst,OK,True,30GKBBX6651K1ZK,True,1,1904,PROCESSED,Sai Traders,True,29946.81,2026-09-16,OK,Sai Traders
+accuracy,billbook-037.jpg,True,31235.4,True,1045.0,Office & stationery,2026-08-25,True,,,gst,OK,True,27MQCXD3305L1ZC,True,1,1021,PROCESSED,Lakshmi Enterprises,True,31235.40,2026-08-25,OK,Lakshmi Enterprises
+accuracy,billbook-038.jpg,True,4937.07,True,4187.0,Home & hardware,2026-06-06,True,,,gst,OK,True,30GFDMB4144T1ZI,True,1,4165,PROCESSED,Mapusa Hardware,True,4937.07,2026-06-06,OK,Mapusa Hardware
+accuracy,billbook-039.jpg,True,22677.79,True,1372.0,Office & stationery,2026-09-13,True,,,gst,OK,True,30JGBGJ4398M1ZI,True,1,1349,PROCESSED,Anand Distributors,True,22677.79,2026-09-13,OK,Anand Distributors
+accuracy,billbook-040.jpg,True,35625.32,True,3347.0,Office & stationery,2026-06-02,True,,,gst,OK,True,30RSQSF6471F1Z6,True,1,3306,PROCESSED,Fatima Stationers,True,35625.32,2026-06-02,OK,Fatima Stationers
+accuracy,billbook-041.jpg,True,34614.33,True,2350.0,Office & stationery,2026-08-23,True,,,gst,OK,True,30RLASZ8214J1ZE,True,1,2327,PROCESSED,Fatima Stationers,True,34614.33,2026-08-23,OK,Fatima Stationers
+accuracy,billbook-042.jpg,True,2110.24,True,1568.0,Other,2026-10-11,True,,,gst,OK,True,30QHYTM1919F1ZM,True,1,1546,PROCESSED,Lakshmi Enterprises,True,2110.24,2026-10-11,OK,Lakshmi Enterprises
+accuracy,billbook-043.jpg,True,35317.22,True,3643.0,Office & stationery,2026-02-25,True,,,gst,OK,True,27ZVPUM5543Z1Z5,True,1,3622,PROCESSED,Ravi Agencies,True,35317.22,2026-02-25,OK,Ravi Agencies
+accuracy,billbook-044.jpg,True,33179.07,True,924.0,Home & hardware,2026-02-13,True,,,gst,OK,True,27DQJNA0984U1Z4,True,1,901,PROCESSED,Mapusa Hardware,True,33179.07,2026-02-13,OK,Mapusa Hardware
+accuracy,billbook-045.jpg,True,21713.76,True,3155.0,Health,2026-07-16,True,,,gst,OK,True,29XXWBU7690E1ZI,True,1,3114,PROCESSED,Sai Traders,True,21713.76,2026-07-16,OK,Sai Traders
+accuracy,billbook-046.jpg,True,36514.17,True,739.0,Health,2026-08-18,True,,,gst,OK,True,30FBTPD8241J1ZH,True,1,716,PROCESSED,Mormugao Supplies,True,36514.17,2026-08-18,OK,Mormugao Supplies
+accuracy,billbook-047.jpg,True,19303.76,True,806.0,Health,2026-05-19,True,,,gst,OK,True,30AVNEL9251F1Z7,True,1,765,PROCESSED,Lakshmi Enterprises,True,19303.76,2026-05-19,OK,Lakshmi Enterprises
+accuracy,billbook-048.jpg,True,3414.01,True,4318.0,Other,2026-09-15,True,,,gst,OK,True,29FPZAS5839S1ZT,True,1,4299,PROCESSED,Ravi Agencies,True,3414.01,2026-09-15,OK,Ravi Agencies
+accuracy,billbook-049.jpg,True,16603.53,True,700.0,Office & stationery,2026-01-06,True,,,gst,OK,True,30WRMFL3012Q1ZQ,True,1,677,PROCESSED,Sai Traders,True,16603.53,2026-01-06,OK,Sai Traders
+accuracy,billbook-050.jpg,True,21370.65,True,2187.0,Home & hardware,2026-01-08,True,,,gst,OK,True,30HESFL3940B1Z8,True,1,2163,PROCESSED,Mapusa Hardware,True,21370.65,2026-01-08,OK,Mapusa Hardware
+accuracy,billbook-051.jpg,True,16769.22,True,875.0,Office & stationery,2026-07-18,True,,,gst,OK,True,30XXPGT7246H1ZZ,True,1,833,PROCESSED,Fatima Stationers,True,16769.22,2026-07-18,OK,Fatima Stationers
+accuracy,billbook-052.jpg,True,9264.62,True,728.0,Health,2026-03-26,True,,,gst,OK,True,30RNWJU5969P1ZJ,True,1,706,PROCESSED,Lakshmi Enterprises,True,9264.62,2026-03-26,OK,Lakshmi Enterprises
+accuracy,billbook-053.jpg,True,41982.35,True,909.0,Home & hardware,2026-07-20,True,,,gst,OK,True,30HNVLK2839V1Z1,True,1,886,PROCESSED,Lakshmi Enterprises,True,41982.35,2026-07-20,OK,Lakshmi Enterprises
+accuracy,billbook-054.jpg,True,41614.12,True,1960.0,Health,2026-04-17,True,,,gst,OK,True,29UXQST0330K1Z9,True,1,1937,PROCESSED,Lakshmi Enterprises,True,41614.12,2026-04-17,OK,Lakshmi Enterprises
+accuracy,billbook-055.jpg,True,5285.87,True,810.0,Office & stationery,2026-10-28,True,,,gst,OK,True,30PKCDU1115Q1ZG,True,1,787,PROCESSED,Fatima Stationers,True,5285.87,2026-10-28,OK,Fatima Stationers
+accuracy,billbook-056.jpg,True,8899.6,True,743.0,Home & hardware,2026-07-12,True,,,gst,OK,True,29BYWHX8369R1ZU,True,1,701,PROCESSED,Coastal Electricals,True,8899.60,2026-07-12,OK,Coastal Electricals
+accuracy,billbook-057.jpg,True,33853.48,True,767.0,Home & hardware,2026-05-23,True,,,gst,OK,True,29GAVFD1575Q1Z7,True,1,744,PROCESSED,Sai Traders,True,33853.48,2026-05-23,OK,Sai Traders
+accuracy,billbook-058.jpg,True,8086.17,True,811.0,Office & stationery,2026-07-08,True,,,gst,OK,True,30VUETC2833Q1ZY,True,1,788,PROCESSED,Mormugao Supplies,True,8086.17,2026-07-08,OK,Mormugao Supplies
+accuracy,billbook-059.jpg,True,3523.88,True,724.0,Office & stationery,2026-06-02,True,,,gst,OK,True,27TPRYP2459X1ZD,True,1,702,PROCESSED,Anand Distributors,True,3523.88,2026-06-02,OK,Anand Distributors
+accuracy,billbook-060.jpg,True,58347.86,True,845.0,Office & stationery,2026-03-23,True,,,gst,OK,True,30PZRPF0342K1Z6,True,1,822,PROCESSED,Fatima Stationers,True,58347.86,2026-03-23,OK,Fatima Stationers
+accuracy,billbook-061.jpg,True,19202.48,True,883.0,Health,2026-04-21,True,,,gst,OK,True,30MJEBA9707Z1Z3,True,1,860,PROCESSED,Lakshmi Enterprises,True,19202.48,2026-04-21,OK,Lakshmi Enterprises
+accuracy,billbook-062.jpg,True,25940.32,True,764.0,Other,2026-07-15,True,,,gst,OK,True,29FDYWG0189Y1ZH,True,1,722,PROCESSED,Mormugao Supplies,True,25940.32,2026-07-15,OK,Mormugao Supplies
+accuracy,billbook-063.jpg,True,5320.97,True,705.0,Home & hardware,2026-05-20,True,,,gst,OK,True,29LRVXD2453G1ZS,True,1,663,PROCESSED,Mapusa Hardware,True,5320.97,2026-05-20,OK,Mapusa Hardware
+accuracy,billbook-064.jpg,True,9508.3,True,965.0,Home & hardware,2026-02-22,True,,,gst,OK,True,29PKCEX5182D1Z2,True,1,943,PROCESSED,Coastal Electricals,True,9508.30,2026-02-22,OK,Coastal Electricals
+accuracy,billbook-065.jpg,True,12764.08,True,666.0,Home & hardware,2026-05-27,True,,,gst,OK,True,30UBFJA5227P1ZN,True,1,624,PROCESSED,Mormugao Supplies,True,12764.08,2026-05-27,OK,Mormugao Supplies
+accuracy,billbook-066.jpg,True,19462.63,True,920.0,Home & hardware,2026-08-13,True,,,gst,OK,True,27BGDYW6852Y1ZE,True,1,898,PROCESSED,Mapusa Hardware,True,19462.63,2026-08-13,OK,Mapusa Hardware
+accuracy,billbook-067.jpg,True,15284.09,True,926.0,Other,2026-02-18,True,,,gst,OK,True,29HMYHJ4228V1ZY,True,1,904,PROCESSED,Lakshmi Enterprises,True,15284.09,2026-02-18,OK,Lakshmi Enterprises
+accuracy,billbook-068.jpg,True,19752.36,True,1039.0,Health,2026-02-19,True,,,gst,OK,True,30NXVZD2864N1Z5,True,1,1016,PROCESSED,Lakshmi Enterprises,True,19752.36,2026-02-19,OK,Lakshmi Enterprises
+accuracy,billbook-069.jpg,True,5367.08,True,1032.0,Home & hardware,2026-10-13,True,,,gst,OK,True,29WRETZ6088L1ZU,True,1,1010,PROCESSED,Ravi Agencies,True,5367.08,2026-10-13,OK,Ravi Agencies
+accuracy,billbook-070.jpg,True,22948.1,True,705.0,Health,2026-01-25,True,,,gst,OK,True,29PZBQT3011C1ZA,True,1,682,PROCESSED,Mormugao Supplies,True,22948.10,2026-01-25,OK,Mormugao Supplies
+accuracy,billbook-071.jpg,True,16808.21,True,1669.0,Office & stationery,2026-01-04,True,,,gst,OK,True,29CPEUG6798F1Z3,True,1,1648,PROCESSED,Fatima Stationers,True,16808.21,2026-01-04,OK,Fatima Stationers
+accuracy,billbook-072.jpg,True,13960.2,True,834.0,Health,2026-01-19,True,,,gst,OK,True,27FJHLG8497R1Z6,True,1,812,PROCESSED,Anand Distributors,True,13960.20,2026-01-19,OK,Anand Distributors
+accuracy,billbook-073.jpg,True,12235.1,True,833.0,Office & stationery,2026-01-24,True,,,gst,OK,True,27XDTCE6039Y1ZE,True,1,791,PROCESSED,Fatima Stationers,True,12235.10,2026-01-24,OK,Fatima Stationers
+accuracy,billbook-074.jpg,True,12321.9,True,642.0,Health,2026-09-10,True,,,gst,OK,True,30WYBZW9207A1ZN,True,1,606,PROCESSED,Mormugao Supplies,True,12321.90,2026-09-10,OK,Mormugao Supplies
+accuracy,billbook-075.jpg,True,36677.37,True,844.0,Health,2026-09-03,True,,,gst,OK,True,27KPSLS4546R1ZK,True,1,821,PROCESSED,Sai Traders,True,36677.37,2026-09-03,OK,Sai Traders
+accuracy,billbook-076.jpg,True,26567.22,True,1474.0,Office & stationery,2026-08-15,True,,,gst,OK,True,27RVXWB3881E1ZE,True,1,1453,PROCESSED,Fatima Stationers,True,26567.22,2026-08-15,OK,Fatima Stationers
+accuracy,billbook-077.jpg,True,18658.5,True,691.0,Other,2026-05-02,True,,,gst,OK,True,30NMCDZ2797N1ZP,False,1,667,PROCESSED,Ravi Agencies,True,18658.50,2026-05-02,OK,Ravi Agencies
+accuracy,billbook-078.jpg,True,26785.54,True,1809.0,Office & stationery,2026-07-25,True,,,gst,OK,True,27YRUCP9749F1ZW,True,1,1786,PROCESSED,Lakshmi Enterprises,True,26785.54,2026-07-25,OK,Lakshmi Enterprises
+accuracy,billbook-079.jpg,True,12124,True,1825.0,Health,2026-05-10,True,,,gst,OK,True,30WPTWD4063G1Z4,True,1,1783,PROCESSED,Lakshmi Enterprises,True,12124.00,2026-05-10,OK,Lakshmi Enterprises
+accuracy,billbook-080.jpg,True,35725.22,True,1552.0,Health,2026-03-16,True,,,gst,OK,True,27ABYVA2422U1ZM,True,1,1529,PROCESSED,Mormugao Supplies,True,35725.22,2026-03-16,OK,Mormugao Supplies
+accuracy,billbook-081.jpg,True,23868.58,True,1479.0,Office & stationery,2026-08-07,True,,,gst,OK,True,30BWHFP3519L1Z0,True,1,1456,PROCESSED,Fatima Stationers,True,23868.58,2026-08-07,OK,Fatima Stationers
+accuracy,billbook-082.jpg,True,13578.78,True,1587.0,Other,2026-05-22,True,,,gst,OK,True,29AUXXE2357G1ZR,True,1,1565,PROCESSED,Mormugao Supplies,True,13578.78,2026-05-22,OK,Mormugao Supplies
+accuracy,billbook-083.jpg,True,8436.51,True,787.0,Other,2026-08-05,True,,,gst,OK,True,29MANCR1533X1ZX,True,1,765,PROCESSED,Anand Distributors,True,8436.51,2026-08-05,OK,Anand Distributors
+accuracy,billbook-084.jpg,True,13465.55,True,3965.0,Home & hardware,2026-04-27,True,,,gst,OK,True,29AYMUP6271J1ZD,True,1,3942,PROCESSED,Mapusa Hardware,True,13465.55,2026-04-27,OK,Mapusa Hardware
+accuracy,billbook-085.jpg,True,33448.65,True,2135.0,Other,2026-06-28,True,,,gst,OK,True,30CFTSD3112L1ZI,True,1,2112,PROCESSED,Sai Traders,True,33448.65,2026-06-28,OK,Sai Traders
+accuracy,billbook-086.jpg,True,12402.74,True,903.0,Home & hardware,2026-10-22,True,,,gst,OK,True,27BUVUW2558U1ZO,True,1,862,PROCESSED,Mapusa Hardware,True,12402.74,2026-10-22,OK,Mapusa Hardware
+accuracy,billbook-087.jpg,True,25311.77,True,981.0,Home & hardware,2026-10-26,True,,,gst,OK,True,30JZEXK5226N1ZP,True,1,958,PROCESSED,Ravi Agencies,True,25311.77,2026-10-26,OK,Ravi Agencies
+accuracy,billbook-088.jpg,True,20437.05,True,1068.0,Home & hardware,2026-01-23,True,,,gst,OK,True,29ZTURD7245L1Z4,True,1,1026,PROCESSED,Mapusa Hardware,True,20437.05,2026-01-23,OK,Mapusa Hardware
+accuracy,billbook-089.jpg,True,10127.24,True,1012.0,Other,2026-09-10,True,,,gst,OK,True,30UAPKC9649M1ZZ,True,1,989,PROCESSED,Ravi Agencies,True,10127.24,2026-09-10,OK,Ravi Agencies
+accuracy,billbook-090.jpg,True,24937.73,True,2158.0,Health,2026-02-08,True,,,gst,OK,True,27BGNRW4037N1ZF,True,1,2135,PROCESSED,Mormugao Supplies,True,24937.73,2026-02-08,OK,Mormugao Supplies
+accuracy,billbook-091.jpg,True,12800.51,True,1975.0,Health,2026-04-05,True,,,gst,OK,True,29MJWTD7492G1ZX,True,1,1936,PROCESSED,Anand Distributors,True,12800.51,2026-04-05,OK,Anand Distributors
+accuracy,billbook-092.jpg,True,16929.85,True,2292.0,Health,2026-09-07,True,,,gst,OK,True,30ANCYF4745Q1ZF,True,1,2270,PROCESSED,Mormugao Supplies,True,16929.85,2026-09-07,OK,Mormugao Supplies
+accuracy,billbook-093.jpg,True,16147.49,True,1626.0,Home & hardware,2026-04-15,True,,,gst,OK,True,30SXBJN6265P1ZZ,True,1,1604,PROCESSED,Coastal Electricals,True,16147.49,2026-04-15,OK,Coastal Electricals
+accuracy,billbook-094.jpg,True,22415.05,True,743.0,Other,2026-09-09,True,,,gst,OK,True,27ZHBEJ8841D1ZE,True,1,720,PROCESSED,Mormugao Supplies,True,22415.05,2026-09-09,OK,Mormugao Supplies
+accuracy,billbook-095.jpg,True,9515.14,True,973.0,Health,2026-08-15,True,,,gst,OK,True,30AVUMB8503V1Z3,True,1,951,PROCESSED,Sai Traders,True,9515.14,2026-08-15,OK,Sai Traders
+accuracy,billbook-096.jpg,True,14294.6,True,647.0,Home & hardware,2026-10-18,True,,,gst,OK,True,29XQBFZ2378W1ZC,True,1,607,PROCESSED,Mapusa Hardware,True,14294.60,2026-10-18,OK,Mapusa Hardware
+accuracy,billbook-097.jpg,True,4315.48,True,940.0,Other,2026-04-04,True,,,gst,OK,True,29XAWPV5657C1Z8,True,1,918,PROCESSED,Anand Distributors,True,4315.48,2026-04-04,OK,Anand Distributors
+accuracy,billbook-098.jpg,True,13915.84,True,935.0,Home & hardware,2026-03-09,True,,,gst,OK,True,30BSUFK9952Z1ZR,True,1,912,PROCESSED,Mapusa Hardware,True,13915.84,2026-03-09,OK,Mapusa Hardware
+accuracy,billbook-099.jpg,True,37943.29,True,690.0,Office & stationery,2026-02-23,True,,,gst,OK,True,30YHUUX7518L1ZL,True,1,668,PROCESSED,Mormugao Supplies,True,37943.29,2026-02-23,OK,Mormugao Supplies
+accuracy,billbook-100.jpg,True,23398.92,True,810.0,Office & stationery,2026-02-15,True,,,gst,OK,True,30RQSHB0031D1ZR,True,1,768,PROCESSED,Fatima Stationers,True,23398.92,2026-02-15,OK,Fatima Stationers
+accuracy,tampered-1-gstin-check-digit-018.jpg,True,18584.98,True,971.0,Other,2026-06-23,True,,,gst-tampered,PROBLEM: GSTIN 30NZGHW2550P1ZA fails its check digit,True,30NZGHW2550P1ZA,True,1,929,NEEDS_REVIEW,Sai Traders,True,18584.98,2026-06-23,PROBLEM,Sai Traders
+accuracy,tampered-1-gstin-check-digit-073.jpg,True,12235.1,True,928.0,Office & stationery,2026-01-24,True,,,gst-tampered,PROBLEM: GSTIN 27XDTCE6039Y1ZA fails its check digit,True,27XDTCE6039Y1ZA,True,1,890,NEEDS_REVIEW,Fatima Stationers,True,12235.10,2026-01-24,PROBLEM,Fatima Stationers
+accuracy,tampered-1-gstin-check-digit-098.jpg,True,13915.84,True,939.0,Home & hardware,2026-03-09,True,,,gst-tampered,OK,False,30BSUFK9952ZIZA,False,1,899,PROCESSED,Mapusa Hardware,True,13915.84,2026-03-09,PROBLEM,Mapusa Hardware
+accuracy,tampered-1-gstin-check-digit-009.jpg,True,32846.76,True,962.0,Office & stationery,2026-03-26,True,,,gst-tampered,PROBLEM: GSTIN 30NBZUZ1207J1ZA fails its check digit,True,30NBZUZ1207J1ZA,True,1,920,NEEDS_REVIEW,Ravi Agencies,True,32846.76,2026-03-26,PROBLEM,Ravi Agencies
+accuracy,tampered-1-gstin-check-digit-033.jpg,True,5394.04,True,888.0,Other,2026-08-06,True,,,gst-tampered,PROBLEM: GSTIN 30XAEGX5382Q1ZA fails its check digit,True,30XAEGX5382Q1ZA,True,1,865,NEEDS_REVIEW,Anand Distributors,True,5394.04,2026-08-06,PROBLEM,Anand Distributors
+accuracy,tampered-1-gstin-check-digit-016.jpg,True,30298.01,True,858.0,Office & stationery,2026-09-24,True,,,gst-tampered,PROBLEM: GSTIN 29RBNVP4374T1ZA fails its check digit,True,29RBNVP4374T1ZA,True,1,835,NEEDS_REVIEW,Fatima Stationers,True,30298.01,2026-09-24,PROBLEM,Fatima Stationers
+accuracy,tampered-1-gstin-check-digit-064.jpg,True,9508.3,True,834.0,Home & hardware,2026-02-22,True,,,gst-tampered,PROBLEM: GSTIN 29PKCEX5182D1ZA fails its check digit,True,29PKCEX5182D1ZA,True,1,812,NEEDS_REVIEW,Coastal Electricals,True,9508.30,2026-02-22,PROBLEM,Coastal Electricals
+accuracy,tampered-1-gstin-check-digit-058.jpg,True,8086.17,True,1026.0,Office & stationery,2026-07-08,True,,,gst-tampered,PROBLEM: GSTIN 30VUETC2833Q1ZA fails its check digit,True,30VUETC2833Q1ZA,True,1,1003,NEEDS_REVIEW,Mormugao Supplies,True,8086.17,2026-07-08,PROBLEM,Mormugao Supplies
+accuracy,tampered-1-gstin-check-digit-061.jpg,True,19202.48,True,1018.0,Health,2026-04-21,True,,,gst-tampered,PROBLEM: GSTIN 30MJEBA9707Z1ZA fails its check digit,True,30MJEBA9707Z1ZA,True,1,995,NEEDS_REVIEW,Lakshmi Enterprises,True,19202.48,2026-04-21,PROBLEM,Lakshmi Enterprises
+accuracy,tampered-1-gstin-check-digit-084.jpg,True,13465.55,True,754.0,Home & hardware,2026-04-27,True,,,gst-tampered,PROBLEM: GSTIN 29AYMUP6271J1ZA fails its check digit,True,29AYMUP6271J1ZA,True,1,732,NEEDS_REVIEW,Mapusa Hardware,True,13465.55,2026-04-27,PROBLEM,Mapusa Hardware
+accuracy,tampered-2-gstin-state-code-008.jpg,True,8012.53,True,919.0,Office & stationery,2026-05-05,True,,,gst-tampered,PROBLEM: GSTIN 45LNMYS8925G1ZL fails its check digit,True,45LNMYS8925G1ZL,True,1,896,NEEDS_REVIEW,Ravi Agencies,True,8012.53,2026-05-05,PROBLEM,Ravi Agencies
+accuracy,tampered-2-gstin-state-code-012.jpg,True,13436.49,True,764.0,Health,2026-06-21,True,,,gst-tampered,PROBLEM: GSTIN 45TRBWX6781S1Z0 fails its check digit,True,45TRBWX6781S1Z0,False,1,741,NEEDS_REVIEW,Ravi Agencies,True,13436.49,2026-06-21,PROBLEM,Ravi Agencies
+accuracy,tampered-2-gstin-state-code-011.jpg,True,17622.56,True,810.0,Office & stationery,2026-10-13,True,,,gst-tampered,PROBLEM: GSTIN 45BEGAJ3930K1ZA fails its check digit,True,45BEGAJ3930K1ZA,True,1,787,NEEDS_REVIEW,Ravi Agencies,True,17622.56,2026-10-13,PROBLEM,Ravi Agencies
+accuracy,tampered-2-gstin-state-code-047.jpg,True,19303.76,True,725.0,Health,2026-05-19,True,,,gst-tampered,PROBLEM: GSTIN 45AVNEL9251F1ZW fails its check digit,True,45AVNEL9251F1ZW,True,1,702,NEEDS_REVIEW,Lakshmi Enterprises,True,19303.76,2026-05-19,PROBLEM,Lakshmi Enterprises
+accuracy,tampered-2-gstin-state-code-022.jpg,True,9531.04,True,1825.0,Home & hardware,2026-06-07,True,,,gst-tampered,PROBLEM: GSTIN 45CMTLF4667X1ZU fails its check digit,True,45CMTLF4667X1ZU,True,1,1784,NEEDS_REVIEW,Coastal Electricals,True,9531.04,2026-06-07,PROBLEM,Coastal Electricals
+accuracy,tampered-2-gstin-state-code-095.jpg,True,9515.14,True,1982.0,Health,2026-08-15,True,,,gst-tampered,PROBLEM: GSTIN 45AVUMB8503V1ZS fails its check digit,True,45AVUMB8503V1ZS,True,1,1959,NEEDS_REVIEW,Sai Traders,True,9515.14,2026-08-15,PROBLEM,Sai Traders
+accuracy,tampered-2-gstin-state-code-086.jpg,True,12402.74,True,1871.0,Home & hardware,2026-10-22,True,,,gst-tampered,PROBLEM: GSTIN 45BUVUW2558U1ZQ fails its check digit,True,45BUVUW2558U1ZQ,True,1,1848,NEEDS_REVIEW,Mapusa Hardware,True,12402.74,2026-10-22,PROBLEM,Mapusa Hardware
+accuracy,tampered-2-gstin-state-code-040.jpg,True,35625.32,True,649.0,Office & stationery,2026-06-02,True,,,gst-tampered,PROBLEM: GSTIN 45RSQSF6471F1ZV fails its check digit,True,45RSQSF6471F1ZV,True,1,609,NEEDS_REVIEW,Fatima Stationers,True,35625.32,2026-06-02,PROBLEM,Fatima Stationers
+accuracy,tampered-2-gstin-state-code-033.jpg,True,5394.04,True,781.0,Other,2026-08-06,True,serverless/experiments/exp-20261027-211243/accuracy/gst-tampered/tampered-1-gstin-check-digit-033.jpg,,gst-tampered,PROBLEM: GSTIN 45XAEGX5382Q1ZM fails its check digit,True,45XAEGX5382Q1ZM,True,1,759,NEEDS_REVIEW,Anand Distributors,True,5394.04,2026-08-06,PROBLEM,Anand Distributors
+accuracy,tampered-2-gstin-state-code-078.jpg,True,26785.54,True,864.0,Office & stationery,2026-07-25,True,,,gst-tampered,PROBLEM: GSTIN 45YRUCP9749F1ZY fails its check digit,True,45YRUCP9749F1ZY,True,1,842,NEEDS_REVIEW,Lakshmi Enterprises,True,26785.54,2026-07-25,PROBLEM,Lakshmi Enterprises
+accuracy,tampered-3-cgst-not-sgst-023.jpg,True,14759.35,True,716.0,Home & hardware,2026-01-27,True,,,gst-tampered,PROBLEM: CGST 1121.90 and SGST 1171.90 should be equal,True,30CEZPY3842X1ZY,True,1,674,NEEDS_REVIEW,Coastal Electricals,True,14759.35,2026-01-27,PROBLEM,Coastal Electricals
+accuracy,tampered-3-cgst-not-sgst-061.jpg,True,19252.48,True,1759.0,Health,2026-04-21,True,,,gst-tampered,PROBLEM: CGST 1464.60 and SGST 1514.60 should be equal,True,30MJEBA9707Z1Z3,True,1,1737,NEEDS_REVIEW,Lakshmi Enterprises,True,19252.48,2026-04-21,PROBLEM,Lakshmi Enterprises
+accuracy,tampered-3-cgst-not-sgst-055.jpg,True,5335.87,True,2056.0,Office & stationery,2026-10-28,True,,,gst-tampered,PROBLEM: CGST 403.16 and SGST 453.16 should be equal,True,30PKCDU1115Q1ZG,True,1,2035,NEEDS_REVIEW,Fatima Stationers,True,5335.87,2026-10-28,PROBLEM,Fatima Stationers
+accuracy,tampered-3-cgst-not-sgst-012.jpg,True,13486.49,True,871.0,Health,2026-06-21,True,,,gst-tampered,PROBLEM: CGST 719.81 and SGST 769.81 should be equal,True,30TRBWX6781S1ZZ,True,1,849,NEEDS_REVIEW,Ravi Agencies,True,13486.49,2026-06-21,PROBLEM,Ravi Agencies
+accuracy,tampered-3-cgst-not-sgst-039.jpg,True,22727.79,True,956.0,Office & stationery,2026-09-13,True,,,gst-tampered,PROBLEM: CGST 1729.66 and SGST 1779.66 should be equal,True,30JGBGJ4398M1ZI,True,1,935,NEEDS_REVIEW,Anand Distributors,True,22727.79,2026-09-13,PROBLEM,Anand Distributors
+accuracy,tampered-3-cgst-not-sgst-065.jpg,True,12814.08,True,675.0,Home & hardware,2026-05-27,True,,,gst-tampered,PROBLEM: CGST 683.79 and SGST 733.79 should be equal,True,30UBFJA5227P1ZN,True,1,634,NEEDS_REVIEW,Mormugao Supplies,True,12814.08,2026-05-27,PROBLEM,Mormugao Supplies
+accuracy,tampered-3-cgst-not-sgst-050.jpg,True,21420.65,True,1648.0,Home & hardware,2026-01-08,True,,,gst-tampered,PROBLEM: CGST 1144.86 and SGST 1194.86 should be equal,True,30HESFL3940B1Z8,True,1,1625,NEEDS_REVIEW,Mapusa Hardware,True,21420.65,2026-01-08,PROBLEM,Mapusa Hardware
+accuracy,tampered-3-cgst-not-sgst-074.jpg,True,12371.9,True,2127.0,Health,2026-09-10,True,,,gst-tampered,PROBLEM: CGST 293.38 and SGST 343.38 should be equal,True,30WYBZW9207A1ZN,True,1,2105,NEEDS_REVIEW,Mormugao Supplies,True,12371.90,2026-09-10,PROBLEM,Mormugao Supplies
+accuracy,tampered-3-cgst-not-sgst-099.jpg,True,37993.29,True,1734.0,Office & stationery,2026-02-23,True,,,gst-tampered,PROBLEM: CGST 2032.68 and SGST 2082.68 should be equal,True,30YHUUX7518L1ZL,True,1,1712,NEEDS_REVIEW,Mormugao Supplies,True,37993.29,2026-02-23,PROBLEM,Mormugao Supplies
+accuracy,tampered-3-cgst-not-sgst-008.jpg,True,8062.53,True,2381.0,Office & stationery,2026-05-05,True,,,gst-tampered,PROBLEM: CGST 429.24 and SGST 479.24 should be equal,True,30LNMYS8925G1ZW,True,1,2358,NEEDS_REVIEW,Ravi Agencies,True,8062.53,2026-05-05,PROBLEM,Ravi Agencies
+accuracy,tampered-4-total-inflated-023.jpg,True,15609.35,True,761.0,Home & hardware,2026-01-27,True,,,gst-tampered,"PROBLEM: taxable 12465.55 + GST 2243.80 = 14709.35, but the total is 15609.35",True,30CEZPY3842X1ZY,True,1,720,NEEDS_REVIEW,Coastal Electricals,True,15609.35,2026-01-27,PROBLEM,Coastal Electricals
+accuracy,tampered-4-total-inflated-033.jpg,True,6294.04,True,2086.0,Other,2026-08-06,True,,,gst-tampered,"PROBLEM: taxable 5137.18 + GST 256.86 = 5394.04, but the total is 6294.04",True,30XAEGX5382Q1ZX,True,1,2063,NEEDS_REVIEW,Anand Distributors,True,6294.04,2026-08-06,PROBLEM,Anand Distributors
+accuracy,tampered-4-total-inflated-010.jpg,True,22250.24,True,854.0,Office & stationery,2026-07-27,True,,,gst-tampered,"PROBLEM: taxable 18093.42 + GST 3256.82 = 21350.24, but the total is 22250.24",True,30EYRNE4628J1ZD,True,1,831,NEEDS_REVIEW,Sai Traders,True,22250.24,2026-07-27,PROBLEM,Sai Traders
+accuracy,tampered-4-total-inflated-089.jpg,True,11027.24,True,987.0,Other,2026-09-10,True,,,gst-tampered,"PROBLEM: taxable 9042.18 + GST 1085.06 = 10127.24, but the total is 11027.24",True,30XHWMB5828B1Z6,False,1,964,NEEDS_REVIEW,Ravi Agencies,True,11027.24,2026-09-10,PROBLEM,Ravi Agencies
+accuracy,tampered-4-total-inflated-041.jpg,True,35514.33,True,1036.0,Office & stationery,2026-08-23,True,,,gst-tampered,"PROBLEM: taxable 30905.65 + GST 3708.68 = 34614.33, but the total is 35514.33",True,30RLASZ8214J1ZE,True,1,1013,NEEDS_REVIEW,Fatima Stationers,True,35514.33,2026-08-23,PROBLEM,Fatima Stationers
+accuracy,tampered-4-total-inflated-050.jpg,True,22270.65,True,1028.0,Home & hardware,2026-01-08,True,,,gst-tampered,"PROBLEM: taxable 19080.93 + GST 2289.72 = 21370.65, but the total is 22270.65",True,30HESFL3940B1Z8,True,1,1005,NEEDS_REVIEW,Mapusa Hardware,True,22270.65,2026-01-08,PROBLEM,Mapusa Hardware
+accuracy,tampered-4-total-inflated-013.jpg,True,7273.13,True,679.0,Home & hardware,2026-01-05,True,,,gst-tampered,"PROBLEM: taxable 6069.65 + GST 303.48 = 6373.13, but the total is 7273.13",True,30TMVWF7264N1ZL,True,1,637,NEEDS_REVIEW,Mapusa Hardware,True,7273.13,2026-01-05,PROBLEM,Mapusa Hardware
+accuracy,tampered-4-total-inflated-009.jpg,True,33746.76,True,1075.0,Office & stationery,2026-03-26,True,,,gst-tampered,"PROBLEM: taxable 27836.24 + GST 5010.52 = 32846.76, but the total is 33746.76",True,30NBZUZ1207J1ZN,True,1,1052,NEEDS_REVIEW,Ravi Agencies,True,33746.76,2026-03-26,PROBLEM,Ravi Agencies
+accuracy,tampered-4-total-inflated-008.jpg,True,8912.53,True,755.0,Office & stationery,2026-05-05,True,,,gst-tampered,"PROBLEM: taxable 7154.05 + GST 858.48 = 8012.53, but the total is 8912.53",True,30LNMYS8925G1ZW,True,1,732,NEEDS_REVIEW,Ravi Agencies,True,8912.53,2026-05-05,PROBLEM,Ravi Agencies
+accuracy,tampered-4-total-inflated-005.jpg,True,3499.05,True,925.0,Office & stationery,2026-06-15,True,,,gst-tampered,"PROBLEM: taxable 2475.29 + GST 123.76 = 2599.05, but the total is 3499.05",True,30NXJFN5667G1ZK,True,1,903,NEEDS_REVIEW,Raví Agencies,True,3499.05,2026-06-15,PROBLEM,Ravi Agencies
+accuracy,tampered-5-igst-and-cgst-084.jpg,True,14908.29,True,906.0,Home & hardware,2026-04-27,True,,,gst-tampered,PROBLEM: IGST charged together with CGST/SGST,True,29AYMUP6271J1ZD,True,1,864,NEEDS_REVIEW,Mapusa Hardware,True,14908.29,2026-04-27,PROBLEM,Mapusa Hardware
+accuracy,tampered-5-igst-and-cgst-044.jpg,True,40436.99,True,934.0,Home & hardware,2026-02-13,True,,,gst-tampered,PROBLEM: IGST charged together with CGST/SGST,True,27DQJNA0984U1Z4,True,1,911,NEEDS_REVIEW,Mapusa Hardware,True,40436.99,2026-02-13,PROBLEM,Mapusa Hardware
+accuracy,tampered-5-igst-and-cgst-059.jpg,True,3901.44,True,775.0,Office & stationery,2026-06-02,True,,,gst-tampered,PROBLEM: IGST charged together with CGST/SGST,True,27TPRYP2459X1ZD,True,1,737,NEEDS_REVIEW,Anand Distributors,True,3901.44,2026-06-02,PROBLEM,Anand Distributors
+accuracy,tampered-5-igst-and-cgst-088.jpg,True,23554.57,True,803.0,Home & hardware,2026-01-23,True,,,gst-tampered,PROBLEM: IGST charged together with CGST/SGST,True,29ZTURD7245L1Z4,True,1,766,NEEDS_REVIEW,Mapusa Hardware,True,23554.57,2026-01-23,PROBLEM,Mapusa Hardware
+accuracy,tampered-5-igst-and-cgst-075.jpg,True,38423.91,True,859.0,Health,2026-09-03,True,,,gst-tampered,PROBLEM: IGST charged together with CGST/SGST,True,27KPSLS4546R1ZK,True,1,835,NEEDS_REVIEW,Sai Traders,True,38423.91,2026-09-03,PROBLEM,Sai Traders
+accuracy,tampered-5-igst-and-cgst-003.jpg,True,4674.42,True,785.0,Home & hardware,2026-01-10,True,,,gst-tampered,PROBLEM: IGST charged together with CGST/SGST,True,27KYMDK2145Y1ZS,True,1,762,NEEDS_REVIEW,Coastal Electricals,True,4674.42,2026-01-10,PROBLEM,Coastal Electricals
+accuracy,tampered-5-igst-and-cgst-070.jpg,True,24040.86,True,983.0,Health,2026-01-25,True,,,gst-tampered,PROBLEM: IGST charged together with CGST/SGST,True,29PZBQT3011C1ZA,True,1,960,NEEDS_REVIEW,Mormugao Supplies,True,24040.86,2026-01-25,PROBLEM,Mormugao Supplies
+accuracy,tampered-5-igst-and-cgst-043.jpg,True,39101.2,True,903.0,Office & stationery,2026-02-25,True,,,gst-tampered,PROBLEM: IGST charged together with CGST/SGST,True,27ZVPUM5543Z1Z5,True,1,861,NEEDS_REVIEW,Ravi Agencies,True,39101.20,2026-02-25,PROBLEM,Ravi Agencies
+accuracy,tampered-5-igst-and-cgst-015.jpg,True,3327.53,True,783.0,Health,2026-09-18,True,,,gst-tampered,PROBLEM: IGST charged together with CGST/SGST,True,27BKWBY7820X1Z3,True,1,761,NEEDS_REVIEW,Mormugao Supplies,True,3327.53,2026-09-18,PROBLEM,Mormugao Supplies
+accuracy,tampered-5-igst-and-cgst-029.jpg,True,36281.16,True,746.0,Home & hardware,2026-08-24,True,,,gst-tampered,PROBLEM: IGST charged together with CGST/SGST,True,27FXBNK2070T1ZZ,True,1,727,NEEDS_REVIEW,Lakshmi Enterprises,True,36281.16,2026-08-24,PROBLEM,Lakshmi Enterprises
+accuracy,tampered-6-tax-does-not-add-up-080.jpg,True,35725.22,True,737.0,Health,2026-03-16,True,,,gst-tampered,"PROBLEM: taxable 34024.02 + GST 2551.80 = 36575.82, but the total is 35725.22",True,27ABYVA2422U1ZM,True,1,715,NEEDS_REVIEW,Mormugao Supplies,True,35725.22,2026-03-16,PROBLEM,Mormugao Supplies
+accuracy,tampered-6-tax-does-not-add-up-020.jpg,True,13377.24,True,672.0,Home & hardware,2026-01-13,True,,,gst-tampered,"PROBLEM: taxable 11336.64 + GST 3060.90 = 14397.54, but the total is 13377.24",True,29JYCZE3884B1ZR,True,1,630,NEEDS_REVIEW,Mapusa Hardware,True,13377.24,2026-01-13,PROBLEM,Mapusa Hardware
+accuracy,tampered-6-tax-does-not-add-up-072.jpg,True,13960.2,True,3198.0,Health,2026-01-19,True,,,gst-tampered,"PROBLEM: taxable 11830.68 + GST 3194.28 = 15024.96, but the total is 13960.20",True,27FJHLG8497R1Z6,True,1,3157,NEEDS_REVIEW,Anand Distributors,True,13960.20,2026-01-19,PROBLEM,Anand Distributors
+accuracy,tampered-6-tax-does-not-add-up-044.jpg,True,33179.07,True,2173.0,Home & hardware,2026-02-13,True,,,gst-tampered,"PROBLEM: taxable 25921.15 + GST 10886.88 = 36808.03, but the total is 33179.07",True,27DQJNA0984U1Z4,True,1,2150,NEEDS_REVIEW,Mapusa Hardware,True,33179.07,2026-02-13,PROBLEM,Mapusa Hardware
+accuracy,tampered-6-tax-does-not-add-up-004.jpg,True,10745.77,True,780.0,Office & stationery,2026-06-24,True,,,gst-tampered,"PROBLEM: taxable 8395.13 + GST 3525.96 = 11921.09, but the total is 10745.77",True,27CQCPN9602N1ZC,True,1,758,NEEDS_REVIEW,Fatima Stationers,True,10745.77,2026-06-24,PROBLEM,Fatima Stationers
+accuracy,tampered-6-tax-does-not-add-up-001.jpg,True,3867.44,True,717.0,Home & hardware,2026-09-04,True,,,gst-tampered,"PROBLEM: taxable 3683.28 + GST 276.24 = 3959.52, but the total is 3867.44",True,27CLVCF6953H1Z7,True,1,676,NEEDS_REVIEW,Coastal Electricals,True,3867.44,2026-09-04,PROBLEM,Coastal Electricals
+accuracy,tampered-6-tax-does-not-add-up-027.jpg,True,12024.6,True,2327.0,Office & stationery,2026-06-21,True,,,gst-tampered,"PROBLEM: taxable 10190.34 + GST 2751.39 = 12941.73, but the total is 12024.60",True,29HQXLG9456H1ZY,True,1,2304,NEEDS_REVIEW,Fatima Stationers,True,12024.60,2026-06-21,PROBLEM,Fatima Stationers
+accuracy,tampered-6-tax-does-not-add-up-082.jpg,True,13578.78,True,1592.0,Other,2026-05-22,True,,,gst-tampered,"PROBLEM: taxable 10608.42 + GST 4455.54 = 15063.96, but the total is 13578.78",True,29AUXXE2357G1ZR,True,1,1569,NEEDS_REVIEW,Mormugao Supplies,True,13578.78,2026-05-22,PROBLEM,Mormugao Supplies
+accuracy,tampered-6-tax-does-not-add-up-071.jpg,True,16808.21,True,1773.0,Office & stationery,2026-01-04,True,,,gst-tampered,"PROBLEM: taxable 16007.82 + GST 1200.59 = 17208.41, but the total is 16808.21",True,29CPEUG6798F1Z3,True,1,1750,NEEDS_REVIEW,Fatima Stationers,True,16808.21,2026-01-04,PROBLEM,Fatima Stationers
+accuracy,tampered-6-tax-does-not-add-up-062.jpg,True,25940.32,True,848.0,Other,2026-07-15,True,,,gst-tampered,"PROBLEM: taxable 21983.32 + GST 5935.50 = 27918.82, but the total is 25940.32",True,29FDYWG0189Y1ZH,True,1,825,NEEDS_REVIEW,Mormugao Supplies,True,25940.32,2026-07-15,PROBLEM,Mormugao Supplies
+accuracy,duplicate-of-billbook-042.jpg,True,2110.24,True,790.0,Other,2026-10-11,True,serverless/experiments/exp-20261027-211243/accuracy/gst/billbook-042.jpg,True,gst,OK,True,30QHYTM1919F1ZM,True,1,751,NEEDS_REVIEW,Lakshmi Enterprises,True,2110.24,2026-10-11,OK,Lakshmi Enterprises
+accuracy,duplicate-of-billbook-020.jpg,True,13377.24,True,745.0,Home & hardware,2026-01-13,True,serverless/experiments/exp-20261027-211243/accuracy/gst/billbook-020.jpg,True,gst,OK,True,29JYCZE3884B1ZR,True,1,706,NEEDS_REVIEW,Mapusa Hardware,True,13377.24,2026-01-13,OK,Mapusa Hardware
+accuracy,duplicate-of-billbook-051.jpg,True,16769.22,True,724.0,Office & stationery,2026-07-18,True,serverless/experiments/exp-20261027-211243/accuracy/gst/billbook-051.jpg,True,gst,OK,True,30XXPGT7246H1ZZ,True,1,702,NEEDS_REVIEW,Fatima Stationers,True,16769.22,2026-07-18,OK,Fatima Stationers
+accuracy,duplicate-of-billbook-084.jpg,True,13465.55,True,767.0,Home & hardware,2026-04-27,True,serverless/experiments/exp-20261027-211243/accuracy/gst/billbook-084.jpg,True,gst,OK,True,29AYMUP6271J1ZD,True,1,744,NEEDS_REVIEW,Mapusa Hardware,True,13465.55,2026-04-27,OK,Mapusa Hardware
+accuracy,duplicate-of-billbook-007.jpg,True,7739.92,True,779.0,Health,2026-09-17,True,serverless/experiments/exp-20261027-211243/accuracy/gst/billbook-007.jpg,True,gst,OK,True,30XJLQX4955S1ZH,True,1,757,NEEDS_REVIEW,Sai Traders,True,7739.92,2026-09-17,OK,Sai Traders
+accuracy,duplicate-of-billbook-010.jpg,True,21350.24,True,957.0,Office & stationery,2026-07-27,True,serverless/experiments/exp-20261027-211243/accuracy/gst/billbook-010.jpg,True,gst,OK,True,30EYRNE4628J1ZD,True,1,935,NEEDS_REVIEW,Sai Traders,True,21350.24,2026-07-27,OK,Sai Traders
+accuracy,duplicate-of-billbook-069.jpg,True,5367.08,True,944.0,Home & hardware,2026-10-13,True,serverless/experiments/exp-20261027-211243/accuracy/gst/billbook-069.jpg,True,gst,OK,True,29WRETZ6088L1ZU,True,1,921,NEEDS_REVIEW,Ravi Agencies,True,5367.08,2026-10-13,OK,Ravi Agencies
+accuracy,duplicate-of-billbook-013.jpg,True,6373.13,True,985.0,Home & hardware,2026-01-05,True,serverless/experiments/exp-20261027-211243/accuracy/gst/billbook-013.jpg,True,gst,OK,True,30TMVWF7264N1ZL,True,1,963,NEEDS_REVIEW,Mapusa Hardware,True,6373.13,2026-01-05,OK,Mapusa Hardware
+accuracy,duplicate-of-billbook-047.jpg,True,19303.76,True,789.0,Health,2026-05-19,True,serverless/experiments/exp-20261027-211243/accuracy/gst/billbook-047.jpg,True,gst,OK,True,30AVNEL9251F1Z7,True,1,766,NEEDS_REVIEW,Lakshmi Enterprises,True,19303.76,2026-05-19,OK,Lakshmi Enterprises
+accuracy,duplicate-of-billbook-075.jpg,True,36677.37,True,1010.0,Health,2026-09-03,True,serverless/experiments/exp-20261027-211243/accuracy/gst/billbook-075.jpg,True,gst,OK,True,27KPSLS4546R1ZK,True,1,987,NEEDS_REVIEW,Sai Traders,True,36677.37,2026-09-03,OK,Sai Traders

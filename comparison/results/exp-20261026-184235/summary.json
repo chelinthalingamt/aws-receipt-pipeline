@@ -1,0 +1,530 @@
+{
+  "run": "exp-20261026-184235",
+  "region": "ap-southeast-2",
+  "accuracy": {
+    "real_receipts": {
+      "n": 40,
+      "vendor_pct": 87.5,
+      "amount_pct": 85.0,
+      "date_pct": 97.5,
+      "all_pct": 80.0,
+      "ocr_calls": {
+        "n": 40,
+        "mean": 3.2,
+        "p50": 5.0,
+        "p95": 5.0,
+        "max": 5.0,
+        "min": 1.0
+      },
+      "processing_ms": {
+        "n": 40,
+        "mean": 3997.7,
+        "p50": 5343.0,
+        "p95": 7304.0,
+        "max": 7601.0,
+        "min": 747.0
+      },
+      "billed_ms": {
+        "n": 40,
+        "mean": 4044.8,
+        "p50": 5365.0,
+        "p95": 7326.0,
+        "max": 7623.0,
+        "min": 770.0
+      },
+      "over_100_words": 22
+    },
+    "gst_invoices": {
+      "n": 15,
+      "verdict_correct": "15/15",
+      "valid_passed": "9/9",
+      "tampered_caught": "6/6",
+      "gstin_read_correctly": "15/15",
+      "fields_all_correct_pct": 100.0,
+      "duplicate_detected": true
+    }
+  },
+  "coldstart": {
+    "eager_pdf": {
+      "init_ms": {
+        "n": 5,
+        "mean": 902.4,
+        "p50": 967.71,
+        "p95": 971.12,
+        "max": 971.12,
+        "min": 800.22
+      },
+      "duration_ms": {
+        "n": 5,
+        "mean": 313.0,
+        "p50": 314.31,
+        "p95": 320.82,
+        "max": 320.82,
+        "min": 305.62
+      },
+      "billed_ms": {
+        "n": 5,
+        "mean": 1216.0,
+        "p50": 1283.0,
+        "p95": 1292.0,
+        "max": 1292.0,
+        "min": 1106.0
+      },
+      "cold_total_ms": {
+        "n": 5,
+        "mean": 1215.5,
+        "p50": 1282.02,
+        "p95": 1291.94,
+        "max": 1291.94,
+        "min": 1105.8400000000001
+      }
+    },
+    "eager_photo": {
+      "init_ms": {
+        "n": 5,
+        "mean": 955.5,
+        "p50": 987.46,
+        "p95": 998.05,
+        "max": 998.05,
+        "min": 826.01
+      },
+      "duration_ms": {
+        "n": 5,
+        "mean": 843.9,
+        "p50": 840.98,
+        "p95": 881.1,
+        "max": 881.1,
+        "min": 819.92
+      },
+      "billed_ms": {
+        "n": 5,
+        "mean": 1799.8,
+        "p50": 1829.0,
+        "p95": 1854.0,
+        "max": 1854.0,
+        "min": 1646.0
+      },
+      "cold_total_ms": {
+        "n": 5,
+        "mean": 1799.4,
+        "p50": 1828.44,
+        "p95": 1853.1399999999999,
+        "max": 1853.1399999999999,
+        "min": 1645.9299999999998
+      }
+    },
+    "lazy_pdf": {
+      "init_ms": {
+        "n": 5,
+        "mean": 316.3,
+        "p50": 321.95,
+        "p95": 330.3,
+        "max": 330.3,
+        "min": 286.57
+      },
+      "duration_ms": {
+        "n": 5,
+        "mean": 4689.2,
+        "p50": 4718.74,
+        "p95": 4746.79,
+        "max": 4746.79,
+        "min": 4576.18
+      },
+      "billed_ms": {
+        "n": 5,
+        "mean": 5006.0,
+        "p50": 5034.0,
+        "p95": 5052.0,
+        "max": 5052.0,
+        "min": 4892.0
+      },
+      "cold_total_ms": {
+        "n": 5,
+        "mean": 5005.5,
+        "p50": 5033.36,
+        "p95": 5051.49,
+        "max": 5051.49,
+        "min": 4891.59
+      }
+    },
+    "lazy_photo": {
+      "init_ms": {
+        "n": 5,
+        "mean": 329.9,
+        "p50": 327.65,
+        "p95": 336.61,
+        "max": 336.61,
+        "min": 323.85
+      },
+      "duration_ms": {
+        "n": 5,
+        "mean": 1994.5,
+        "p50": 1994.98,
+        "p95": 2058.17,
+        "max": 2058.17,
+        "min": 1953.1
+      },
+      "billed_ms": {
+        "n": 5,
+        "mean": 2324.8,
+        "p50": 2319.0,
+        "p95": 2393.0,
+        "max": 2393.0,
+        "min": 2281.0
+      },
+      "cold_total_ms": {
+        "n": 5,
+        "mean": 2324.4,
+        "p50": 2318.83,
+        "p95": 2392.98,
+        "max": 2392.98,
+        "min": 2280.75
+      }
+    },
+    "pdf_improvement_pct": -292.6,
+    "photo_improvement_pct": -26.8
+  },
+  "tune": {
+    "configs": [
+      {
+        "arch": "x86_64",
+        "memory_mb": 128,
+        "receipts": 12,
+        "fields_all_correct": 12,
+        "warm_duration_ms_avg": 292.8,
+        "warm_billed_ms_avg": 293.4,
+        "cold_init_ms": 342.56,
+        "max_memory_used_mb": 119.0,
+        "cost_per_1000_receipts_usd": 0.000811
+      },
+      {
+        "arch": "x86_64",
+        "memory_mb": 256,
+        "receipts": 12,
+        "fields_all_correct": 12,
+        "warm_duration_ms_avg": 196.3,
+        "warm_billed_ms_avg": 196.8,
+        "cold_init_ms": 319.4,
+        "max_memory_used_mb": 150.0,
+        "cost_per_1000_receipts_usd": 0.00102
+      },
+      {
+        "arch": "x86_64",
+        "memory_mb": 512,
+        "receipts": 12,
+        "fields_all_correct": 12,
+        "warm_duration_ms_avg": 169.8,
+        "warm_billed_ms_avg": 170.3,
+        "cold_init_ms": 357.72,
+        "max_memory_used_mb": 150.0,
+        "cost_per_1000_receipts_usd": 0.001619
+      },
+      {
+        "arch": "x86_64",
+        "memory_mb": 1024,
+        "receipts": 12,
+        "fields_all_correct": 12,
+        "warm_duration_ms_avg": 149.9,
+        "warm_billed_ms_avg": 150.5,
+        "cold_init_ms": 330.23,
+        "max_memory_used_mb": 150.0,
+        "cost_per_1000_receipts_usd": 0.002709
+      },
+      {
+        "arch": "x86_64",
+        "memory_mb": 2048,
+        "receipts": 12,
+        "fields_all_correct": 12,
+        "warm_duration_ms_avg": 151.7,
+        "warm_billed_ms_avg": 152.1,
+        "cold_init_ms": 331.89,
+        "max_memory_used_mb": 150.0,
+        "cost_per_1000_receipts_usd": 0.00527
+      },
+      {
+        "arch": "arm64",
+        "memory_mb": 128,
+        "receipts": 12,
+        "fields_all_correct": 12,
+        "warm_duration_ms_avg": 312.0,
+        "warm_billed_ms_avg": 312.5,
+        "cold_init_ms": 265.53,
+        "max_memory_used_mb": 119.0,
+        "cost_per_1000_receipts_usd": 0.000721
+      },
+      {
+        "arch": "arm64",
+        "memory_mb": 256,
+        "receipts": 12,
+        "fields_all_correct": 12,
+        "warm_duration_ms_avg": 203.1,
+        "warm_billed_ms_avg": 203.5,
+        "cold_init_ms": 267.44,
+        "max_memory_used_mb": 151.0,
+        "cost_per_1000_receipts_usd": 0.000878
+      },
+      {
+        "arch": "arm64",
+        "memory_mb": 512,
+        "receipts": 12,
+        "fields_all_correct": 12,
+        "warm_duration_ms_avg": 153.9,
+        "warm_billed_ms_avg": 154.3,
+        "cold_init_ms": 248.46,
+        "max_memory_used_mb": 151.0,
+        "cost_per_1000_receipts_usd": 0.001228
+      },
+      {
+        "arch": "arm64",
+        "memory_mb": 1024,
+        "receipts": 12,
+        "fields_all_correct": 12,
+        "warm_duration_ms_avg": 146.2,
+        "warm_billed_ms_avg": 146.9,
+        "cold_init_ms": 247.83,
+        "max_memory_used_mb": 151.0,
+        "cost_per_1000_receipts_usd": 0.002159
+      },
+      {
+        "arch": "arm64",
+        "memory_mb": 2048,
+        "receipts": 12,
+        "fields_all_correct": 12,
+        "warm_duration_ms_avg": 148.5,
+        "warm_billed_ms_avg": 149.1,
+        "cold_init_ms": 333.53,
+        "max_memory_used_mb": 151.0,
+        "cost_per_1000_receipts_usd": 0.004176
+      }
+    ],
+    "cheapest": {
+      "arch": "arm64",
+      "memory_mb": 128,
+      "receipts": 12,
+      "fields_all_correct": 12,
+      "warm_duration_ms_avg": 312.0,
+      "warm_billed_ms_avg": 312.5,
+      "cold_init_ms": 265.53,
+      "max_memory_used_mb": 119.0,
+      "cost_per_1000_receipts_usd": 0.000721
+    },
+    "fastest": {
+      "arch": "arm64",
+      "memory_mb": 1024,
+      "receipts": 12,
+      "fields_all_correct": 12,
+      "warm_duration_ms_avg": 146.2,
+      "warm_billed_ms_avg": 146.9,
+      "cold_init_ms": 247.83,
+      "max_memory_used_mb": 151.0,
+      "cost_per_1000_receipts_usd": 0.002159
+    },
+    "prices_used": {
+      "x86_64": "0.0000166667",
+      "arm64": "0.0000133334"
+    }
+  },
+  "burst": {
+    "lambda_concurrency_limit": 400,
+    "bursts": [
+      {
+        "burst": 10,
+        "version": "Lambda",
+        "done": 10,
+        "fields_all_correct": 10,
+        "end_to_end_ms": {
+          "n": 10,
+          "mean": 5154.6,
+          "p50": 5127.0,
+          "p95": 5369.0,
+          "max": 5369.0,
+          "min": 5003.0
+        },
+        "wait_ms": {
+          "n": 10,
+          "mean": 453.0,
+          "p50": 445.0,
+          "p95": 648.0,
+          "max": 648.0,
+          "min": 376.0
+        },
+        "processing_ms": {
+          "n": 10,
+          "mean": 4701.0,
+          "p50": 4720.0,
+          "p95": 4837.0,
+          "max": 4837.0,
+          "min": 4585.0
+        },
+        "all_done_after_s": 6.3,
+        "throughput_per_s": 1.6,
+        "peak_concurrency": 30.0,
+        "throttles": 0.0
+      },
+      {
+        "burst": 10,
+        "version": "EC2",
+        "done": 10,
+        "fields_all_correct": 10,
+        "end_to_end_ms": {
+          "n": 10,
+          "mean": 6593.8,
+          "p50": 6633.0,
+          "p95": 6798.0,
+          "max": 6798.0,
+          "min": 6376.0
+        },
+        "wait_ms": {
+          "n": 10,
+          "mean": 6556.8,
+          "p50": 6598.0,
+          "p95": 6768.0,
+          "max": 6768.0,
+          "min": 6333.0
+        },
+        "processing_ms": {
+          "n": 10,
+          "mean": 36.6,
+          "p50": 37.0,
+          "p95": 43.0,
+          "max": 43.0,
+          "min": 30.0
+        },
+        "all_done_after_s": 6.9,
+        "throughput_per_s": 1.45
+      },
+      {
+        "burst": 50,
+        "version": "Lambda",
+        "done": 50,
+        "fields_all_correct": 50,
+        "end_to_end_ms": {
+          "n": 50,
+          "mean": 639.6,
+          "p50": 0.0,
+          "p95": 4624.0,
+          "max": 4926.0,
+          "min": 0.0
+        },
+        "wait_ms": {
+          "n": 50,
+          "mean": 9.7,
+          "p50": 0.0,
+          "p95": 16.0,
+          "max": 274.0,
+          "min": 0.0
+        },
+        "processing_ms": {
+          "n": 50,
+          "mean": 717.1,
+          "p50": 65.0,
+          "p95": 4685.0,
+          "max": 4790.0,
+          "min": 29.0
+        },
+        "all_done_after_s": 5.7,
+        "throughput_per_s": 8.77,
+        "peak_concurrency": 30.0,
+        "throttles": 0.0
+      },
+      {
+        "burst": 50,
+        "version": "EC2",
+        "done": 50,
+        "fields_all_correct": 50,
+        "end_to_end_ms": {
+          "n": 50,
+          "mean": 7459.9,
+          "p50": 7575.0,
+          "p95": 8890.0,
+          "max": 9238.0,
+          "min": 5587.0
+        },
+        "wait_ms": {
+          "n": 50,
+          "mean": 7421.7,
+          "p50": 7538.0,
+          "p95": 8851.0,
+          "max": 9200.0,
+          "min": 5550.0
+        },
+        "processing_ms": {
+          "n": 50,
+          "mean": 37.7,
+          "p50": 36.0,
+          "p95": 69.0,
+          "max": 78.0,
+          "min": 27.0
+        },
+        "all_done_after_s": 9.5,
+        "throughput_per_s": 5.28
+      },
+      {
+        "burst": 200,
+        "version": "Lambda",
+        "done": 200,
+        "fields_all_correct": 200,
+        "end_to_end_ms": {
+          "n": 200,
+          "mean": 249.0,
+          "p50": 0.0,
+          "p95": 390.0,
+          "max": 4847.0,
+          "min": 0.0
+        },
+        "wait_ms": {
+          "n": 200,
+          "mean": 17.1,
+          "p50": 0.0,
+          "p95": 119.0,
+          "max": 313.0,
+          "min": 0.0
+        },
+        "processing_ms": {
+          "n": 200,
+          "mean": 286.4,
+          "p50": 50.0,
+          "p95": 178.0,
+          "max": 4808.0,
+          "min": 31.0
+        },
+        "all_done_after_s": 10.3,
+        "throughput_per_s": 19.51,
+        "peak_concurrency": 30.0,
+        "throttles": 0.0
+      },
+      {
+        "burst": 200,
+        "version": "EC2",
+        "done": 200,
+        "fields_all_correct": 200,
+        "end_to_end_ms": {
+          "n": 200,
+          "mean": 7923.0,
+          "p50": 6574.0,
+          "p95": 16582.0,
+          "max": 17359.0,
+          "min": 0.0
+        },
+        "wait_ms": {
+          "n": 200,
+          "mean": 7887.6,
+          "p50": 6544.0,
+          "p95": 16554.0,
+          "max": 17334.0,
+          "min": 0.0
+        },
+        "processing_ms": {
+          "n": 200,
+          "mean": 35.2,
+          "p50": 35.0,
+          "p95": 42.0,
+          "max": 61.0,
+          "min": 23.0
+        },
+        "all_done_after_s": 23.9,
+        "throughput_per_s": 8.35
+      }
+    ]
+  }
+}

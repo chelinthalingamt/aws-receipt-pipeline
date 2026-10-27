@@ -4,3 +4,10 @@ comparison-*-results.csv
 comparison-*-summary.json
 __pycache__/
 ec2-server/lambda_function.py
+# dataset images: rebuilt by tests/fetch_datasets.py (see comparison/DATASETS.md)
+comparison/real-receipts/*.jpg
+comparison/gst-invoices/*.jpg
+
+# personal working notes
+PROGRESS.md
+notes/

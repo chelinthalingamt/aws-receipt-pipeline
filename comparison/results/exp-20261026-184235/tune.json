@@ -1,0 +1,140 @@
+{
+  "configs": [
+    {
+      "arch": "x86_64",
+      "memory_mb": 128,
+      "receipts": 12,
+      "fields_all_correct": 12,
+      "warm_duration_ms_avg": 292.8,
+      "warm_billed_ms_avg": 293.4,
+      "cold_init_ms": 342.56,
+      "max_memory_used_mb": 119.0,
+      "cost_per_1000_receipts_usd": 0.000811
+    },
+    {
+      "arch": "x86_64",
+      "memory_mb": 256,
+      "receipts": 12,
+      "fields_all_correct": 12,
+      "warm_duration_ms_avg": 196.3,
+      "warm_billed_ms_avg": 196.8,
+      "cold_init_ms": 319.4,
+      "max_memory_used_mb": 150.0,
+      "cost_per_1000_receipts_usd": 0.00102
+    },
+    {
+      "arch": "x86_64",
+      "memory_mb": 512,
+      "receipts": 12,
+      "fields_all_correct": 12,
+      "warm_duration_ms_avg": 169.8,
+      "warm_billed_ms_avg": 170.3,
+      "cold_init_ms": 357.72,
+      "max_memory_used_mb": 150.0,
+      "cost_per_1000_receipts_usd": 0.001619
+    },
+    {
+      "arch": "x86_64",
+      "memory_mb": 1024,
+      "receipts": 12,
+      "fields_all_correct": 12,
+      "warm_duration_ms_avg": 149.9,
+      "warm_billed_ms_avg": 150.5,
+      "cold_init_ms": 330.23,
+      "max_memory_used_mb": 150.0,
+      "cost_per_1000_receipts_usd": 0.002709
+    },
+    {
+      "arch": "x86_64",
+      "memory_mb": 2048,
+      "receipts": 12,
+      "fields_all_correct": 12,
+      "warm_duration_ms_avg": 151.7,
+      "warm_billed_ms_avg": 152.1,
+      "cold_init_ms": 331.89,
+      "max_memory_used_mb": 150.0,
+      "cost_per_1000_receipts_usd": 0.00527
+    },
+    {
+      "arch": "arm64",
+      "memory_mb": 128,
+      "receipts": 12,
+      "fields_all_correct": 12,
+      "warm_duration_ms_avg": 312.0,
+      "warm_billed_ms_avg": 312.5,
+      "cold_init_ms": 265.53,
+      "max_memory_used_mb": 119.0,
+      "cost_per_1000_receipts_usd": 0.000721
+    },
+    {
+      "arch": "arm64",
+      "memory_mb": 256,
+      "receipts": 12,
+      "fields_all_correct": 12,
+      "warm_duration_ms_avg": 203.1,
+      "warm_billed_ms_avg": 203.5,
+      "cold_init_ms": 267.44,
+      "max_memory_used_mb": 151.0,
+      "cost_per_1000_receipts_usd": 0.000878
+    },
+    {
+      "arch": "arm64",
+      "memory_mb": 512,
+      "receipts": 12,
+      "fields_all_correct": 12,
+      "warm_duration_ms_avg": 153.9,
+      "warm_billed_ms_avg": 154.3,
+      "cold_init_ms": 248.46,
+      "max_memory_used_mb": 151.0,
+      "cost_per_1000_receipts_usd": 0.001228
+    },
+    {
+      "arch": "arm64",
+      "memory_mb": 1024,
+      "receipts": 12,
+      "fields_all_correct": 12,
+      "warm_duration_ms_avg": 146.2,
+      "warm_billed_ms_avg": 146.9,
+      "cold_init_ms": 247.83,
+      "max_memory_used_mb": 151.0,
+      "cost_per_1000_receipts_usd": 0.002159
+    },
+    {
+      "arch": "arm64",
+      "memory_mb": 2048,
+      "receipts": 12,
+      "fields_all_correct": 12,
+      "warm_duration_ms_avg": 148.5,
+      "warm_billed_ms_avg": 149.1,
+      "cold_init_ms": 333.53,
+      "max_memory_used_mb": 151.0,
+      "cost_per_1000_receipts_usd": 0.004176
+    }
+  ],
+  "cheapest": {
+    "arch": "arm64",
+    "memory_mb": 128,
+    "receipts": 12,
+    "fields_all_correct": 12,
+    "warm_duration_ms_avg": 312.0,
+    "warm_billed_ms_avg": 312.5,
+    "cold_init_ms": 265.53,
+    "max_memory_used_mb": 119.0,
+    "cost_per_1000_receipts_usd": 0.000721
+  },
+  "fastest": {
+    "arch": "arm64",
+    "memory_mb": 1024,
+    "receipts": 12,
+    "fields_all_correct": 12,
+    "warm_duration_ms_avg": 146.2,
+    "warm_billed_ms_avg": 146.9,
+    "cold_init_ms": 247.83,
+    "max_memory_used_mb": 151.0,
+    "cost_per_1000_receipts_usd": 0.002159
+  },
+  "prices_used": {
+    "x86_64": "0.0000166667",
+    "arm64": "0.0000133334"
+  }
+}

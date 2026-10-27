@@ -1,0 +1,203 @@
+{
+  "lambda_concurrency_limit": 400,
+  "bursts": [
+    {
+      "burst": 10,
+      "version": "Lambda",
+      "done": 10,
+      "fields_all_correct": 10,
+      "end_to_end_ms": {
+        "n": 10,
+        "mean": 5154.6,
+        "p50": 5127.0,
+        "p95": 5369.0,
+        "max": 5369.0,
+        "min": 5003.0
+      },
+      "wait_ms": {
+        "n": 10,
+        "mean": 453.0,
+        "p50": 445.0,
+        "p95": 648.0,
+        "max": 648.0,
+        "min": 376.0
+      },
+      "processing_ms": {
+        "n": 10,
+        "mean": 4701.0,
+        "p50": 4720.0,
+        "p95": 4837.0,
+        "max": 4837.0,
+        "min": 4585.0
+      },
+      "all_done_after_s": 6.3,
+      "throughput_per_s": 1.6,
+      "peak_concurrency": 30.0,
+      "throttles": 0.0
+    },
+    {
+      "burst": 10,
+      "version": "EC2",
+      "done": 10,
+      "fields_all_correct": 10,
+      "end_to_end_ms": {
+        "n": 10,
+        "mean": 6593.8,
+        "p50": 6633.0,
+        "p95": 6798.0,
+        "max": 6798.0,
+        "min": 6376.0
+      },
+      "wait_ms": {
+        "n": 10,
+        "mean": 6556.8,
+        "p50": 6598.0,
+        "p95": 6768.0,
+        "max": 6768.0,
+        "min": 6333.0
+      },
+      "processing_ms": {
+        "n": 10,
+        "mean": 36.6,
+        "p50": 37.0,
+        "p95": 43.0,
+        "max": 43.0,
+        "min": 30.0
+      },
+      "all_done_after_s": 6.9,
+      "throughput_per_s": 1.45
+    },
+    {
+      "burst": 50,
+      "version": "Lambda",
+      "done": 50,
+      "fields_all_correct": 50,
+      "end_to_end_ms": {
+        "n": 50,
+        "mean": 639.6,
+        "p50": 0.0,
+        "p95": 4624.0,
+        "max": 4926.0,
+        "min": 0.0
+      },
+      "wait_ms": {
+        "n": 50,
+        "mean": 9.7,
+        "p50": 0.0,
+        "p95": 16.0,
+        "max": 274.0,
+        "min": 0.0
+      },
+      "processing_ms": {
+        "n": 50,
+        "mean": 717.1,
+        "p50": 65.0,
+        "p95": 4685.0,
+        "max": 4790.0,
+        "min": 29.0
+      },
+      "all_done_after_s": 5.7,
+      "throughput_per_s": 8.77,
+      "peak_concurrency": 30.0,
+      "throttles": 0.0
+    },
+    {
+      "burst": 50,
+      "version": "EC2",
+      "done": 50,
+      "fields_all_correct": 50,
+      "end_to_end_ms": {
+        "n": 50,
+        "mean": 7459.9,
+        "p50": 7575.0,
+        "p95": 8890.0,
+        "max": 9238.0,
+        "min": 5587.0
+      },
+      "wait_ms": {
+        "n": 50,
+        "mean": 7421.7,
+        "p50": 7538.0,
+        "p95": 8851.0,
+        "max": 9200.0,
+        "min": 5550.0
+      },
+      "processing_ms": {
+        "n": 50,
+        "mean": 37.7,
+        "p50": 36.0,
+        "p95": 69.0,
+        "max": 78.0,
+        "min": 27.0
+      },
+      "all_done_after_s": 9.5,
+      "throughput_per_s": 5.28
+    },
+    {
+      "burst": 200,
+      "version": "Lambda",
+      "done": 200,
+      "fields_all_correct": 200,
+      "end_to_end_ms": {
+        "n": 200,
+        "mean": 249.0,
+        "p50": 0.0,
+        "p95": 390.0,
+        "max": 4847.0,
+        "min": 0.0
+      },
+      "wait_ms": {
+        "n": 200,
+        "mean": 17.1,
+        "p50": 0.0,
+        "p95": 119.0,
+        "max": 313.0,
+        "min": 0.0
+      },
+      "processing_ms": {
+        "n": 200,
+        "mean": 286.4,
+        "p50": 50.0,
+        "p95": 178.0,
+        "max": 4808.0,
+        "min": 31.0
+      },
+      "all_done_after_s": 10.3,
+      "throughput_per_s": 19.51,
+      "peak_concurrency": 30.0,
+      "throttles": 0.0
+    },
+    {
+      "burst": 200,
+      "version": "EC2",
+      "done": 200,
+      "fields_all_correct": 200,
+      "end_to_end_ms": {
+        "n": 200,
+        "mean": 7923.0,
+        "p50": 6574.0,
+        "p95": 16582.0,
+        "max": 17359.0,
+        "min": 0.0
+      },
+      "wait_ms": {
+        "n": 200,
+        "mean": 7887.6,
+        "p50": 6544.0,
+        "p95": 16554.0,
+        "max": 17334.0,
+        "min": 0.0
+      },
+      "processing_ms": {
+        "n": 200,
+        "mean": 35.2,
+        "p50": 35.0,
+        "p95": 42.0,
+        "max": 61.0,
+        "min": 23.0
+      },
+      "all_done_after_s": 23.9,
+      "throughput_per_s": 8.35
+    }
+  ]
+}

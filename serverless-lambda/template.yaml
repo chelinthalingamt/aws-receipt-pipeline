@@ -27,7 +27,7 @@ Resources:
       LogGroupName: /aws/lambda/receipt-pipeline-processor
       RetentionInDays: 14
 
-  # Security: the function can do exactly five things and nothing else.
+  # Security: the function can do exactly these things and nothing else.
   ProcessorRole:
     Type: AWS::IAM::Role
     Properties:
@@ -51,7 +51,9 @@ Resources:
                 Resource: !Sub 'arn:aws:s3:::${BucketName}/serverless/*'
               - Sid: SaveExtractedData
                 Effect: Allow
-                Action: dynamodb:PutItem
+                Action:
+                  - dynamodb:PutItem
+                  - dynamodb:GetItem   # read back the first copy when a duplicate bill is found
                 Resource: !Sub 'arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/${TableName}'
               - Sid: SendNotification
                 Effect: Allow
@@ -81,6 +83,10 @@ Resources:
       FunctionName: receipt-pipeline-processor
       Description: Extracts vendor, amount and date from uploaded receipts.
       Runtime: python3.13
+      # ARM (Graviton): in the tuning experiment, 256 MB on ARM cost ~14% less per receipt
+      # than on Intel at nearly the same speed. The code is pure Python, so it runs on either.
+      Architectures:
+        - arm64
       Handler: lambda_function.lambda_handler
       Role: !GetAtt ProcessorRole.Arn
       Code:

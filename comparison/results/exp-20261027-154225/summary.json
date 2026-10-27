@@ -1,0 +1,47 @@
+{
+  "run": "exp-20261027-154225",
+  "region": "ap-southeast-2",
+  "accuracy": {
+    "real_receipts": {
+      "n": 40,
+      "vendor_pct": 87.5,
+      "amount_pct": 92.5,
+      "date_pct": 97.5,
+      "all_pct": 82.5,
+      "ocr_calls": {
+        "n": 40,
+        "mean": 3.2,
+        "p50": 5.0,
+        "p95": 5.0,
+        "max": 5.0,
+        "min": 1.0
+      },
+      "processing_ms": {
+        "n": 40,
+        "mean": 3917.3,
+        "p50": 5345.0,
+        "p95": 7473.0,
+        "max": 7783.0,
+        "min": 801.0
+      },
+      "billed_ms": {
+        "n": 40,
+        "mean": 4005.9,
+        "p50": 5377.0,
+        "p95": 7496.0,
+        "max": 7804.0,
+        "min": 823.0
+      },
+      "over_100_words": 22
+    },
+    "gst_invoices": {
+      "n": 15,
+      "verdict_correct": "15/15",
+      "valid_passed": "9/9",
+      "tampered_caught": "6/6",
+      "gstin_read_correctly": "15/15",
+      "fields_all_correct_pct": 100.0,
+      "duplicate_detected": true
+    }
+  }
+}

@@ -293,7 +293,7 @@ def main():
         say("  EC2 server stopped again (this script started it).")
     elif not args.keep_running:
         say("  EC2 server was already running before this script; stop it with: bash ec2-power.sh stop")
-    say("\nPaste this output (or the summary JSON) to Claude to write up the comparison.")
+    say("\nThe summary JSON above holds every number for the write-up.")
 
 
 if __name__ == "__main__":

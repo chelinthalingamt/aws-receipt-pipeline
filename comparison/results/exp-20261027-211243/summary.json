@@ -1,0 +1,50 @@
+{
+  "run": "exp-20261027-211243",
+  "region": "ap-southeast-2",
+  "accuracy": {
+    "real_receipts": {
+      "n": 626,
+      "vendor_pct": 90.7,
+      "amount_pct": 89.6,
+      "date_pct": 98.6,
+      "all_pct": 81.3,
+      "ocr_calls": {
+        "n": 626,
+        "mean": 3.3,
+        "p50": 5.0,
+        "p95": 5.0,
+        "max": 7.0,
+        "min": 1.0
+      },
+      "processing_ms": {
+        "n": 626,
+        "mean": 3464.5,
+        "p50": 2717.0,
+        "p95": 9756.0,
+        "max": 25188.0,
+        "min": 685.0
+      },
+      "billed_ms": {
+        "n": 626,
+        "mean": 3505.8,
+        "p50": 2746.0,
+        "p95": 9908.0,
+        "max": 25212.0,
+        "min": 708.0
+      },
+      "over_100_words": 362,
+      "needs_review": 55,
+      "not_saved": 0,
+      "gst_false_alarms": 3
+    },
+    "gst_invoices": {
+      "n": 170,
+      "verdict_correct": "169/170",
+      "valid_passed": "110/110",
+      "tampered_caught": "59/60",
+      "gstin_read_correctly": "169/170",
+      "fields_all_correct_pct": 100.0,
+      "duplicate_detected": true
+    }
+  }
+}

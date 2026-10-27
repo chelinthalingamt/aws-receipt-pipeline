@@ -101,6 +101,8 @@ button.go:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
 .chip.PROCESSED { background: var(--accent-soft); color: var(--accent); }
 .chip.NEEDS_REVIEW { background: var(--amber-soft); color: var(--amber); }
 .chip.FAILED { background: var(--bad-soft); color: var(--bad); }
+.chip.ok { background: var(--accent-soft); color: var(--accent); }
+.chip.bad { background: var(--bad-soft); color: var(--bad); }
 .notice { margin-top: 12px; padding: 9px 11px; border-radius: 6px; font: .82rem/1.45 var(--sans); }
 .notice.fix { background: var(--accent-soft); color: var(--ink); }
 .notice.warn { background: var(--amber-soft); color: var(--ink); }
@@ -115,6 +117,44 @@ td { padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: to
 td.num { font-family: var(--mono); text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 th.num { text-align: right; }
 .muted { color: var(--muted); }
+
+/* spending dashboard */
+.dash-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; margin-bottom: 16px; }
+.dash-head h2 { margin: 0; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.seg button { border: 0; background: transparent; color: var(--muted); font: 500 .85rem var(--sans); padding: 7px 12px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--accent-soft); color: var(--ink); font-weight: 600; }
+.seg button:focus-visible, a.btn:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
+a.btn { display: inline-block; text-decoration: none; color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 7px 12px; font: 500 .85rem var(--sans); }
+a.btn:hover { border-color: var(--accent); }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 18px; }
+.tile { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; min-width: 0; }
+.tile .k { color: var(--muted); font: 600 .7rem var(--mono); letter-spacing: .06em; text-transform: uppercase; }
+.tile .v { font: 600 1.45rem/1.25 var(--mono); font-variant-numeric: tabular-nums; margin-top: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 520px) { .tile.wide { grid-column: 1 / -1; } }
+.tile .s { color: var(--muted); font-size: .8rem; }
+.charts { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; }
+@media (max-width: 820px) { .charts { grid-template-columns: minmax(0, 1fr); } }
+.chart h3 { margin: 0 0 10px; font-size: .95rem; }
+.hbars { display: grid; gap: 6px; }
+.hbar { display: grid; grid-template-columns: minmax(84px, 9.5rem) minmax(0, 1fr) auto; gap: 10px; align-items: center; font-size: .86rem; }
+.hbar .lab { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hbar .track { height: 14px; }
+.hbar .fill { height: 100%; min-width: 3px; background: var(--accent); border-radius: 0 4px 4px 0; }
+.hbar .val { font: .8rem var(--mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.hbar:hover .fill { filter: brightness(1.12); }
+.months { display: flex; align-items: flex-end; gap: 2px; height: 150px; border-bottom: 1px solid var(--line); }
+.mcol { flex: 1 1 0; min-width: 0; max-width: 64px; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; position: relative; cursor: default; }
+.mcol .bar { background: var(--accent); border-radius: 4px 4px 0 0; min-height: 2px; }
+.mcol:hover .bar, .mcol:focus .bar { filter: brightness(1.12); }
+.mcol:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+.mlabels { display: flex; gap: 2px; margin-top: 4px; }
+.mlabels span { flex: 1 1 0; min-width: 0; max-width: 64px; text-align: center; font: .68rem var(--mono); color: var(--muted); overflow: hidden; white-space: nowrap; }
+.tip { position: fixed; pointer-events: none; z-index: 10; background: var(--ink); color: var(--bg); font: .78rem/1.35 var(--sans); padding: 6px 8px; border-radius: 6px; display: none; max-width: 240px; }
+.dash-note { color: var(--muted); font-size: .8rem; margin-top: 12px; }
+details.table { margin-top: 14px; }
+details.table summary { cursor: pointer; color: var(--muted); font-size: .85rem; }
 
 /* how it works */
 .flow { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font: .82rem var(--mono); color: var(--muted); }
@@ -177,6 +217,29 @@ footer { color: var(--muted); font-size: .82rem; }
     </div>
   </section>
 
+  <section class="card" aria-labelledby="dash-h">
+    <div class="dash-head">
+      <h2 id="dash-h">Spending dashboard</h2>
+      <div class="controls">
+        <div class="seg" role="group" aria-label="Which receipts">
+          <button type="button" data-scope="all" aria-pressed="true">All receipts</button>
+          <button type="button" data-scope="web" aria-pressed="false">This website</button>
+        </div>
+        <a class="btn" id="csv" href="/api/export.csv" download>Download CSV</a>
+      </div>
+    </div>
+    <div class="tiles" id="tiles"><div class="tile"><div class="k">Loading</div><div class="v">…</div></div></div>
+    <div class="charts">
+      <div class="chart"><h3>Spending by category</h3><div class="hbars" id="cats"></div></div>
+      <div class="chart"><h3>Spending by month</h3><div class="months" id="months" role="list"></div><div class="mlabels" id="mlabels" aria-hidden="true"></div></div>
+    </div>
+    <details class="table"><summary>Show the numbers as a table</summary>
+      <div class="tablewrap"><table><thead><tr><th>Group</th><th>Name</th><th class="num">Amount</th></tr></thead><tbody id="dash-table"></tbody></table></div>
+    </details>
+    <p class="dash-note" id="dash-note"></p>
+    <div class="tip" id="tip" role="tooltip"></div>
+  </section>
+
   <section aria-label="How it works">
     <div class="flow"><b>Browser</b>→<b>S3 upload</b>→<b>S3 event</b>→<b>Lambda</b>→<b>DynamoDB</b>+<b>SNS email</b></div>
   </section>
@@ -230,7 +293,16 @@ footer { color: var(--muted); font-size: .82rem; }
   function render(r) {
     const notices = [];
     if (r.amount_corrected_from != null) notices.push(`<div class="notice fix">Total corrected from ${esc(r.amount_corrected_from)}: the camera misread the currency sign as a digit, and the item prices confirm the fix.</div>`);
-    if (r.note) notices.push(`<div class="notice warn">${esc(r.note)}</div>`);
+    if (r.duplicate_of) notices.push(`<div class="notice warn"><b>Possible duplicate</b> of ${esc(String(r.duplicate_of).split("/").pop())}: same vendor, total and date.</div>`);
+    if (r.note && !r.duplicate_of) notices.push(`<div class="notice warn">${esc(r.note)}</div>`);
+    const gstRows = r.gstin || r.gst_total != null ? `
+      <hr class="rule">
+      <dl>
+        ${r.gstin ? `<div class="row"><dt>GSTIN</dt><dd>${esc(r.gstin)} <span class="chip ${r.gstin_valid ? "ok" : "bad"}">${r.gstin_valid ? "VALID" : "INVALID"}</span></dd></div>` : ""}
+        ${r.gst_state ? `<div class="row"><dt>State</dt><dd>${esc(r.gst_state)}</dd></div>` : ""}
+        ${["cgst", "sgst", "igst"].filter((k) => r[k] != null).map((k) => `<div class="row"><dt>${k.toUpperCase()}</dt><dd>${esc(Number(r[k]).toFixed(2))}</dd></div>`).join("")}
+        ${r.gst_check ? `<div class="row"><dt>GST check</dt><dd><span class="chip ${String(r.gst_check).startsWith("OK") ? "ok" : "bad"}">${String(r.gst_check).startsWith("OK") ? "ADDS UP" : "PROBLEM"}</span></dd></div>` : ""}
+      </dl>` : "";
     $("paper").innerHTML = `
       <div class="head">${esc(r.vendor || "Vendor not found")}</div>
       <div class="sub">${esc((r.s3_key || "").split("/").pop())}</div>
@@ -238,12 +310,13 @@ footer { color: var(--muted); font-size: .82rem; }
       <dl>
         <div class="row total"><dt>Total</dt><dd>${esc(money(r))}</dd></div>
         <div class="row"><dt>Date</dt><dd>${esc(r.receipt_date || "—")}</dd></div>
+        <div class="row"><dt>Category</dt><dd>${esc(r.category || "—")}</dd></div>
         <div class="row"><dt>Status</dt><dd><span class="chip ${esc(r.status)}">${esc((r.status || "").replace("_", " "))}</span></dd></div>
-      </dl>
+      </dl>${gstRows}
       <hr class="rule">
       <dl>
         <div class="row"><dt>Read from</dt><dd>${esc(method(r.extraction_method))}</dd></div>
-        <div class="row"><dt>Processing</dt><dd>${esc(r.processing_ms)} ms</dd></div>
+        <div class="row"><dt>Processing</dt><dd>${esc(r.processing_ms)} ms${r.ocr_calls > 1 ? ` · read in ${esc(r.ocr_calls)} parts` : ""}</dd></div>
         <div class="row"><dt>Receipt ID</dt><dd>${esc(r.receipt_id)}</dd></div>
       </dl>
       ${notices.join("")}`;
@@ -293,6 +366,7 @@ footer { color: var(--muted); font-size: .82rem; }
       ["read", "save", "mail"].forEach((s) => setStep(s, "done"));
       render(r);
       loadRecent();
+      loadSummary();
     } catch (e) {
       clearInterval(clockTimer); resetSteps();
       showError(e.message || "Something went wrong.");
@@ -302,7 +376,64 @@ footer { color: var(--muted); font-size: .82rem; }
     }
   });
 
+  // ---- spending dashboard
+  let scope = "all";
+  const num = (v) => Number(v || 0);
+  const fmt = (v, cur) => `${cur ? cur + " " : ""}${num(v).toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+  const tip = $("tip");
+  function showTip(e, html) { tip.innerHTML = html; tip.style.display = "block"; const x = Math.min(e.clientX + 14, innerWidth - 250); tip.style.left = x + "px"; tip.style.top = (e.clientY + 14) + "px"; }
+  function hideTip() { tip.style.display = "none"; }
+
+  async function loadSummary() {
+    try {
+      const res = await fetch("/api/summary?scope=" + scope);
+      const d = await res.json();
+      const cur = d.currency || "";
+      const review = (d.statuses || {}).NEEDS_REVIEW || 0;
+      const others = Object.entries(d.other_currencies || {}).map(([c, v]) => fmt(v, c)).join(", ");
+      $("tiles").innerHTML = [
+        ["Receipts", d.receipts, ""],
+        ["Total spent", d.total != null && cur ? fmt(d.total, cur) : "—", others ? "plus " + others : ""],
+        ["Need review", review, "missing fields, GST or duplicate"],
+        ["GST invoices", d.gst_checked, `${d.gst_problems} with a problem`],
+        ["Duplicates caught", d.duplicates, "same vendor, total, date"],
+      ].map(([k, v, s]) => `<div class="tile${k === "Total spent" ? " wide" : ""}"><div class="k">${esc(k)}</div><div class="v">${esc(v)}</div><div class="s">${esc(s)}</div></div>`).join("");
+
+      const cats = d.by_category || [];
+      const maxC = Math.max(1, ...cats.map((c) => num(c.amount)));
+      $("cats").innerHTML = cats.map((c) => `<div class="hbar" data-tip="${esc(c.name)}: ${esc(fmt(c.amount, cur))}">
+          <span class="lab">${esc(c.name)}</span><span class="track"><span class="fill" style="display:block;width:${(100 * num(c.amount) / maxC).toFixed(1)}%"></span></span>
+          <span class="val">${esc(fmt(c.amount, ""))}</span></div>`).join("") || `<p class="muted">No receipts yet.</p>`;
+
+      const months = d.by_month || [];
+      const maxM = Math.max(1, ...months.map((m) => num(m.amount)));
+      $("months").innerHTML = months.map((m) => `<div class="mcol" role="listitem" tabindex="0" aria-label="${esc(m.name)}: ${esc(fmt(m.amount, cur))}" data-tip="${esc(m.name)}: ${esc(fmt(m.amount, cur))}">
+          <div class="bar" style="height:${(100 * num(m.amount) / maxM).toFixed(1)}%"></div></div>`).join("");
+      const monthName = (n) => { const d = new Date(n + "-01T00:00:00Z"); return isNaN(d) ? n : d.toLocaleString("en-GB", { month: "short", year: "2-digit", timeZone: "UTC" }); };
+      $("mlabels").innerHTML = months.map((m) => `<span>${esc(monthName(m.name))}</span>`).join("");
+
+      const rows = [...cats.map((c) => ["Category", c.name, c.amount]), ...months.map((m) => ["Month", m.name, m.amount]),
+                    ...(d.top_vendors || []).map((v) => ["Top vendor", v.name, v.amount])];
+      $("dash-table").innerHTML = rows.map(([g, n, a]) => `<tr><td class="muted">${esc(g)}</td><td>${esc(n)}</td><td class="num">${esc(fmt(a, cur))}</td></tr>`).join("");
+      const unpriced = d.no_currency ? ` ${d.no_currency} receipt${d.no_currency > 1 ? "s" : ""} with no currency printed ${d.no_currency > 1 ? "are" : "is"} not counted.` : "";
+      $("dash-note").textContent = cur ? `Amounts in ${cur}, the most used currency${others ? "; other currencies are shown separately, not converted" : ""}.${unpriced} Test runs are excluded.` : "";
+      $("csv").href = "/api/export.csv?scope=" + scope;
+    } catch { $("tiles").innerHTML = `<div class="tile"><div class="k">Dashboard</div><div class="v">—</div><div class="s">Could not load the summary.</div></div>`; }
+  }
+
+  document.querySelectorAll(".seg button").forEach((b) => b.addEventListener("click", () => {
+    scope = b.dataset.scope;
+    document.querySelectorAll(".seg button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    loadSummary();
+  }));
+  ["cats", "months"].forEach((id) => {
+    const el = $(id);
+    el.addEventListener("mousemove", (e) => { const t = e.target.closest("[data-tip]"); t ? showTip(e, esc(t.dataset.tip)) : hideTip(); });
+    el.addEventListener("mouseleave", hideTip);
+  });
+
   loadRecent();
+  loadSummary();
 })();
 </script>
 </body>
