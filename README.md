@@ -22,17 +22,17 @@ upload website with a spending dashboard. Region: Asia Pacific (Sydney), `ap-sou
 | `ec2-server/` | EC2 server running the same code | `bash deploy.sh` then `bash test.sh` |
 | `monitoring/` | CloudWatch dashboard and error alarm | `bash monitoring.sh` |
 | `comparison/` | The same 12 receipts through both versions | `python3 compare.py` |
-| `comparison/` | Accuracy, cold starts, memory/ARM tuning, burst load | `python3 experiments.py all` |
+| `comparison/` | Accuracy, cold starts, memory/ARM tuning, burst load | `python3 experiments.py all` (or one of `accuracy`, `coldstart`, ...) |
 | `website/` | Public upload website and spending dashboard | `bash deploy.sh` (and `bash deploy.sh off`) |
 | `comparison/` | Charts and numbers from the results (needs `python3-matplotlib`) | `python3 analyze.py` |
 | `comparison/cost-model/` | Lambda vs EC2 cost spreadsheet (needs `python3-openpyxl`) | `python3 build_cost_model.py` |
-| `tests/` | Offline tests, no AWS needed | see *Testing* below |
+| `tests/` | Code checks (no AWS needed) and dataset tools | see *Testing* below |
 
 **Results:** `comparison/RESULTS.md` has every measured number and chart.
 
 Deploy them in the order listed. Run every command from inside its own folder
 (for example `cd website && bash deploy.sh`). To redeploy everything and run all experiments
-in one go, run `bash run_all.sh` from the project folder (about 30 minutes, well under $1).
+in one go, run `bash run_all.sh` from the project folder (about an hour, roughly $3, mostly Rekognition reads).
 
 **The receipt-reading code lives in one place:** `serverless-lambda/lambda_function.py`.
 `ec2-server/deploy.sh` copies it into the EC2 folder automatically, so edit only that file.
@@ -63,7 +63,7 @@ See `comparison/DATASETS.md` for the full list. In short:
 - **170 GST invoice images** in `comparison/gst-invoices/`: 100 genuine ones from BillBook
   (github.com/Abh1j1th1/BillBook, Apache-2.0; computer-generated to look like photos, not real bills),
   60 tampered copies and 10 re-shot copies made by `tests/make_gst_invoices.py`.
-- The images are large, so Git ignores them; `tests/fetch_datasets.py` rebuilds both folders.
+- The SROIE images are large, so Git ignores them and `tests/fetch_datasets.py` rebuilds them. The GST invoice images (about 10 MB) are kept in Git.
 
 ## One-time setup on Windows (about 30 minutes)
 
@@ -116,7 +116,7 @@ aws sts get-caller-identity     # should print your account number
 1. Open Ubuntu, `cd ~/projects/receipt-pipeline && code .`
 2. Sign in if it has been more than 12 hours: `aws login --profile signin --remote`
 3. Edit a file in VS Code and save.
-4. Run the offline tests: `python3 tests/test_batch.py`
+4. Run the code checks: `python3 tests/test_batch.py`
 5. In VS Code's terminal (Ctrl + `), redeploy the part you changed:
 
 | You changed | Run |
